@@ -1,0 +1,80 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+Width=400
+Height=600
+
+Title="Help"
+
+Manager=(Name="SimsHelpScreen"
+
+	Title="Sims Wardrobe"	// This must be specified
+
+	// Make changes from here ...
+	Content=GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUISpacer(Width=8 Height=0)
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y"
+				Ratio0=0.0
+				Ratio1=1.0
+				Ratio2=0.0
+				Ratio3=1.0
+				Ratio4=0.0
+				Ratio5=1.0
+				Ratio6=0.0
+				Ratio7=1.0
+				Ratio8=0.0
+				Ratio9=1.0
+				Ratio10=0.0
+				Ratio11=1.0
+			)
+			GUITextArea(
+				Content="The Sims Wardrobe allows you to change your Sim's clothes. You can choose which garment you would like your Sim to wear from the left, and then you can choose a material for that garment from the right. You can layer the garments on your Sim by clicking on more garments. You may also choose any accessories you wish to place on your Sim from the left but you are only allowed to change the material on certain accessories."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="You can view your Sim from different angles, by clicking and dragging in the 3D view."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="Use the 'Undo' button to remove the last piece of clothing you added. The 'Undress' button removes most of the Sim's clothing. If you do not click the 'Undress' button you will layer the new garments over the Sim's original garments."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="You can load more material from disk by clicking on the 'Load Texture' button (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types)."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+
+			GUITextArea(
+				Content="To add an image to the body of the Sim click on the 'Add Logo' button, you will be taken to the Logo Selector screen."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="When you are finished click 'Done' to return to the start screen, or click 'Cancel' to return without keeping your changes."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+		)
+		GUISpacer(Width=8 Height=0)
+
+		// Add new GUITextAreas here, sliders, scrollers, images, ...
+	)
+	// ... to here.
+)

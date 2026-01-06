@@ -1,0 +1,72 @@
+/********************************************************************************
+ ********** System data
+ ********************************************************************************/
+
+ApplicationExitRequested=0	// (Hypothetical/used under Win32.) Set to TRUE to request the OS-specific code to exit the application.
+
+Preferences=()	// Parent node of all the user's preferences.  Read from Preferences.ADG in RHStartup.cpp.
+DevPreferences=()	/* Placeholder for developer preferences node.  (Use for stuff that's more 
+	changeable than compile-time flags). Read from DevPreferences.ADG in RHStartup.cpp. */
+
+Preset=RHXPreset()			// Parent node of all the presets - brushes, airbrushes, crayon, etc
+//PresetEditor=RHXPresetEditor()	// Parent node, holding the structures of the editors for all the system's presets.
+//DefaultPresets=()
+
+CurrentPainterSettings=(
+	Name="Hard 0.03"
+	Scale=0.030000
+	Aspect=0.500000
+	Spacing=0.080000
+	Rotation=0.000000
+	Strength=1.000000
+	Color=Color
+		(
+			Red=0.000000
+			Green=0.000000
+			Blue=0.000000
+			Alpha=0.000000
+			Brightness=1.000000
+		)
+	Feather=0.200000
+	Profile=0
+	PressAffectsScale=0
+	PressAffectsStrength=1
+	PaintOperation=0
+	PencilMode=1
+	DefaultPreset = 2
+)	// Placeholder for the global (for now) properties of the current brush
+
+Hotkeys=()	// Loaded from HotKeys.adg.   Each child is of the form Key="S" Modifier="Ctrl" Action="CurrentDocument::Save"
+
+IO=RHXIO()	// IO node; eg IO::LoadFile
+
+ColorSwatchManager=RHXColorSwatchManager() //Used to handle the colorswatch calls EG. load,save,saveas,reset etc...
+
+System=(
+	ForegroundColor=Color(
+		Red=1.0
+		Green=1.0
+		Blue=1.0
+		Brightness=1.0
+		Opacity=1.0
+		Alpha=1.0;
+
+		Hue=180.0
+		Value=0.5
+		Saturation=0.5
+	)
+	BackgroundColor=Color(
+		Red=0.6
+		Green=0.5
+		Blue=0.4
+		Alpha=1.0
+		Opacity=1.0
+	)
+	CurrentToolIndex=400	//rotate
+)
+
+RenderOption=(
+	LightDiffuse=1.0
+	LightSpecular=1.0
+	LightAmbient=0.4
+)

@@ -1,0 +1,141 @@
+The Sims™ Creator
+Arquivo Leia-Me
+http://thesims.ea.com
+14 de Março de 2002
+MAXIS - Electronic Arts
+Versão 1.1
+
+Índice
+
+Geral
+Descrição
+Tela de Início/Principal
+Importador de Fotos
+Guarda-Roupas Sim
+Pintar
+Salvar
+Opções de Renderização
+
+Geral
+-----
+Para ter acesso às últimas informações sobre o The Sims™ e o The Sims™ Creator visite:
+http://www.thesims.com. (para usuários com proficiência na Língua Inglesa)
+Você pode encontrar links para sites feitos por fãs, encontrar fóruns de discussão, FAQs (Perguntas e Respostas mais comuns),
+descritivos e dicas. Confira também a área de chat de nosso site, onde você poderá conversar com outros jogadores. 
+
+Descrição
+---------
+O The Sims™ Creator permite que você dê um novo rosto aos seus Sims, além de pintá-los, adicionar logotipos e mudar 
+suas roupas.
+
+O The Sims™ Creator trabalha com os dados encontrados na pasta Skins no diretório de instalação de seu The Sims™ e de todos
+os pacotes de expansão:
+(Diretório Padrão: \Arquivos de Programas\Maxis\The Sims\GameData\Skins e \Arquivos de Programas\Maxis\The Sims\ExpansionPack...). 
+As ferramentas do The Sims™ Creator permitem que você modifique os Sims do The Sims™ 1.0 e dos pacotes de expansão. 
+
+
+Tela de Início/Principal
+------------------------
+Aqui é onde você pode selecionar os atributos físicos de seus Sims, como cabeça e corpo. 
+Você também pode mudar a idade, sexo e cor da pele do Sim que você deseja modificar nesta tela. Na janela de Visualização 3D,
+você pode ver como seu Sim está ficando a partir de diferentes ângulos.
+
+
+Importador de Fotos
+-------------------
+O Importador de Fotos é uma ferramenta que permite a você importar fotografias, para que elas possam ser utilizadas como
+rostos para seus Sims. Os arquivos de imagem que são compatíveis com o The Sims™ Creator são: .png, .jpg, .tga, .bmp e .tif. 
+
+Passo Um: “Carregar uma Imagem“
+     -	Clique no botão “Importador de Fotos” na Tela Principal
+     -	Clique no botão “Rosto”, e então procure pela foto que você deseja importar
+     -	Use as barras “Girar” e “Tamanho” para posicionar o rosto de maneira que ele se enquadre nos limites da caixa. 
+     -	Clique no botão “Avançar>” quando tiver terminado. 
+
+Passo Dois:  “Edição”
+Depois de importar a foto, a próxima tela descreve as ferramentas de edição disponíveis para que você personalize o rosto de
+seu Sim. 
+
+Dica: Use a armação de arame e as barras de máscara para melhor posicionar a imagem escolhida no rosto de seu Sim - elas irão
+ajudá-lo a alinhar os olhos e o nariz da imagem ao modelo.
+
+
+Guarda-Roupas Sim
+-----------------
+A seção Guarda-Roupas Sim contém as ferramentas para ajudá-lo a vestir seu Sim. Você pode adicionar acessórios às roupas
+originais ou clicar no botão “Despir” para iniciar um novo modelo do zero. Você também pode sobrepor peças de roupa com
+facilidade, simplesmente escolhendo novas peças e acessórios. Outra característica desta ferramenta é a habilidade de 
+selecionar e importar novas texturas para serem usadas nas roupas de seus Sims. Para importar novas texturas, clique no botão
+“Texturas” e então procure pelo arquivo de imagem que você deseja importar. Similar ao Importador de Fotos, os únicos tipos 
+de arquivo aceitos pelo The Sims™ Creator são: .png, .jpg, .tga, .bmp e tif. Para melhores resultados, as imagens importadas
+devem ser em 8bit ou 256 cores.  
+
+Quando você clica no botão Logotipos, a tela Selecionador de Logotipos é aberta. 
+Nesta tela você pode adicionar logotipos/imagens ao seu Sim no modo 2D, e então ver o resultado de como seu Sim ficará no
+jogo na janela de visualização 3D.  
+Escolha um dos logotipos fornecidos com a ferramenta ou adicione suas próprias imagens clicando no botão Logotipos
+(.png, .jpg, .tga, .bmp e .tif são os tipos de arquivo que você pode utilizar com o The Sims™ Creator, e para melhores
+resultados elas devem ser em 8bit ou 256 cores).
+
+Infelizmente, o The Sims™ Creator não pode adicionar ou remover chapéus. Algumas cabeças possuem chapéus que fazem parte do
+modelo, e estes não podem ser removidos. Note também que algumas cabeças possuem chapéus no jogo, mas estes não aparecem no
+The Sims™ Creator. Não há maneiras de modificar estes chapéus no The Sims™ Creator porque eles não fazem parte do modelo.
+Outros modelos também podem possuir acessórios que são partes separadas. Estes acessórios também não irão aparecer no The
+Sims Creator. 
+
+(Exemplo: existe um modelo do pacote de expansão The Sims™ Gozando a Vida, e também disponível em http://thesims.com, que
+possui um chapéu, mas este chapéu não aparece no programa porque faz parte de um arquivo de acessórios separados. No The
+Sims Creator, este modelo aparecerá sem o topo de sua cabeça.)
+
+
+
+Pintar
+------
+A ferramenta Pintar permite que você pinte seu Sim tanto na visualização 2D quanto na 3D. Esta opção está disponível a partir
+da Tela Principal. Para acessá-la, clique no botão “Pintar”.  
+O painel de ferramentas na parte inferior da tela permite que você pinte seu modelo com muitas cores e texturas diferentes,
+movimente o modelo de muitas maneiras para facilitar a pintura e corrija quaisquer erros que venham a acontecer.
+
+Uma vez que você tenha terminado de pintar seu Sim, clicar no botão "Feito" o levará de volta a Tela Principal (onde você 
+poderá salvar seu modelo terminado) e seu Sim recém-pintado estará no lugar do modelo original. O modelo padrão ainda 
+estará lá, a menos que você salve por cima do arquivo original, mas você precisará reiniciar o The Sims™ Creator para
+trabalhar com o modelo padrão novamente. 
+
+Salvar
+------
+A tela salvar permite que você salve seu modelo modificado. É só dar um nome ao modelo e clicar no botão Salvar. O novo
+modelo será salvo na sua pasta Skins 
+(Diretório Padrão: \Arquivos de Programas\Maxis\The Sims\GameData\Skins).
+
+
+Opções de Renderização
+----------------------
+Pressionar a tecla P na Tela Principal fará com que a janela Preferências de Renderização seja aberta. Nesta janela você pode
+escolher o modelo de renderização gráfica do programa entre OpenGL ou Software. 
+
+Placas de vídeo mais recentes se beneficiarão das opções de compatibilidade. Ligando a opção Compartilhar Recursos GL você
+aumenta a velocidade de pintura do programa, enquanto que ligando a opção Armazenar Modelos Sim, você aumenta a velocidade de
+interação com os modelos 3D. A alteração destas características requer que o The Sims™ Creator seja reiniciado.
+
+Se o The Sims™ Creator começar a apresentar problemas de instabilidade (travamentos e mensagens de erro) após a alteração de
+qualquer uma destas opções, isto significa que sua placa gráfica não está conseguindo trabalhar com as novas opções.
+Da próxima vez que você executar o programa, ele estará configurado para o modo de renderização por Software. 
+
+Para alterar o modo de renderização a partir da linha de comando, digite:
+Renderização por Software: TheSimsCreator.exe -rS  
+Renderização por OpenGL:   TheSimsCreator.exe -rO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

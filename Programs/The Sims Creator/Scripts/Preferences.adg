@@ -1,0 +1,87 @@
+// ============================================================================
+// This file contains the template preferences.  The user's preferences are stored in 
+//	ADGUser:Preferences.  Whenever this file is changed, the user's preferences are 
+//	merged with this file.
+// To add a new preference, just add a property to this file.  Don't bother about calling
+//	EstablishCompound() or checking whether a property exists; if it's in this file, it'll be 
+//	loaded the next time the program runs.
+// It's safe for the user to delete their preferences file at any time.
+// ============================================================================
+
+RecentFileList=(
+	NumRecentFiles=6
+	// Recent file names are stored here
+)
+
+RenderOptions=(
+	SimsMainRenderer = 2
+	Renderer2D=2
+	Renderer3D=2
+	DefaultMaterial = 2
+	ShutdownSuccess = 0
+)
+
+Language = "English"
+
+// ============================================================================
+// I am expecting that all data after this point is historic.  If I'm wrong, move it above this comment.
+// ============================================================================
+/*
+Modeling =
+	(
+		WorldSpace = 0
+	)
+General=
+	(
+		Stroke=
+			(
+				PathPreview=GUICheckBox
+					(
+						Label="Painting path preview"
+						State=1
+						Default=0
+					)
+				DrawingSpeed=GUISlider
+					(
+						Label="Drawing speed"
+						State=0.100000
+						Default=0.100000
+						Min=0.000000
+						Max=1.000000
+					)
+				CatchupSpeed=GUISlider
+					(
+						Label="Catch-up speed"
+						Value=0.100000
+						Default=0.100000
+						Min=0.000000
+						Max=1.000000
+					)
+				Undo=GUIInteger
+					(
+						Label="Undo buffer size"
+						Value=4
+						Default=4
+						Min=1
+						Max=100
+					)
+				Options=GUIRegion
+					(
+						SaveReminderInterval=GUIInteger
+							(
+								Label="Remind to save time"
+								Value=0
+								Default=2
+								Min=0
+								Max=100
+							)
+						GestureSupport=GUIBoolean
+							(
+								Label="Mouse/stylus gesture support"
+								State=0
+								Default=0
+							)
+					)
+			)
+	)
+*/

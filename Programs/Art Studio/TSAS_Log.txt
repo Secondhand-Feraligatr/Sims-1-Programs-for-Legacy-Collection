@@ -1,0 +1,5 @@
+Log Started
+800x600 or higher detected.
+Actual Desktop Resolution is: 1280 x 800
+Actual Desktop Color Depth is: 32 bits per pixel
+16-bit not detected.

@@ -1,0 +1,150 @@
+File=(
+	Open=MenuItem(
+		Label="&Open"
+		//Action="::LoadFile"
+		Action="WizardManager::BeginWizard Name='RHWizFileLoader'"
+	)
+	Close=MenuItem(
+		Label="&Close"
+		Action="::CloseCurrentView"
+	)
+
+	Break0=MenuItemBreak ( ) 
+
+	Save=MenuItem(
+		Label="&Save"
+		Action="Save"
+		//Action="CurrentDocument::BeginWizard Name='RHWizFileSaver' Mode='SaveAs'"		
+		//Action="WizardManager::BeginWizard Name='RHWizFileSaver' Mode='SaveAs'"		
+	)
+	SaveAs=MenuItem(
+		Label="Save &As"2
+		Action="SaveAs"
+		//Action="CurrentDocument::SaveAs"
+	)
+
+//	Export=MenuItem(
+//		Label="Export"
+//		Action="CurrentDocument::SaveAs"
+//	)
+
+	SaveAll=MenuItem(
+		Label="Save A&ll"
+		Action="SaveAll"	// Should be caught by the parent project
+		Enabled=0
+	)
+
+	Break1=MenuItemBreak()
+
+	RecentFiles=RecentFileMenu(
+		Label="Recent &Files"
+	)
+
+	Break3=MenuItemBreak()
+
+	Preferences=MenuItem(
+		Label="&Preferences"
+		Action="::EditPreferences"
+	)
+
+	Break4=MenuItemBreak()
+
+	ExitApplication=MenuItem(
+		Label="E&xit"
+		Action="::ExitApplication"	// Should be caught by RHXRoot
+	)
+
+)
+
+Edit=DefaultEditMenu(
+	EditInteractiveMapping=MenuItem(
+		Label="&Edit Interactive Mapping"
+		Action="CurrentDocument::OpenInteractiveMappingEditor"
+	)
+
+	Break1=MenuItemBreak()
+
+	Transform=(
+		Label="&Transform"
+		Rotate180=MenuItem(
+			Label = "Rotate 180"
+			Action = "CurrentView::TransformUVs Transform=((-1.0 0.0) (0.0 -1.0))"
+		)
+		Rotate90CW=MenuItem(
+			Label = "Rotate 90 CW"
+			Action = "CurrentView::TransformUVs Transform=((0.0 -1.0) (1.0 0.0))"
+		)
+		Rotate90CCW=MenuItem(
+			Label = "Rotate 90 CCW"
+			Action = "CurrentView::TransformUVs Transform=((0.0 1.0) (-1.0 0.0))"
+		)
+		Rotate45CW=MenuItem(
+			Label = "Rotate 45 CW"
+			Action = "CurrentView::TransformUVs Transform=((0.70710678118654752440084436210485 -0.70710678118654752440084436210485) (0.70710678118654752440084436210485 0.70710678118654752440084436210485))"
+		)
+		Rotate45CCW=MenuItem(
+			Label = "Rotate 45 CCW"
+			Action = "CurrentView::TransformUVs Transform=((0.70710678118654752440084436210485 0.70710678118654752440084436210485) (-0.70710678118654752440084436210485 0.70710678118654752440084436210485))"
+		)
+
+		Break1=MenuItemBreak()
+
+		FlipH=MenuItem(
+			Label = "Flip Horizontal"
+			Action = "CurrentView::TransformUVs Transform=((-1.0 0.0) (0.0 1.0))"
+		)
+		FlipV=MenuItem(
+			Label = "Flip Vertical"
+			Action = "CurrentView::TransformUVs Transform=((1.0 0.0) (0.0 -1.0))"
+		)
+	)
+)
+
+//View=DefaultViewMenu()
+Select=DefaultSelectMenu()
+//Insert=DefaultInsertMenu()
+ToolWindow=ToolWindowMenu(Label="Palette")
+//Tools=DefaultToolsMenu()
+
+Window=DefaultWindowMenu(
+	NewView=MenuItem(
+		Label="New &Window"
+		Action="CurrentView::NewView"
+	)
+	ViewportLayout=MenuItem(
+		Label="Viewport &Layout"
+		Action="CurrentView::OpenViewportLayoutEditor"
+	)
+)
+Help=DefaultHelpMenu()
+
+	/*
+AppTests=(
+	SimsSplitModelView=MenuItem(
+		Label="SimsSplitModelView"
+		Action="CurrentView::OpenAppWindow Name='SimsSplitModelView'"
+	)
+	MenuItemBreak()
+	GUIImageEditor=MenuItem(
+		Label="Image Broker Editor"
+		Action="WizardManager::BeginWizard Name='RHWizGUIImageEditor'"
+	)
+	MenuItemBreak()
+	GamePainterSims=MenuItem(
+		Label="Sims Games Painter"
+		//Action="WizardManager::BeginWizard Name='RHWizGamePainterSims'"
+		Action="CurrentView::OpenGamePainterSims"
+	)
+	GamePainterUnreal=MenuItem(
+		Label="Unreal Games Painter"
+		//Action="WizardManager::BeginWizard Name='RHWizGamePainterUnreal'"
+		Action="CurrentView::OpenGamePainterUnreal"
+	)
+	MenuItemBreak()
+	GUIImageEditor=MenuItem(
+		Label="Param Head Window"
+		Action="CurrentView::OpenAppWindow Name='ParamHeadViewer'"
+	)
+)
+	*/
+

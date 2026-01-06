@@ -1,0 +1,47 @@
+//All screens
+(Key="Q" Action="appData.WizardManager.Wizard0::ActivateHelpFrame Structure='GUIFragment:SimsExitDialog'")
+(Key="Z" Modifier="Ctrl" Action="CurrentView::Undo")
+(Key="R" Modifier="Ctrl" Action="CurrentView::Redo")
+(Key="R" Action="CurrentView::ZoomExtent")
+(Key="P" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::ActivateHelpFrame Structure='GUIFragment:SimsPreferencesEditor'")	
+(Key="D" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::HotKey HotKey='Done'")
+(Key="C" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::HotKey HotKey='Cancel'")
+(Key="H" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::HotKey HotKey='Help'")
+(Key="F1" Action="appData.WizardManager.Wizard0::HotKey HotKey='Help'")
+(Key="ESC" Action="appData.WizardManager.Wizard0::CloseHelpFrame")
+
+
+//Start screen
+(Key="S" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::HotKey HotKey='Save'")
+(Key="F" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::HotKey HotKey='FacePhotoWizard'")
+(Key="W" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::HotKey HotKey='Wardrobe'")
+(Key="P" Modifier="Ctrl" Action="appData.WizardManager.Wizard0::HotKey HotKey='PaintScreen'")
+
+
+//Face Photo Wizard
+(Key="W" Action="appData.WizardManager.Wizard0::HotKey HotKey='WireFrame'")
+(Key="M" Action="appData.WizardManager.Wizard0::HotKey HotKey='Mask'")
+
+
+//wardrobe screen
+(Key="U" Action="appData.WizardManager.Wizard0::HotKey HotKey='Undress'")
+
+
+//Logo screen
+(Key="F" Action="appData.WizardManager.Wizard0::HotKey HotKey='FlipLogo'")
+(Key="A" Action="appData.WizardManager.Wizard0::HotKey HotKey='ApplyLogo'")
+
+
+// Paint screen
+(Key="B" Action="appData.WizardManager.Wizard0::HotKey HotKey='Brush'")
+(Key="T" Action="appData.WizardManager.Wizard0::HotKey HotKey='TextureBrush'")
+(Key="E" Action="appData.WizardManager.Wizard0::HotKey HotKey='Eraser'")
+(Key="H" Action="appData.WizardManager.Wizard0::HotKey HotKey='Pan'")
+(Key="I" Action="appData.WizardManager.Wizard0::HotKey HotKey='EyeDropper'")
+(Key="Z" Action="appData.WizardManager.Wizard0::HotKey HotKey='Zoom'")
+
+
+
+
+
+

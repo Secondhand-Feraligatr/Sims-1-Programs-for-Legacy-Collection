@@ -1,0 +1,42 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+Width=400
+Height=300
+
+Title="Help"
+
+Manager=(Name="SimsHelpScreen"
+
+	Title="Save"	// This must be specified
+
+	// Make changes from here ...
+	Content=GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUISpacer(Width=8 Height=0)
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y"
+				Ratio0=1.0
+				Ratio1=0.0
+				Ratio2=1.0
+				Ratio3=0.0
+				Ratio4=1.0
+			)
+			GUISpacer()
+			GUITextArea(
+				Content="Type a unique name in the 'Name' box. The name of the file that will be saved on the disk will be displayed underneath the 'Name' box by the word 'FileName'. Once you are happy with the name, press 'Save'. You must enter a name for the head and for the body if you would like to save both. It is easiest if you select the same name for each so that you remember they go together!"
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer()
+			GUITextArea(
+				Content="Once you have saved the models press the 'Done' button.  (Note: You do not have to save both the head and the body. You can save just one of them if you want to.)"
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer()
+		)
+		GUISpacer(Width=8 Height=0)
+	)
+	// ... to here.
+)

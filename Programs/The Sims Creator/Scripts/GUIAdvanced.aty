@@ -1,0 +1,25 @@
+InteractiveMapperData=(
+
+	Mode="Planar"
+
+	// Parameters common to planar, spherical, cylindrical, and football
+	Position=(X=0.0 Y=0.0 Z=0.0)
+	Normal=(X=0.0 Y=1.0 Z=0.0)
+	Binormal=(X=1.0 Y=0.0 Z=0.0)
+
+	// Extra parameter for football
+	FootballAspect=0.0
+
+	// Spline parameter
+	Spline=(
+		Control_0=(
+			Position=(X=0.0 Y=0.0 Z=0.0)
+			Normal=(X=0.0 Y=1.0 Z=0.0)
+			Binormal=(X=1.0 Y=0.0 Z=0.0)
+		)
+	)
+
+	// GUI size.
+	HandleSize=10.0
+	InteractiveMappingHandles=0
+)

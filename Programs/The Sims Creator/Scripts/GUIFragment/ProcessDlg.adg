@@ -1,0 +1,44 @@
+// The more advanced process dialog.  In addition to the elements a progress bar 
+//	has, has a "Stop" button to interrupt the process, and a "Live Update" toggle.
+Title=""	// Updated before the window is created
+RHWStyle="ToolWindow"
+RHWUpdateRate=-1
+
+RegionState=(
+	GUIColorLevel=0
+)
+
+GUIRegion(
+	Layout=(Name="Standard" Style="Y")
+	GUISpacer(Height=20)
+	ProgressBarRegion=GUIRegion(
+		Layout=(Name="Ratio" Style="X" RespectChildRequests=1 Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=1.0 Ratio4=0.0)
+		GUISpacer(Width=20)
+		Label=GUITextArea(Content="Progress:" Placement="Right")
+		GUISpacer(Width=10)
+		Progress=GUIProgressBar (
+			Target="Progress"
+			Min=0.0	
+			Max=1.0
+//				Width=100
+		)
+		GUISpacer(Width=20)
+	)
+	GUISpacer(Height=20)
+	GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=1.0)
+		Message=GUITextArea(Target="Message")
+	)
+	GUIRegion(
+		Layout=(Name="Ratio" Style="X" RespectChildRequests=1 Ratio0=0.0 Ratio1=0.33 Ratio2=0.0 Ratio3=0.33 Ratio4=0.0 Ratio5=0.34 Ratio6=0.0)
+		GUISpacer(Width=20)
+		CancelButton=GUIButtonRH( Label="Cancel" Action="Merge Cancelled=1" Width=60 )
+		GUISpacer(Width=20)
+		StopButton=GUIButtonRH( Label="Stop" Action="Merge Stopping=1" Width=60 )
+		GUISpacer(Width=20)
+		LiveUpdateButton=GUICheckBoxRH( Label="Live Update" Target="LiveUpdate" Width=60 )
+		GUISpacer(Width=20)
+	)
+	GUISpacer(Height=20)
+)
+

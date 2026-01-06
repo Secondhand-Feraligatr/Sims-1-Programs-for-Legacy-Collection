@@ -1,0 +1,104 @@
+////////////////////////////////////////////////////////////////////////////////////
+DocumentManagerMode="MDI"
+
+////////////////////////////////////////////////////////////////////////////////////
+MainFrame=(
+	RHWStyle="BareApplication"
+	
+	Title="The Sims(TM) Creator"
+
+	CloseAction="appData.WizardManager.Wizard0::ActivateHelpFrame Structure='GUIFragment:SimsExitDialog'"	// HM: Assumes that one and only one wizard exists.
+
+	Geometry="Maximized"
+	Layout=(Name="Singleton")
+	GUIMDIContainer(
+		FileImageName="PW"
+		Label = "Please wait..."
+		FontSize = -2
+		ColorTL=(Red=0 Green=0 Blue=82)
+		ColorTR=(Red=0 Green=32 Blue=123)
+		ColorBL=(Red=0 Green=0 Blue=82)
+		ColorBR=(Red=0 Green=32 Blue=123)
+	)
+)
+
+////////////////////////////////////////////////////////////////////////////////////
+Skin="Sims"
+
+////////////////////////////////////////////////////////////////////////////////////
+//InitialPresets=""
+
+////////////////////////////////////////////////////////////////////////////////////
+InitialHotkeys="SimsHotkeys"
+
+////////////////////////////////////////////////////////////////////////////////////
+// Available types:
+// Standard.aty is loaded by default
+Type=(
+	"ADGType:nVidia"
+	"ADGType:DefaultMenus"
+	//"..."
+)
+
+////////////////////////////////////////////////////////////////////////////////////
+// Available wizards:
+// As the collections of wizards is going to be extended in the worst possible way 
+//	(changes being made to collections of builds, as well as additions to single builds)
+//	a #include method is used.  Structure must be provided elsewhere.
+
+Wizard=(
+	"Wizard:FileLoader"
+	"Wizard:FileSaver"
+	"Wizard:GamePainterSims"
+	"Wizard:ImageBrokerViewer"
+)
+
+////////////////////////////////////////////////////////////////////////////////////
+Editor=(
+	// All these objects
+	DefaultModelEditor="SplitModelEditor"	// .. or "SimpleModelEditor", or "ModelViewer", etc ...
+	DefaultSceneEditor="SplitModelEditor"
+	DefaultProjectEditor="ToyProjectEditor"
+	DefaultImageEditor="DefaultImageViewer"
+
+	UVMapper="UVEditor"
+	RHXDocImage="DocImageEditor"
+	UVMapperSettings="UVMapperSettings"
+)
+
+////////////////////////////////////////////////////////////////////////////////////
+// DefaultMenu
+// When no menu has been explicitly set, this will be used
+DefaultMenu="MenuFilePaletteHelp"
+
+////////////////////////////////////////////////////////////////////////////////////
+// Available tool windows
+ToolWindow=(
+)
+
+////////////////////////////////////////////////////////////////////////////////////
+
+StockImageResource="ButtonSims"
+
+////////////////////////////////////////////////////////////////////////////////////
+// Tool properties.
+//	The contents of this node are copied directly into the "Tool" node.
+Tool=(
+	"EMBED <ADG:DataToolProperties>"
+)
+
+////////////////////////////////////////////////////////////////////////////////////
+// Properties to merge into the main data graph.  eg
+//		AdditionalAppData=(UserLevel="Novice")
+//	would add a new string node to the root, called "UserLevel" 
+//	with the value "Novice".
+
+AdditionalAppData=(
+	CurrentTextureSwatch = 0
+	CurrentLogo = 0
+
+	CurrentShirtMask = 0
+	CurrentPantsMask = 0
+)
+
+////////////////////////////////////////////////////////////////////////////////////

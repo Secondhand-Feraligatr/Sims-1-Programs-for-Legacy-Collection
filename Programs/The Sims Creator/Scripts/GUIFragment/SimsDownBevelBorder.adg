@@ -1,0 +1,22 @@
+Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0)
+    GUIDummyImage(ImageName="SimsDownBevelBorderDark" Stretch=1)
+	GUIDummyImage(ImageName="SimsDownBevelBorderJoin")
+)
+
+ActiveRegion=GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+	GUIDummyImage(ImageName="SimsDownBevelBorderDark" Stretch=1)
+	ActiveRegion=GUIRegion(
+		Layout=(Name="Singleton")
+	)
+	GUIDummyImage(ImageName="SimsDownBevelBorderLight" Stretch=1)
+)
+
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0)
+    GUIDummyImage(ImageName="SimsDownBevelBorderJoin")
+	GUIDummyImage(ImageName="SimsDownBevelBorderLight" Stretch=1)
+)

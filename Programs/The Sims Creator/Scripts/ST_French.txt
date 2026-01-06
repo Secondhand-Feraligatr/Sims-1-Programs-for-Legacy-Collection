@@ -1,0 +1,268 @@
+  
+          |                    
+           |                                             
+ Accessories| Accessoires
+ Lower body garments| Vêtements bas du corps
+ Upper body garments| Vêtements haut du corps
+%S%%S~%%%S~|%S%%S~%%%S~
+%d|%d
+*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw|*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw
+1) Adjust the framing box by moving the white handles to a better position around the face.|1) Ajustez le cadre en déplaçant les carrés blancs pour centrer le visage.
+1) Move|1) Déplacer
+1) Select "Load Face" to load a face image file.|1) Sélectionnez "Charger visage" pour charger une photo.
+2) Adjust the look of the image by using "Tint", "Saturation", and "Stylize" sliders.|2) Modifiez l'aspect du visage à l'aide des curseurs "Couleurs", "Saturation" et "Lissage".
+2) Move your face to the center of the white box by clicking on and dragging the image to position the face inside the box.|2) Déplacez le visage vers le centre du cadre en cliquant dessus et en faisant glisser l'image afin de centrer le visage dans le cadre.
+2) Rotate|2) Pivoter
+3) Adjust the mask on the face using the mask sliders and the wire frame tool so the image sits on the skin to your liking.|3) Ajustez le masque sur le visage à l'aide des curseurs du masque et de l'outil Contour pour le faire coïncider selon votre goût.
+3) If the face is not straight, use "Rotate" to get the eyes level.|3) Si le visage n'est pas droit, utilisez "Pivoter" pour mettre les yeux à niveau.
+3) Scale|3) Ajuster
+3D Preview|Vue 3D 
+4) Use the "Size" slider to fit the face into the box approximately as shown.|4) Utilisez le curseur "Taille" pour mettre le visage dans la boîte comme indiqué.
+5) When you are satisfied with the result, select "Next".|5) Quand le résultat vous plaît, sélectionnez "Suivant".
+< Back|< Précédent
+Aaron Keppel|Aaron Keppel
+Aaron Robinson|Aaron Robinson
+Activating these options will increase the performance of opengl.|En activant ces options, les performances d'OpenGL seront améliorées.
+Add Logo|Ajouter logo
+Add a logo to your sims clothes|Ajoutez un logo aux vêtements des Sims
+Add another Logo to the collection|Ajoutez un autre logo à la collection.
+Add another material texture to the collection|Ajoutez un autre tissu à la collection
+Adult|Adulte
+Alex Fennell|Alex Fennell
+All|Tout
+All Files (*.*)|Tous les fichiers (*.*)
+All Image Files (%s)|Tous les fichiers images (%s)
+All~*.*~|Tous~*.*~
+Andrew Howes|Andrew Howes
+Any unsaved changes will be lost, are you sure you want to quit?|Les modifications non sauvegardées seront perdues, désirez-vous quitter ?
+Apply Logo|Appliquer logo
+Apply the selected logo to your sim|Appliquez le logo sélectionné sur votre Sim
+Back|Dos
+Blend|Combiner
+Body|Corps
+Body Saved|Corps sauvegardé
+Body Skins|Skins (corps)
+Bottom|Bas
+Brian Lomas|Brian Lomas
+Brooke Harris|Brooke Harris
+Bryan Moodie|Bryan Moodie
+Cancel|Annuler
+Can't add logo images FROM the logo directory!|Erreur
+Can't add material textures FROM the texture directory!|Erreur
+Can't add texture
+Change which heads and bodies are displayed by clicking the Adult, Child, Gender, and Skin Tone icons on the left.|Changez l'affichage des têtes et des corps en cliquant sur les icônes Adulte, Enfant, Sexe et Couleur de peau situées à gauche.
+Change your Sims clothes|Changez les vêtements de votre Sim
+Changing these options will require a restart of The Sims(TM) Creator.|La modification de ces options nécessite le redémarrage de l'editeur de Sims™.
+Charis Kumpula|Charis Kumpula
+Chih-Kuo Chuang|Chih-Kuo Chuang
+Child|Enfant
+Choose from the selection of logos on the right to add to your Sim's clothing. If you would like to add a second logo, click on the 'Apply Logo' button and select another logo for your Sim.|Faites votre choix dans la sélection de logos à droite pour les ajouter aux vêtements de vos Sims. Si vous voulez en ajouter un autre, cliquez à nouveau sur "Afficher/Appliquer logo" et faites votre choix.
+Chris Blackbourn|Chris Blackbourn
+Click 'Done' when you are finished.|Cliquez sur "Terminé" lorsque vous avez fini.
+Click 'Next' to continue.|Cliquez sur "Suivant" pour continuer.
+Click the '?' button if you get stuck.|Cliquez sur le bouton "?" si êtes coincé.
+Click the 'Load Face' button to load an image from disk (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Cliquez sur "Charger visage" pour charger un visage à partir du disque (les fichiers .png, .jpg, .tga, .bmp, ou .tif sont valides).
+Close|Fermer
+Color Paintbrush Tool|Outil Dessin couleur
+Color Picker Tool|Outil Pipette 
+Continue to next screen|Ecran suivant
+Credits|Générique
+Damien Connolly|Damien Connolly
+Dark Skin|Peau foncée
+David Miller|David Miller
+David Revill|David Revill
+David Rhoades|David Rhoades
+Done|Terminé
+Drag the logo in the left window or use the X-Y sliders to position the logo on the Sim.|Faites glisser le logo dans la fenêtre de gauche ou utilisez les curseurs X-Y pour le positionner sur le Sim.
+Engineering Support|Assistance Ingénierie
+Eraser Tool|Outil Gomme
+Error|Erreur
+Exit|Quitter l'éditeur de Sims™ 
+Face Photo Wizard|Assistant création de visage
+Face Photo Wizard Step 1|Création de visage, étape 1
+Face Photo Wizard Step 2|Création de visage, étape 2
+Face Photo Wizard: Step 1|Création de visage : étape 1
+Face Photo Wizard: Step 2|Création de visage : étape 2
+Feather|Netteté
+Female|Femme
+File:|Fichier :
+File already exists|Le fichier existe déjà
+File exists|Fichier existant
+FileName|NomFichier
+Finish dressing this sim|Finir l'habillage du Sim
+Finish the Face Photo Wizard|Fermer l'Assistant création de visage
+Flip Logo|Inverser logo
+Flip the selected logo on your sim|Inversez le logo sélectionné sur le Sim
+Front|Face
+Glenn Collins|Glenn Collins
+Go Back|Retour
+Head|Visage
+Head Saved|Visage sauvegardé
+Head Skins|Skins (visage)
+Help|Aide
+Hugh Malan|Hugh Malan
+If you need to load a new image you can do so here by clicking on 'Load Face' (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Si vous voulez charger une nouvelle image, vous pouvez le faire ici en cliquant sur "Charger visage" (les fichiers .png, .jpg, .tga, .bmp, ou .tif sont valides).
+Instructions:|Instructions :
+Jeannie Revill|Jeannie Revill
+John Zurek|John Zurek
+Keep logos and return to the wardrobe|Validez le(s) logo(s) et revenez à la Garde-robe
+Kent Barber|Kent Barber
+Left|Gauche
+Left click and drag to rotate.|Faites un cliquer-glisser avec le bouton gauche de la souris pour faire pivoter le Sim.
+Light Skin|Peau claire
+Load Face|Charger visage
+Load Logo|Charger logo
+Load Texture|Charger texture
+Load your own photo from disk|Chargez votre photo à partir du disque
+Loading|Chargement en cours
+Logo Selector|Sélecteur de logos
+Logos|Logos
+Main renderer|Rendu général
+Male|Homme
+Mark Thomas|Mark Thomas
+Mary Alice Krayecki|Mary Alice Krayecki
+Mask|Masque
+Mask Height|Hauteur masque
+Mask Left/Right|Masque gauche/droite
+Mask Model|Modèle de masque
+Mask Up/Down|Masque haut/bas
+Mask Width|Largeur masque
+Material|Tissu
+Materials|Tissus
+Matthew Simmonds|Matthew Simmonds
+Medium Skin|Peau mate
+Michael Lynch|Michael Lynch
+Middle or L and R click and drag to Pan.|Faites un cliquer-glisser avec la roulette ou cliquez à la fois sur les boutons gauche et droit de la souris pour déplacer votre Sim dans la fenêtre.
+Name|Nom
+Next >|Suivant >
+No|Non
+No files saved|Aucun fichier sauvegardé
+OFF|SANS
+ON|AVEC
+Once you have saved the models press the 'Done' button.  (Note: You do not have to save both the head and the body. You can save just one of them if you want to.)|Lorsque vous avez sauvegardé les modèles, appuyez sur "Terminé" (il n'est pas nécessaire de sauvegarder le visage et le corps, vous ne pouvez sauvegarder que l'un des deux).
+OpenGL  |OpenGL 
+OpenGL Compatibility|Compatibilité OpenGL
+Paint|Colorier
+Paint Screen|Colorier
+Paint your Sim|Coloriez votre Sim
+Pan Tool|Outil Panoramique
+Parsing CMX files...|Analyse fichiers CMX...
+Patrick Barrett|Patrick Barrett
+Perspective|Perspective
+Peter Dansted|Peter Dansted
+Please load a picture of a face to continue.|Veuillez charger un visage pour continuer.
+Position the face so it fills the box in the left window by dragging it with your mouse and using the 'Size' and 'Rotate' sliders. Try to leave the ears and hair in the picture inside the box.|Positionnez le visage en le faisant glisser avec la souris, de façon à remplir la boîte dans la fenêtre de gauche, et utilisez les curseurs "Taille" et "Pivoter". Essayez de faire rentrer les cheveux et les oreilles dans la boîte.
+Preparing Body Work Area...|Préparation de la zone de travail du corps...
+Preparing Head Work Area...|Préparation de la zone de travail du visage...
+Preparing to remove body images|Préparation modification images corps
+Preparing to remove body models|Préparation modification modèles corps
+Preparing to remove body shaders|Préparation modification ombres corps
+Preparing to remove head images|Préparation modification images visage
+Preparing to remove head models|Préparation modification modèles visage
+Preparing to remove head shaders|Préparation modification ombres visage
+Press R to reset the view.|Appuyez sur R pour rétablir la vue.
+Pressing P will bring up the Rendering Preferences. From here you can change from OpenGL to Software. More recent graphics cards can take advantage of the compatibility settings. By turning on the Share GL Resources it will increase the painting speed. Turning on the Cache Sims Models will speed up the frame rate of interacting with the models. These features will require a restart of The Sims(TM) Creator.|En appuyant sur P vous pouvez accéder aux Paramètres de rendu. Vous pouvez alors passer d'OpenGL à Logiciel. Les cartes graphiques les plus récentes peuvent tirer avantage des réglages de compatibilité. La vitesse de coloration peut être augmentée avec les ressources de Share GL. En travaillant avec le Cache des modèles de Sims, la fluidité d'affichage sera améliorée lors de l'interaction avec les modèles. Ceci nécessite un redémarrage de l'éditeur de Sims.
+Pressing the 'Reset' button will reset all the sliders and the control box.|En appuyant sur "Par défaut", les curseurs se remettent comme ils étaient, tout comme la boîte de commandes.
+Pressing the 'Reset' button will set the sliders back to their starting positions and will center the photo again.|En appuyant sur "Par défaut", les curseurs reviennent à leur position initiale et la photo sera à nouveau centrée.
+Preview your Sim from different angles in the 3D view.|Regardez votre Sim sous tous les angles grâce à la vue 3D.
+Producer|Producteur
+Projection Image|Projection Image
+Put your face on your Sim|Donnez votre visage à votre Sim
+Quit the Face Photo Wizard|Quitter l'Assistant création de visage
+Redo|Recommencer
+Remember that you can click 'Back' at any time to read instructions from a previous screen.|A tout moment, vous pouvez cliquer sur "Précédent" pour consulter les instructions de l'écran précédent.
+Remove logos ans return to the wardrobe|Supprimez les logos et revenez à la Garde-robe
+Remove the previous garment|Annulez l'action précédente
+Removing body images|Modification image corps
+Removing body models|Modification modèle corps
+Removing body shaders|Modification ombre corps
+Removing head images|Modification image visage
+Removing head models|Modification modèle visage
+Removing head shaders|Modification ombre visage
+Render Settings|Paramètres de rendu
+Reset|Par défaut
+Reset controls|Commandes par défaut
+Restart dressing this sim|Déshabillez le Sim
+Return to main screen|Revenir à l'écran principal
+Return to previous screen|Revenir à l'écran précédent
+Return to the main screen without changing clothes|Revenir à l'écran principal sans changer de vêtements
+Right|Droite
+Right click and drag to zoom.|Faites un cliquer-glisser avec le bouton droit de la souris pour faire un zoom.
+Rotate|Pivoter
+Rotate Tool|Outil Pivoter
+Saturation|Saturation
+Save|Sauvegardez votre œuvre
+Save Sim|Sauvegarder
+Save this body to disk|Sauvegarder ce corps sur le disque
+Save this head to disk|Sauvegarder ce visage sur le disque
+Scale|Dimension
+Scale:|Dimension :
+Scott Boness|Scott Boness
+Sean Baity|Sean Baity
+Sebastian Hyde|Sebastian Hyde
+Shan Simpson|Shan Simpson
+Share GL Resources|Ressources Share GL
+Sims Model Caching|Cache des modèles de Sims
+Sims Wardrobe|Garde-robe des Sims
+Sinjin Bain|Sinjin Bain
+Size|Taille
+Software|Logiciel
+Special Thanks|Remerciements particuliers à 
+Stephen Long|Stephen Long
+Strength|Intensité
+Stylize|Lissage
+Testers|Testeurs
+Texture Paintbrush Tool|Outil Dessin texture
+The Sims Wardrobe allows you to change your Sim's clothes. You can choose which garment you would like your Sim to wear from the left, and then you can choose a material for that garment from the right. You can layer the garments on your Sim by clicking on more garments. You may also choose any accessories you wish to place on your Sim from the left but you are only allowed to change the material on certain accessories.|La garde-robe vous permet de changer les vêtements de vos Sims. Vous pouvez choisir le vêtement à gauche, puis le tissu à droite. Vous pouvez superposer des vêtements en cliquant sur d'autres vêtements. Et vous pouvez choisir les accessoires que vous voulez faire porter à votre Sim (parmi les accessoires seuls les tissus des cravates et des écharpes peuvent être modifiés).
+The Sims(TM) Creator|L'Editeur de Sims™
+The Sims(TM) Website|Le site Internet des Sims™
+The right side of the panel has the color swatch and a color picker. The color swatch shows the current foreground color, background color, and a few preset colors. The foreground color will be the color used with the Color Paintbrush tool and the background color will be the color used with the Eraser tool. You can choose a preset color by left clicking, or store the foreground color by right clicking. Clicking within the color picker changes the current foreground color.|Le côté droit du panneau comporte un échangeur de couleurs et un nuancier vous permettant de faire votre choix. L'échangeur de couleurs vous montre la couleur actuelle du premier plan, la couleur de l'arrière-plan et quelques couleurs prédéterminées. La couleur du premier plan est celle qui sera utilisée avec l'outil Dessin couleur et la couleur de l'arrière-plan est celle utilisée avec l'outil Gomme. Vous pouvez choisir une couleur prédéterminée en faisant un clic-gauche ou garder la couleur de premier plan en faisant un clic-droit. En cliquant dans le nuancier avec l'outil Pipette vous changez la couleur du premier plan.
+The tool panel at the bottom of the screen allows you to paint, move and save your Sim. On the left are the tool buttons. You can Undo or Redo changes with the arrow buttons. The Color Picker tool can be used to choose a color from the 2D or 3D views. The Pan, Zoom and Rotate tools allow you to move your Sim. If you click on the Rotate tool you may pan, zoom and rotate the same way you were able to on the start screen of The Sims(TM) Creator. To paint your Sim, choose the Color Paintbrush or the Texture Paintbrush.|Le panneau des outils au bas de l'écran vous permet de colorier, de déplacer et de sauvegarder votre Sim. Les boutons correspondant aux outils se trouvent à gauche. Vous pouvez Annuler et Recommencer les modifications avec les flèches. L'outil Pipette vous permet de choisir une couleur en vues 2D ou 3D. Les outils Panoramique, Zoom et Pivoter vous permettent de déplacer votre Sim. En cliquant sur l'outil Pivoter, vous pouvez avoir un panoramique, faire un zoom et faire pivoter votre Sim comme dans l'écran de démarrage de l'éditeur de Sims. Pour colorier votre Sim, vous avez le choix entre l'outil Dessin couleur ou l'outil Dessin texture.
+There is already a body with that filename, do you wish to save over it?|Un corps portant ce nom de fichier existe déjà, désirez-vous le remplacer ?
+There is already a head with that filename, do you wish to save over it?|Un visage portant ce nom de fichier existe déjà, désirez-vous le remplacer ?
+Tim LeTourneau|Tim LeTourneau
+Tint|Couleurs
+Tip: Use the wire frame tool and the mask sliders to adjust and align the image to your liking, try to align the nose and eyes of the image with the wire frame.|Astuce : utilisez l'outil Contour et les curseurs du masque pour ajuster et aligner l'image comme vous le désirez ; essayez d'aligner le nez et les yeux avec le Contour.
+To add an image to the body of the Sim click on the 'Add Logo' button, you will be taken to the Logo Selector screen.|Pour faire apparaître une image sur le corps ou les vêtements d'un Sim, cliquez sur "Ajouter logo" et l'écran de sélection des logos s'affichera.  
+To import an image to use as a logo press the 'Load Logo' button and choose the file you want to use (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Pour importer une image à utiliser comme logo, appuyez sur "Charger logo" et faites votre choix (les fichiers .png, .jpg, .tga, .bmp, ou .tif sont valides).
+To put your face on the Sim model, follow these instructions.|Pour mettre votre visage sur un modèle de Sim, suivez ces instructions.
+Toggle Wire Frame|Alterner contour
+Top|Haut
+Trude Mattingly|Trude Mattingly
+Type a unique name in the 'Name' box. The name of the file that will be saved on the disk will be displayed underneath the 'Name' box by the word 'FileName'. Once you are happy with the name, press 'Save'. You must enter a name for the head and for the body if you would like to save both. It is easiest if you select the same name for each so that you remember they go together!|Entrez un nom dans la boîte "Nom". Le nom du fichier qui sera sauvegardé sur le disque sera affiché sous la boîte "Nom" à côté du mot "NomFichier". Si le nom vous convient, appuyez sur "Sauvegarder". Vous devez entrer un nom pour sauvegarder le visage et un pour le corps. Il vaut mieux choisir le même nom pour les deux pour vous rappeler qu'ils vont ensemble !
+Undo|Annuler 
+Undress|Déshabiller
+Untitled window|Fenêtre sans nom
+Use The Sims(TM) Creator to customize the look of all your Sims. Just click on a head and a body to choose a Sim to customize.|Utilisez l'éditeur de Sims™ pour personnaliser le look de tous vos Sims. Il suffit de cliquer sur un visage et un corps et de choisir le Sim que vous voulez relooker.
+Use the 'Undo' button to remove the last piece of clothing you added. The 'Undress' button removes most of the Sim's clothing. If you do not click the 'Undress' button you will layer the new garments over the Sim's original garments.|Utilisez le bouton "Annuler action" pour ôter le dernier vêtement mis. Le bouton "Déshabiller" enlève la plupart des vêtements du Sim. Si vous ne cliquez pas sur "Déshabiller", les nouveaux vêtements seront enfilés par-dessus les anciens.
+Use the controls to fine-tune your Sim's new face.|Utilisez les commandes pour fignoler le nouveau visage de votre Sim.
+Use the scale slider to make the logo larger or smaller.|Utilisez le curseur de dimension pour agrandir ou diminuer le logo.
+Use the slider to change your paintbrush's scale, feather, and strength.|Utilisez le curseur pour modifier la dimension du dessin, la netteté et l'intensité de la couleur. 
+Use this screen to paint your Sim using the 2D and 3D views.|Utilisez cet écran pour colorier votre Sim grâce aux vues en 2D et 3D.
+View All Of The Sim|Vue d'ensemble du Sim
+View From The Back|Vue de dos
+View From The Bottom|Vue du bas
+View From The Front|Vue de face
+View From The Left|Vue profil gauche
+View From The Right|Vue profil droit
+View From The Top|Vue du haut
+View The Body|Vue du corps
+View The Head|Vue du visage
+When you are finished, click 'Done' to return to the Sims Wardrobe screen and keep your changes, or click 'Cancel' to return without keeping your changes.|Lorsque vous avez fini, cliquez sur "Terminé" pour revenir à l'écran de la garde-robe des Sims et conserver vos modifications, ou sur "Annuler" si vous ne désirez pas garder les modifications.
+When you are finished click 'Done' to return to the start screen, or click 'Cancel' to return without keeping your changes.|Lorsque vous avez fini, cliquez sur "Terminé" pour revenir à l'écran de démarrage, ou sur "Annuler" si vous ne désirez pas conserver les modifications.
+When you are finished painting your Sim click 'Done' to return to the main screen. Click 'Cancel' to undo all your painting and return to the main screen.|Lorsque vous avez fini de colorier votre Sim, cliquez sur "Terminé" pour revenir à l'écran principal, ou sur "Annuler" pour revenir à l'écran principal sans enregistrer vos modifications.
+When you select the Texture Paintbrush, the right side of the panel shows a texture selector. Choose the texture you want to paint with from there. If you would like to import your own textures, you must go to the Sim Wardrobe screen.|Lorsque vous sélectionnez l'outil Dessin texture, le côté droit du panneau vous propose un choix de textures. C'est dans cette fenêtre que vous pouvez choisir celle qui vous convient. Si vous désirez importer vos propres textures, il faut aller à l'écran Garde-robe des Sims. 
+Wire Frame|Contour
+Working|En cours
+X:|X :
+Y:|Y :
+Yes|Oui
+You can access the Face Photo Wizard, Sims Wardrobe, and Paint from here. When you are done don't forget to save your work.|C'est d'ici que vous pouvez accéder à l'Assistant création de visage, à la Garde-robe des Sims et à l'outil Colorier. Lorsque vous avez terminé, n'oubliez pas de sauvegarder votre œuvre.
+You can change your 3D view direction using the 'Front', 'Back', 'Left', 'Right', 'Top' and 'Bottom' buttons on the top of the 3D panel. You can get a closer view by clicking the 'Head' or 'Body' buttons. Click on the wireframe button to show or hide the wireframe.|Vous pouvez modifier votre vue en 3D grâce aux boutons "Face", "Dos", "Gauche", "Droite", "Haut" et "Bas", en haut du panneau 3D. Pour une vue rapprochée, cliquez sur les boutons "Visage" ou "Corps". Cliquez sur le bouton Contour pour afficher ou cacher le contour.
+You can load more material from disk by clicking on the 'Load Texture' button (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Vous pouvez charger d'autres tissus à partir du disque en cliquant sur "Charger texture" (les fichiers .png, .jpg, .tga, .bmp, ou .tif sont valides).
+You can move the face around on your Sim by clicking inside the white box on the left or clicking and dragging the white squares that are attached to the box.|Vous pouvez ajuster l'image sur le visage de votre Sim en cliquant dans le cadre blanc de gauche ou en cliquant et en faisant glisser les carrés blancs situés sur le cadre.
+You can view your Sim from different angles, by clicking and dragging in the 3D view.|Vous pouvez voir votre Sim sous des angles différents en cliquant et en faisant glisser l'image en 3D.
+You have not clicked a save button, are you sure you wish to return?|Vous n'avez pas cliqué sur "Sauvegarder", désirez-vous vraiment annuler ?
+Zoom Tool|Outil Zoom
+and all of the employees of Maxis who|et tous le personnel de Maxis
+continue to make The Sims(TM) an incredible game.|qui continue à faire des Sims un jeu époustouflant.

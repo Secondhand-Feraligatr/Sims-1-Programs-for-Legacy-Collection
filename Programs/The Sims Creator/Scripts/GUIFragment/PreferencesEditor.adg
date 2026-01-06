@@ -1,0 +1,31 @@
+// The preferences dialog box
+
+RHWStyle="Normal"
+RHWResizableX=1
+RHWResizableY=1
+RHWPreferredSize=1	// Resize so that the window matches the preferred size.  TO DO: Come up with a more sophisticated method of indicating and handling this...
+
+Title="Preferences"
+
+Layout=( Name="TabbedRegion" )
+
+RegionState=(
+	GUIColorLevel=0
+)
+
+TabController=GUITabsRH( TabHeight=18 SubSpace=1 ContentOffset=3 TabOffset=13 BGColorLevel=4 )
+
+GUIRegion(
+	Layout=( Name="Standard" Style="Y" )
+
+	Title="Renderer"
+	GUITextArea(Content="Preferred renderer" Font="Label")
+	GUIRadioButtonRH( Target="RenderOptions.Renderer3D" Index=0 Label="Automatic")
+	GUIRadioButtonRH( Target="RenderOptions.Renderer3D" Index=1 Label="Software")
+	GUIRadioButtonRH( Target="RenderOptions.Renderer3D" Index=2 Label="OpenGL")
+
+	GUITextArea(Content="Preferred 2D renderer" Font="Label")
+	GUIRadioButtonRH( Target="RenderOptions.Renderer2D" Index=0 Label="Automatic")
+	GUIRadioButtonRH( Target="RenderOptions.Renderer2D" Index=1 Label="Software")
+	GUIRadioButtonRH( Target="RenderOptions.Renderer2D" Index=2 Label="OpenGL")
+)

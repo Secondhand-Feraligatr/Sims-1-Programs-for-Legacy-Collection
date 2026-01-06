@@ -1,0 +1,219 @@
+/********************************************************************************
+ ********** WorldView context (right-click) menu
+ ********************************************************************************/
+
+IsPopup=1	// Bah, humbug.  This will be removed Real Soon Now.
+
+
+
+MenuItem(
+	Label="ZoomExtent"
+	Action="CurrentView::ZoomExtent"
+)
+MenuItem(
+	Label="ZoomSelection"
+	Action="CurrentView::ZoomSelection"
+)
+MenuItemBreak()
+
+Menu(
+	Label="View"
+	
+	MenuItem(
+		Label="Material"
+		Action="CurrentView::SetViewState BaseMode='View2DUV'"
+	)
+	MenuItem(
+		Label="Perspective"
+		Action="CurrentView::SetViewState BaseMode='View3DUV'"
+	)
+
+	MenuItem(
+		Label="&Top"
+		Action="CurrentView::RequestViewDirection Direction='T'"
+	)
+	MenuItem(
+		Label="&Front"
+		Action="CurrentView::RequestViewDirection Direction='F'"
+	)
+	MenuItem(
+		Label="&Left"
+		Action="CurrentView::RequestViewDirection Direction='L'"
+	)
+	MenuItem(
+		Label="&Underneath"
+		Action="CurrentView::RequestViewDirection Direction='U'"
+	)
+	MenuItem(
+		Label="&Back"
+		Action="CurrentView::RequestViewDirection Direction='B'"
+	)
+	MenuItem(
+		Label="&Right"
+		Action="CurrentView::RequestViewDirection Direction='R'"
+	)
+
+	Menu(
+		Label="Perspective"
+
+		MenuItem(
+			Label="&Top"
+			Action="CurrentView::RequestViewDirection Direction='t'"
+		)
+		MenuItem(
+			Label="&Front"
+			Action="CurrentView::RequestViewDirection Direction='f'"
+		)
+		MenuItem(
+			Label="&Left"
+			Action="CurrentView::RequestViewDirection Direction='l'"
+		)
+		MenuItem(
+			Label="&Underneath"
+			Action="CurrentView::RequestViewDirection Direction='u'"
+		)
+		MenuItem(
+			Label="&Back"
+			Action="CurrentView::RequestViewDirection Direction='b'"
+		)
+		MenuItem(
+			Label="&Right"
+			Action="CurrentView::RequestViewDirection Direction='r'"
+		)
+	)
+
+	MenuItemBreak()
+	MenuItem(
+		Label="&Wireframe"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.WireFrame'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.WireFrame'"
+	)
+	MenuItem(
+		Label="Solid"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.Solid'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.Solid'"
+	)
+	MenuItem(
+		Label="Diffuse"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.Diffuse'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.Diffuse'"
+	)
+	MenuItem(
+		Label="Specular"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.Specular'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.Specular'"
+	)
+	MenuItem(
+		Label="Opacity"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.Opacity'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.Opacity'"
+	)
+	/*
+	MenuItem(
+		Label="Bump"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.Bump'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.Bump'"
+	)*/
+	MenuItem(
+		Label="Use Model Materials"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.UseModelMaterials'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.UseModelMaterials'"
+	)
+	MenuItem(
+		Label="Show UV Selection"
+		Action="CurrentView::ToggleViewProperty Property='RenderOptions.UVSelection'"
+		PropertiesQuery="CurrentView::MenuQuery Property='RenderOptions.UVSelection'"
+	)
+)
+
+MaterialMenu=Menu(
+	Label="Material"
+)
+
+Menu(
+	Label="Background"
+
+	MenuItem(
+		Label="None"
+		Marker="Radio"
+	)
+	MenuItem(
+		Label="DiffuseColor"
+	)
+	MenuItem(
+		Label="SpecularColor"
+	)
+	MenuItem(
+		Label="Bump"
+	)
+
+	MenuItemBreak()
+
+	MenuItem(
+		Label="Darken"
+		Marker="Tick"
+	)
+)
+
+MenuItem(
+	Label="Tiling Options"
+	//Enabled=0
+)
+MenuItem(
+	Label="Grid Options"
+	//Enabled=0
+)
+
+/*
+MenuItemBreak()
+MenuItemBreak()
+MenuItemBreak()
+MenuItemBreak()
+MenuItemBreak()
+MenuItemBreak()
+MenuItemBreak()
+
+MenuItem(
+	Label = "WireFrame"
+	Action="CurrentView::ToggleViewProperty Property='WireFrame'"
+)
+MenuItem(
+	Label = "UVSelection"
+	Action="CurrentView::ToggleViewProperty Property='UVSelection'"
+)
+MenuItemBreak()
+
+MenuItem(
+	Label="Grid"
+//		PropertiesQuery="CurrentView::MenuQueryViewProperty Property='Grid'"
+	Action="CurrentView::ToggleViewProperty Property='Grid'"
+)
+
+MenuItemBreak()
+
+MenuItem(
+	Label="3D Bitmap"
+	Action="CurrentView::SetViewState BaseMode='View3DBitmap'"
+)
+MenuItem(
+	Label="3D UV"
+	Action="CurrentView::SetViewState BaseMode='View3DUV'"
+)
+MenuItem(
+	Label="3D Geometry"
+	Action="CurrentView::SetViewState BaseMode='View3DGeometry'"
+)
+
+MenuItem(
+	Label="2D Bitmap"
+	Action="CurrentView::SetViewState BaseMode='View2DBitmap'"
+)
+MenuItem(
+	Label="2D UV"
+	Action="CurrentView::SetViewState BaseMode='View2DUV'"
+)
+MenuItem(
+	Label="2D Geometry"
+	Action="CurrentView::SetViewState BaseMode='View2DGeometry'"
+)
+*/

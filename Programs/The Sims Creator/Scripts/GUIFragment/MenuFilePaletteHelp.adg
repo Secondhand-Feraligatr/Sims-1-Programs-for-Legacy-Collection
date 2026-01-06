@@ -1,0 +1,12 @@
+	File=DefaultFileMenu()
+//	Edit=DefaultEditMenu()
+//	View=DefaultViewMenu()
+	Palette=ToolWindowMenu()
+	Window=DefaultWindowMenu()
+	Help=DefaultHelpMenu(
+//		MenuItemBreak()	//can we put this elsewhere? (somewhere non-global)
+//		GUIImageEditor=MenuItem(
+//			Label="Image Broker Editor"
+//			Action="WizardManager::BeginWizard Name='RHWizGUIImageEditor'"
+//		)
+	)

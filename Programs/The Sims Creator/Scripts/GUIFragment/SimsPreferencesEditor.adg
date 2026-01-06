@@ -1,0 +1,77 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+Width=300
+Height=550
+
+Title="Render Settings"
+
+Manager=(Name="SimsHelpScreen"
+
+	Title="Render Settings"	// This must be specified
+
+	// Make changes from here ...
+	Content=GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUISpacer(Width=8 Height=0)
+		GUIRegion(
+			Layout=( Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0)
+			GUIRegion(
+				Layout=( Name="Standard" Style="Y" )
+				GUISpacer(Height = 20)
+				GUITextArea(Content="Main renderer" Font="Label" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+				GUISpacer(Height = 10)
+				GUIRegion(
+					Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=1.0)
+					GUISpacer()
+					GUIRadioButtonSims( Target="MainRenderer" Label=" " Index = 1)	
+					GUISpacer()
+					GUITextArea( Content="OpenGL  " Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0) Placement="Center");
+					GUISpacer()
+				)
+				GUIRegion(
+					Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=1.0)
+					GUISpacer()
+					GUIRadioButtonSims( Target="MainRenderer" Label=" " Index = 0)
+					GUISpacer()
+					GUITextArea( Content="Software" Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0) Placement="Center");
+					GUISpacer()
+				)
+				
+			
+
+				GUISpacer(Height = 30)
+				GUIRuleOff()
+				GUISpacer(Height = 30)
+			
+				GUITextArea( Content="OpenGL Compatibility" Font="Label" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+				GUISpacer(Height = 10)
+				GUITextArea( Content="Changing these options will require a restart of The Sims(TM) Creator." Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0) Placement="Center");
+				GUISpacer(Height = 5)
+				GUITextArea( Content="Activating these options will increase the performance of opengl." Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0) Placement="Center");
+				GUISpacer(Height = 5)
+				GUIRegion(
+					Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=1.0)
+					GUISpacer()
+					GUICheckButtonSims( Target="AppData.Preferences.GLUseGlobalManagers" Label="ON" Label2="OFF" EnabledTarget="OpenGLOptionsEnabled")
+					GUISpacer()
+					GUITextArea( Content="Share GL Resources" Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0) Placement="Center");
+					GUISpacer()
+				)
+				GUIRegion(
+					Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=1.0)
+					GUISpacer()
+					GUICheckButtonSims( Target="AppData.Preferences.GLUseModelCaching" Label="ON" Label2="OFF" EnabledTarget="OpenGLOptionsEnabled")
+					GUISpacer()
+					GUITextArea( Content="Sims Model Caching" Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0) Placement="Center");
+					GUISpacer()
+				)
+				GUISpacer(Height = 30)
+				GUIRuleOff()
+
+			)
+			GUISpacer(Width=0 Height = 0)
+		)
+		GUISpacer(Width=8 Height = 0)
+	)
+)

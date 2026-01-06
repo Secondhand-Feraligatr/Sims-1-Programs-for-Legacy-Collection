@@ -1,0 +1,86 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+Width=350
+Height=200
+
+Title="No files saved"
+
+
+
+Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip
+		Ratio1=1.0	// Sliver
+		Ratio2=0.0	// RightTip
+	)
+	GUIDummyImage(
+		ImageName = "Help_TL"
+	)
+	
+	GUIDummyImage(
+		ImageName = "Help_T"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "Help_TR"
+	)
+)
+ActiveRegion=GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+	GUIDummyImage(
+		ImageName = "Help_L"
+		Stretch = 1
+	)
+	ActiveRegion=GUIRegion(
+		Layout=(Name="Ratio" Style="Y" RespectChildRequests=1
+			Ratio0=0.0 //Spacer
+			Ratio1=0.0	// Title
+			Ratio2=0.0	// RuleOff
+			Ratio3=1.0	// Body
+			Ratio4=0.0	// Close button
+		)
+		Background="Gradient" ColorTopLeft=(Red=1 Green=37 Blue=123) ColorBottomLeft=(Red=0 Green=61 Blue=144) ColorTopRight=(Red=0 Green=87 Blue=167) ColorBottomRight=(Red=1 Green=113 Blue=189)
+		GUISpacer()
+		GUITextArea(Content="No files saved" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Green=1.0 Blue=0.0) FixedHeight=18 Placement="Center")
+		GUIRuleOff()
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0=0.0  Ratio1=1.0 Ratio2=0.0)
+			GUISpacer(Width=10)
+			GUITextArea(
+				Content="You have not clicked a save button, are you sure you wish to return?"
+				Font="Label"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=10)
+		)
+		GUIRegion(
+			Layout=(Name="Equal" Style="X")
+			GUIButtonSims(Label="Yes" Action="Parent::RealOKSave")
+			GUIButtonSims(Label="No" Action="Parent::CloseHelpFrame")
+		)
+	)
+	GUIDummyImage(
+		ImageName = "Help_R"
+		Stretch = 1
+	)
+)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip
+		Ratio1=1.0	// Sliver
+		Ratio2=0.0	// RightTip
+	)
+	GUIDummyImage(
+		ImageName = "Help_BL"
+	)
+	
+	GUIDummyImage(
+		ImageName = "Help_B"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "Help_BR"
+	)
+)

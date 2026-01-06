@@ -1,0 +1,1 @@
+The Sims File Cop will put other files it deems dangerous into this folder. Return them to your game at your own risk. Please note that just because they do not crash your game now does NOT mean they won't later. Also NEVER upload houses to the The Sims Exchange that contains these files.

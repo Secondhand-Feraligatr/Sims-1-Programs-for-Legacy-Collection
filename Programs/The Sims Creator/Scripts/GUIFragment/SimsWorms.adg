@@ -1,0 +1,20 @@
+RHWStyle="ToolWindow"
+RHWResizableX=0
+RHWResizableY=0
+Width=400
+Height=400
+
+Title="Worms"
+/*
+GUIRegion(
+	Manager=(
+		Name="SimsRoundedBorder"
+		Content=GUIRegion(
+		*/
+			Layout=(Name="Singleton")	// Specify how to lay out the objects at this level
+			GUIWorms()
+			/*
+		)
+	)
+)
+			*/

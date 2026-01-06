@@ -1,0 +1,77 @@
+// The Sims progress bar. Has a title, progress bar widget & message (optional).
+
+RHWStyle="BareSimsPopupWindow"
+Title="Loading"
+RHWUpdateRate=-1
+
+
+
+Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip
+		Ratio1=1.0	// Sliver
+		Ratio2=0.0	// RightTip
+	)
+	GUIDummyImage(
+		ImageName = "Help_TL"
+	)
+	
+	GUIDummyImage(
+		ImageName = "Help_T"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "Help_TR"
+	)
+)
+ActiveRegion=GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+	GUIDummyImage(
+		ImageName = "Help_L"
+		Stretch = 1
+	)
+	ActiveRegion=GUIRegion(
+		Background="Gradient" ColorTopLeft=(Red=1 Green=37 Blue=123) ColorBottomLeft=(Red=0 Green=61 Blue=144) ColorTopRight=(Red=0 Green=87 Blue=167) ColorBottomRight=(Red=1 Green=113 Blue=189)
+
+		Layout=(Name="Standard" Style="Y")
+		
+		GUISpacer(Height=20 Width=140)//Width=340)
+
+		ProgressBarRegion=GUIRegion(
+			Layout=(Name="Ratio" Style="X" RespectChildRequests=1 Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+			GUISpacer(Width=20)
+			GUIRegion(
+				Layout=(Name="Standard" Style="Y")
+				Progress=GUIProgressBar( Target="Progress" Min=0.0 Max=1.0 )
+				GUISpacer(Height=5)
+				Message=GUITextArea(Target="Message" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+			)
+			GUISpacer(Width=20)
+		)
+
+		GUISpacer(Height=20)
+	)
+	GUIDummyImage(
+		ImageName = "Help_R"
+		Stretch = 1
+	)
+)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip
+		Ratio1=1.0	// Sliver
+		Ratio2=0.0	// RightTip
+	)
+	GUIDummyImage(
+		ImageName = "Help_BL"
+	)
+	
+	GUIDummyImage(
+		ImageName = "Help_B"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "Help_BR"
+	)
+)

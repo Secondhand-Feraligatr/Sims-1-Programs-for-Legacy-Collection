@@ -1,0 +1,601 @@
+Brush9=SimpleBrush
+	(
+		Name="Soft 0.1"
+		Scale=0.100000
+		Aspect=0.500000
+		Spacing=0.150000
+		Rotation=0.000000
+		Strength=0.400000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=1.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=2
+		DefaultPreset = 9
+	)
+Brush10=SimpleBrush
+	(
+		Name="Soft 0.15"
+		Scale=0.150000
+		Aspect=0.500000
+		Spacing=0.150000
+		Rotation=0.000000
+		Strength=0.500000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=1.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=2
+		DefaultPreset = 10
+	)
+
+Brush7=SimpleBrush
+	(
+		Name="Soft 0.03"
+		Scale=0.030000
+		Aspect=0.500000
+		Spacing=0.150000
+		Rotation=0.000000
+		Strength=0.200000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=1.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=2
+		DefaultPreset = 7
+	)
+Brush8=SimpleBrush
+	(
+		Name="Soft 0.05"
+		Scale=0.050000
+		Aspect=0.500000
+		Spacing=0.150000
+		Rotation=0.000000
+		Strength=0.300000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=1.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=2
+		DefaultPreset = 8
+	)
+Brush1=SimpleBrush
+	(
+		Name="Hard 0.03"
+		Scale=0.030000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.200000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=1
+		DefaultPreset = 2
+	)
+Brush2=SimpleBrush
+	(
+		Name="Hard 0.05"
+		Scale=0.050000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.200000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=1
+		DefaultPreset = 3
+	)
+Brush3=SimpleBrush
+	(
+		Name="Hard 0.1"
+		Scale=0.100000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.200000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=1
+		DefaultPreset = 4
+	)
+Brush4=SimpleBrush
+	(
+		Name="Hard 0.15"
+		Scale=0.150000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.200000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=1
+		DefaultPreset = 5
+	)
+Brush5=SimpleBrush
+	(
+		Name="Pixel brush"
+		Scale=0.010000
+		Aspect=0.500000
+		Spacing=0.500000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.200000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=1
+		DefaultPreset = 1
+	)
+Brush6=SimpleBrush
+	(
+		Name="Antialiased Line"
+		Scale=0.000000
+		Aspect=0.500000
+		Spacing=0.150000
+		Rotation=0.000000
+		Strength=0.070000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=1.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=2
+		DefaultPreset = 6
+	)
+Brush11=SimpleBrush
+	(
+		Name="Bristle 1"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush11.tga"
+		DefaultPreset = 11
+	)
+Brush12=SimpleBrush
+	(
+		Name="Bristle 2"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush12.tga"
+		DefaultPreset = 12
+	)
+Brush13=SimpleBrush
+	(
+		Name="Bristle 3"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush13.tga"
+		DefaultPreset = 13
+	)
+Brush14=SimpleBrush
+	(
+		Name="Bristle 4"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush14.tga"
+		DefaultPreset = 14
+	)
+Brush15=SimpleBrush
+	(
+		Name="Bristle 5"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush15.tga"
+		DefaultPreset = 15
+	)
+Brush16=SimpleBrush
+	(
+		Name="Circle 1"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush16.tga"
+		DefaultPreset = 16
+	)
+Brush17=SimpleBrush
+	(
+		Name="Circle 2"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush17.tga"
+		DefaultPreset = 17
+	)
+Brush18=SimpleBrush
+	(
+		Name="Circle 3"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush18.tga"
+		DefaultPreset = 18
+	)
+Brush19=SimpleBrush
+	(
+		Name="Catherine wheel"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush19.tga"
+		DefaultPreset = 19
+	)
+Brush20=SimpleBrush
+	(
+		Name="Fuzzy"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush20.tga"
+		DefaultPreset = 20
+	)
+Brush21=SimpleBrush
+	(
+		Name="Ink Blot"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush21.tga"
+		DefaultPreset = 21
+	)
+Brush22=SimpleBrush
+	(
+		Name="Brush Smear"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush22.tga"
+		DefaultPreset = 22
+	)
+Brush23=SimpleBrush
+	(
+		Name="Starburst 1"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush23.tga"
+		DefaultPreset = 23
+	)
+Brush24=SimpleBrush
+	(
+		Name="Starburst 2"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush24.tga"
+		DefaultPreset = 24
+	)
+Brush25=SimpleBrush
+	(
+		Name="Starburst 3"
+		Scale=0.250000
+		Aspect=0.500000
+		Spacing=0.080000
+		Rotation=0.000000
+		Strength=1.000000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=0.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		BrushImage="Brush25.tga"
+		DefaultPreset = 25
+	)

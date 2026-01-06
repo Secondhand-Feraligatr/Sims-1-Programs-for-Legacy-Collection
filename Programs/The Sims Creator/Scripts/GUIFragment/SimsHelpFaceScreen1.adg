@@ -1,0 +1,38 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+
+Title="Help"
+
+Manager=(Name="SimsHelpScreen"
+
+	Title="Face Photo Wizard Step 1"	// This must be specified
+
+	// Make changes from here ...
+	Content=GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUISpacer(Width=8 Height=0)
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y"
+				Ratio0=0.0
+				Ratio1=1.0
+				Ratio2=0.0
+				Ratio3=1.0
+				Ratio4=0.0
+				Ratio5=1.0
+				Ratio6=0.0
+				Ratio7=1.0
+			)
+			GUITextArea(Content="Click the 'Load Face' button to load an image from disk (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types)." Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+			GUISpacer(Width=0 Height=0)
+			GUITextArea(Content="Position the face so it fills the box in the left window by dragging it with your mouse and using the 'Size' and 'Rotate' sliders. Try to leave the ears and hair in the picture inside the box." Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+			GUISpacer(Width=0 Height=0)
+			GUITextArea(Content="Pressing the 'Reset' button will set the sliders back to their starting positions and will center the photo again." Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+			GUISpacer(Width=0 Height=0)
+			GUITextArea(Content="Click 'Next' to continue." Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+			GUISpacer(Width=0 Height=0)
+		)
+		GUISpacer(Width=8 Height=0)
+	)
+	// ... to here.
+)

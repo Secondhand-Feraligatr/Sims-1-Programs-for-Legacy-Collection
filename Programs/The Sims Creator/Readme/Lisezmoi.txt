@@ -1,0 +1,105 @@
+Editeur de Sims™
+LisezMoi
+http://thesims.ea.com
+14 March, 2002
+MAXIS - Electronic Arts
+Version 1.1
+
+Table des matières
+
+Généralités
+Vue d'ensemble
+Ecran principal
+Assistant de création de visage
+Garde-robe des Sims
+Colorier
+Sauvegarde
+Options de rendu
+
+Généralités
+-----------
+Pour obtenir les informations les plus récentes sur les Sims™ et l'Editeur de Sims™, visitez le site :
+http://www.thesims.com.
+Vous pouvez également visiter les sites de fans et consulter la messagerie ou la foire aux questions, 
+avoir des aperçus et des astuces. Visitez aussi le forum de discussion pour dialoguer avec d'autres joueurs. 
+
+Vue d'ensemble
+--------------
+L'Editeur de Sims™ vous permet de colorier votre Sim, de lui ajouter un nouveau visage, de changer ses vêtements et d'y apposer un logo.
+
+L'Editeur de Sims™ lit les données contenues dans le répertoire Skins des Sims™ et de tous les disques additionnels des Sims™
+(répertoire par défaut : \Fichiers Programmes\Maxis\Les Sims\Data\Skins et dans \Fichiers Programmes\Maxis\Les Sims\Disque additionnel...)
+L'Editeur de Sims™ vous permet de modifier toutes les skins des Sims™ 1.0, celles des disques additionnels et même celles que vous avez téléchargées. 
+
+
+Ecran principal
+----------------------------
+Cet écran vous permet de choisir les principales caractéristiques physiques de vos Sims, par exemple la tête ou le corps. 
+Vous pouvez également modifier leur âge, leur sexe et leur type de peau. Dans la fenêtre 3D, vous pouvez visionner votre Sim sous différents angles.
+
+
+Assistant de création de visage
+------------------------
+L'outil Assistant de création de visage vous permet d'importer des photos pour les utiliser sur les Sims™. Les fichiers de photo compatibles avec l'Editeur de Sims sont les suivants : .png, .jpg, .tga, .bmp et .tif. 
+
+Etape 1 : "Charger une image"
+     -	Cliquez sur Assistant de création de visage dans le menu principal.
+     -	Cliquez sur "Charger visage" et recherchez la photo que vous voulez importer.
+     -	Utilisez les curseurs "Pivoter" et "Taille" pour positionner le visage de façon à ce qu'il se trouve à l'intérieur du cadre.
+     -	Cliquez sur "Suivant>" quand vous avez fini. 
+
+Etape 2 :  "Modifier"
+Lorsque l'importation est terminée, l'écran suivant vous propose les options de modification disponibles pour changer le visage de votre Sim. 
+
+Astuce : utilisez l'outil Contour et les curseurs du cadre pour positionner l'image sur la tête, ceci vous permettra d'aligner les yeux et le nez.
+
+
+Garde-robe des Sims
+-------------------
+La Garde-robe des Sims comprend les outils vous permettant de les habiller. Vous pouvez ajouter des accessoires à leurs vêtements d'origine, mais vous pouvez aussi cliquer sur "Déshabiller" pour les rhabiller de la tête aux pieds. Vous pouvez superposer les habits en sélectionnant d'autres vêtements. L'une des caractéristiques de cet outil est de permettre de sélectionner et d'importer de nouveaux tissus pour l'habillement. Pour importer de nouveaux tissus, cliquez sur "Importer texture" et cherchez le fichier que vous désirez importer. Tout comme pour l'Assistant de création de visage, les seuls formats de fichier acceptés par l'Editeur de Sims™ sont : .png, .jpg, .tga, .bmp, et tif. Les meilleurs résultats pour les photos de tissu sont obtenus avec 8 bits ou 256 couleurs.  
+
+En cliquant sur "Ajouter logo", l'écran de sélection des logos s'affichera. Vous pouvez alors ajouter des logos et des images à votre Sim en 2D et voir l'effet produit en 3D.  
+Choisissez parmi les logos proposés ou ajoutez les vôtres avec le bouton "Charger logo" (les fichiers .png, .jpg, .tga, .bmp, et .tif sont ceux que vous pouvez utiliser avec l'Editeur de Sims™ ; les meilleurs résultats sont obtenus avec 8 bits ou 256 couleurs).
+
+Il n'est malheureusement pas possible d'ajouter ou d'enlever les chapeaux. Certains Sims portent des chapeaux qui font partie de la skin et ils sont inamovibles. Les Sims™ qui portent des chapeaux ne sont pas présentés dans l'Editeur de Sims™ puisqu'il n'est pas possible de modifier leurs chapeaux. Certaines skins comportent également des accessoires d'une texture séparée et ne sont pas non plus présentés dans l'Editeur de Sims™. 
+
+(Par exemple, une skin originaire des Sims, ça vous change la vie et que l'on peut télécharger à partir du site http://thesims.com. Cette dernière est censée porter un chapeau, mais le chapeau n'est pas disponible puisqu'il s'agit d'un fichier d'accessoires différent, ce qui signifie que la peau sera absente au sommet de cette tête.)
+
+
+Colorier
+-------
+L'outil Colorier vous permet de colorier votre Sim en vue 2D ou 3D. Cette option est disponible dans le menu principal en cliquant sur le bouton "Colorier". 
+Le panneau des outils au bas de l'écran vous permet d'appliquer de nombreuses couleurs et textures, vous pouvez colorier à votre gré et corriger vos erreurs.  
+
+Lorsque vous avez fini de colorier votre Sim, vous pouvez retourner à l'écran principal en cliquant sur "Terminé". Vous pouvez alors faire votre sauvegarde ; votre Sim colorié remplacera l'original. La coloration par défaut est conservée si vous ne sauvegardez pas et vous devrez redémarrer l'Editeur de Sims™ la modifier.
+
+Sauvegarder
+-----------
+L'écran de sauvegarde vous permet de sauvegarder vos modifications de skin. Il suffit de lui donner un nom et de cliquer sur "Sauvegarder". Le répertoire par défaut est le suivant : \Fichiers Programmes\Maxis\Les Sims\Data\Skins).
+
+
+Options de rendu
+--------------------------
+En appuyant sur P vous afficherez les Préférences de rendu. Vous pouvez alors passer d'OpenGL à Logiciel.
+Les cartes graphiques les plus récentes peuvent tirer avantage des réglages de compatibilité. La vitesse de coloration peut être augmentée avec les ressources de Share GL. En travaillant avec le Cache des modèles de Sims, la fluidité d'affichage sera améliorée lors de l'interaction avec les modèles. Ceci nécessite un redémarrage de l'Editeur de Sims™.
+
+Si vous avez modifié un paramètre de l'Editeur de Sims™ et qu'il se bloque lorsque vous le lancez, ceci veut dire que votre carte graphique ne peut pas intégrer le paramètre. Le démarrage suivant se fera en mode logiciel. 
+
+Pour définir le mode de rendu à partir de la ligne de commande, vous pouvez taper :
+en mode lociciel : TheSimsCreator.exe -rS  
+en mode OpenGL : TheSimsCreator.exe -rO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

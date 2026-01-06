@@ -1,0 +1,252 @@
+          
+                                  
+ Accessories
+ Lower body garments
+ Upper body garments
+%S%%S~%%%S~
+%d
+*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw
+1) Adjust the framing box by moving the white handles to a better position around the face.
+1) Move
+1) Select "Load Face" to load a face image file.
+2) Adjust the look of the image by using "Tint", "Saturation", and "Stylize" sliders.
+2) Move your face to the center of the white box by clicking on and dragging the image to position the face inside the box.
+2) Rotate
+3) Adjust the mask on the face using the mask sliders and the wire frame tool so the image sits on the skin to your liking.
+3) If the face is not straight, use "Rotate" to get the eyes level.
+3) Scale
+3D Preview
+4) Use the "Size" slider to fit the face into the box approximately as shown.
+5) When you are satisfied with the result, select "Next".
+< Back
+Aaron Keppel
+Aaron Robinson
+Add Logo
+Add a logo to your sims clothes
+Add another Logo to the collection
+Add another material texture to the collection
+Adult
+Alex Fennell
+All
+All Files (*.*)
+All Image Files (%s)
+All~*.*~
+Andrew Howes
+Any unsaved changes will be lost, are you sure you want to quit?
+Apply Logo
+Apply the selected logo to your sim
+Back
+Blend
+Body
+Body Saved
+Body Skins
+Bottom
+Brian Lomas
+Brooke Harris
+Bryan Moodie
+Cancel
+Change which heads and bodies are displayed by clicking the Adult, Child, Gender, and Skin Tone icons on the left.
+Change your Sims clothes
+Charis Kumpula
+Chih-Kuo Chuang
+Child
+Choose from the selection of logos on the right to add to your Sim's clothing. If you would like to add a second logo, click on the 'Apply Logo' button and select another logo for your Sim.
+Chris Blackbourn
+Click 'Done' when you are finished.
+Click 'Next' to continue.
+Click the 'Load Face' button to load an image from disk (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).
+Close
+Color Paintbrush Tool
+Color Picker Tool
+Continue to next screen
+Credits
+Damien Connolly
+Dark Skin
+David Miller
+David Revill
+David Rhoades
+Done
+Drag the logo in the left window or use the X-Y sliders to position the logo on the Sim.
+Engineering Support
+Eraser Tool
+Exit
+Face Photo Wizard
+Face Photo Wizard Step 1
+Face Photo Wizard Step 2
+Face Photo Wizard: Step 1
+Face Photo Wizard: Step 2
+Feather
+Female
+File already exists
+File exists
+File:  xskin-b002mafit_01-PELVIS-BODY
+File:  xskin-c002ma_baldfat-HEAD-HEAD
+FileName
+Finish dressing this sim
+Finish the Face Photo Wizard
+Flip Logo
+Flip the selected logo on your sim
+Fred Dieckmann
+Front
+Glenn Collins
+Go Back
+Head
+Head Saved
+Head Skins
+Help
+Hugh Malan
+If you need to load a new image you can do so here by clicking on 'Load Face' (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).
+Instructions:
+Jeannie Revill
+John Zurek
+Keep logos and return to the wardrobe
+Kent Barber
+Left
+Left click and drag to rotate.
+Light Skin
+Load Face
+Load Logo
+Load Texture
+Load your own photo from disk
+Loading
+Logo Selector
+Logos
+Male
+Mark Thomas
+Mary Alice Krayecki
+Mask
+Mask Height
+Mask Left/Right
+Mask Model
+Mask Up/Down
+Mask Width
+Material
+Materials
+Matthew Simmonds
+Medium Skin
+Michael Lynch
+Middle or L and R click and drag to Pan.
+Name
+Next >
+No
+No files saved
+Once you have saved the models press the 'Done' button.  (Note: You do not have to save both the head and the body. You can save just one of them if you want to.)
+Paint
+Paint Screen
+Paint your Sim
+Pan Tool
+Parsing CMX files...
+Patrick Barrett
+Perspective
+Peter Dansted
+Please load a picture of a face to continue.
+Position the face so it fills the box in the left window by dragging it with your mouse and using the 'Size' and 'Rotate' sliders. Try to leave the ears and hair in the picture inside the box.
+Preparing Body Work Area...
+Preparing Head Work Area...
+Preparing to remove body images
+Preparing to remove body models
+Preparing to remove body shaders
+Preparing to remove head images
+Preparing to remove head models
+Preparing to remove head shaders
+Press R to reset the view.
+Pressing P will bring up the Rendering Preferences. From here you can change from OpenGL to Software. More recent graphics cards can take advantage of the compatibility settings. By turning on the Share GL Resources it will increase the painting speed. Turning on the Cache Sims Models will speed up the frame rate of interacting with the models. These features will require a restart of The Sims Creator.
+Pressing the 'Reset' button will reset all the sliders and the control box.
+Pressing the 'Reset' button will set the sliders back to their starting positions and will center the photo again.
+Preview your Sim from different angles in the 3D view.
+Producer
+Projection Image
+Put your face on your Sim
+Quit the Face Photo Wizard
+Redo
+Remember that you can click 'Back' at any time to read instructions from a previous screen.
+Remove logos ans return to the wardrobe
+Remove the previous garment
+Removing body images
+Removing body models
+Removing body shaders
+Removing head images
+Removing head models
+Removing head shaders
+Reset
+Reset controls
+Restart dressing this sim
+Return to main screen
+Return to previous screen
+Return to the main screen without changing clothes
+Right
+Right click and drag to zoom.
+Rotate
+Saturation
+Save
+Save Sim
+Save this body to disk
+Save this head to disk
+Scale
+Scale:
+Scott Boness
+Sean Baity
+Sebastian Hyde
+Shan Simpson
+Sims Wardrobe
+Sinjin Bain
+Size
+Special Thanks
+Stephen Long
+Strength
+Stylize
+Testers
+Texture Paintbrush Tool
+The Sim Wardrobe allows you to change your Sim's clothes. You can choose which garment you would like your Sim to wear from the left, and then you can choose a material for that garment from the right. You can layer the garments on your Sim by clicking on more garments. You may also choose any accessories you wish to place on your Sim from the left but you are only allowed to change the material on certain accessories.
+The Sims(TM) Creator
+The Sims(TM) Website
+The right side of the panel has the color swatch and a color picker. The color swatch shows the current foreground color, background color, and a few preset colors. The foreground color will be the color used with the Color Paintbrush tool and the background color will be the color used with the Eraser tool. You can choose a preset color by left clicking, or store the foreground color by right clicking. Clicking within the color picker changes the current foreground color.
+The tool panel at the bottom of the screen allows you to paint, move and save your Sim. On the left are the tool buttons. You can Undo or Redo changes with the arrow buttons. The Color Picker tool can be used to choose a color from the 2D or 3D views. The Pan, Zoom, and Rotate tools allow you to move your Sim. If you click on the Rotate tool you may pan, zoom, and rotate the same way you were able to on the start screen of The Sims Creator. To paint your Sim choose the Color Paintbrush or the Texture Paintbrush.
+There is already a body with that filename, do you wish to save over it?
+There is already a head with that filename, do you wish to save over it?
+Tim LeTourneau
+Tint
+Tip: Use the wire frame tool and the mask sliders to adjust and align the image to your liking, try to align the nose and eyes of the image with the wire frame.
+To add an image to the body of the Sim click on the 'Add Logo' button, you will be taken to the Logo Selector screen.
+To import an image to use as a logo press the 'Load Logo' button and choose the file you want to use (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).
+To put your face on the Sim model, follow these instructions.
+Toggle Wire Frame
+Top
+Trude Mattingly
+Type a unique name in the 'Name' box. The name of the file that will be saved on the disk will be displayed underneath the 'Name' box by the word 'FileName'. Once you are happy with the name, press 'Save'. You must enter a name for the head and for the body if you would like to save both. It is easiest if you select the same name for each so that you remember they go together!
+Undo
+Undress
+Untitled window
+Use The Sims(TM) Creator to customize the look of all your Sims. Just click on a head and a body to choose a Sim to customize.
+Use the 'Undo' button to remove the last piece of clothing you added. The 'Undress' button removes most of the Sim's clothing. If you do not click the 'Undress' button you will layer the new garments over the Sim's original garments.
+Use the controls to fine-tune your Sims new face.
+Use the scale slider to make the logo larger or smaller.
+Use the slider to change your paintbrush's scale, feather, and strength.
+Use this screen to paint your Sim using the 2D and 3D views.
+View All Of The Sim
+View From The Back
+View From The Bottom
+View From The Front
+View From The Left
+View From The Right
+View From The Top
+View The Body
+View The Head
+When you are finished click 'Done' to return to the Sims Wardrobe screen and keep your changes, or click 'Cancel' to return without keeping your changes.
+When you are finished click 'Done' to return to the start screen, or click 'Cancel' to return without keeping your changes.
+When you are finished painting your Sim click 'Done' to return to the main screen. Click 'Cancel' to undo all your painting and return to the main screen.
+When you select the Texture Paintbrush, the right side of the panel shows a texture selector. Choose the texture you want to paint with from there. If you would like to import your own textures, you must go to the Sim Wardrobe screen.
+Wire Frame
+Working
+X:
+Y:
+Yes
+You can access the Face Photo Wizard, Sims Wardrobe, and Paint from here. When you are done don't forget to save your work.
+You can change your 3D view direction using the 'Front', 'Back', 'Left', 'Right', 'Top' and 'Bottom' buttons on the top of the 3D panel. You can get a closer view by clicking the 'Head' or 'Body' buttons. Click on the wireframe button to show or hide the wireframe.
+You can load more material from disk by clicking on the 'Load Texture' button (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).
+You can move the face around on your Sim by clicking inside the white box on the left or clicking and dragging the white squares that are attached to the box.
+You can view your Sim from different angles, by clicking and dragging in the 3D view.
+You have not clicked a save button, are you sure you wish to return?
+Zoom Tool
+and all of the employees of Maxis who
+continue to make The Sims(TM) an incredible game.

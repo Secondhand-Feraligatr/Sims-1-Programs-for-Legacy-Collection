@@ -1,0 +1,134 @@
+The Sims™ Creator
+Läsmig-dokument
+http://thesims.ea.com
+14 mars 2002
+MAXIS - Electronic Arts
+Version 1.1
+
+Innehåll
+
+Generellt
+Överblick
+Huvud/Start-skärm
+Fotoassistenten
+Simkläder
+Måla
+Spara
+Renderingsalternativ
+
+Generellt
+---------
+Du hittar den senaste informationen om The Sims™ och The Sims™ Creator på:
+http://www.thesims.com.
+Där kan du besöka fansajter och anslagstavlor, läsa FAQ (Vanligt förekommande frågor), 
+och få tips och ledtrådar. Besök chatten på vår sida om du vill chatta med andra spelare. 
+
+Överblick
+---------
+I The Sims™ Creator kan du måla din sim, sätta ett nytt ansikte på din sims huvud, 
+fästa en logga på din sim och byta din sims kläder.
+
+The Sims™ Creator läser speldata från Skins-mappen till The Sims™ och alla utbyggnadspackar 
+(Standardsökväg: \Program\Maxis\The Sims\GameData\Skins och \Program\Maxis\The Sims\ExpansionPack...). 
+The Sims™ Creator-verktyget ger dig möjlighet att ändra alla skins från The Sims™ 1.0, installerade utbyggnadspackar till The Sims™ och de skins som du har laddat ner. 
+
+
+Huvud/Start-skärm
+-----------------
+Här kan du välja de huvudsakliga fysiska attributen till din sim, dvs. huvud och kropp. 
+På den här skärmen kan du även ändra ålder, kön och hudfärg på den sim du vill modifiera.
+I 3D-rutan kan du titta på din sim från flera olika vinklar.
+
+
+Fotoassistenten
+---------------
+Fotoassistenten är ett viktigt verktyg när du vill bearbeta ett foto så att det kan användas som ansikte på en sims huvud.  De bildfiltyper som är godkända och kompatibla med The Sims™ Creator är: .png, .jpg, .tga, .bmp och .tif. 
+
+Steg ett: “Ladda en bild”
+     -	Klicka på “Fotoassistenten” i huvudmenyn
+     -	Klicka på “Ladda ansikte” och bläddra fram den bildfil som du vill importera
+     -	Använd skjutreglagen “Vrid” och “Storlek” för att placera ansiktet så att det passar in i ramen. 
+     -	Klicka på “Nästa>” när du är klar. 
+
+Steg två:  “Redigering”
+När bilden är importerad visar nästa menyskärm detaljerade redigeringsalternativ som du kan ändra din sims ansikte med. 
+
+Tips: Använd rutnätet och maskreglagen när du ska placera bilden på huvudet, så ser du
+lättare om näsan och ögonen hamnar rätt
+
+
+Simkläder
+---------
+På skärmen Simkläder hittar du de verktyg som behövs för att klä på din sim. Du kan välja att förse din sim 
+med olika tillbehör utöver de vanliga kläderna eller att klicka på “Klä av” för att börja om från början. 
+Här kan du även skapa klädlager genom att välja flera plagg. En funktion i detta verktyg är möjligheten att  
+markera och importera nya materialskins till simmarnas kläder. Om du vill importera ett nytt material klickar
+du på “Ladda textur” och bläddrar fram den bildfil du vill importera. Precis som i Fotoassistenten fungerar  
+bara dessa filtyper i The Sim Creator: .png, .jpg, .tga, .bmp, och .tif. För att uppnå bästa resultat bör
+materialbilderna vara 8 bitar eller 256 färger.  
+
+När du klickar på knappen Ny logga öppnas skärmen Välj logga. 
+Här kan du lägga till loggor/bilder på din sim i 2D och se hur de kommer att se ut i The Sims™ på 3D-bilden.  
+Välj bland de bifogade loggorna eller lägg till egna med knappen Ladda logga (.png, .jpg, .tga, .bmp, and .tif 
+är de filtyper som du kan använda i The Sim Creator och för bästa resultat bör de vara 8 bitar eller 256 färger).
+
+Tyvärr kan The Sims™ Creator inte lägga till eller ta bort hattar. Vissa huvuden har hattar som är 
+en del av ett skin och inte kan tas bort. Dessutom har vissa huvuden hattar i The Sims™ fast dessa 
+inte syns i The Sims™ Creator. Det finns inget sätt att ändra dessa hattar i The Sims™ Creator 
+eftersom de inte är en del av ett skin. Vissa skins har även accessoarer som består av separata 
+polygoner. De syns inte heller i The Sims™ Creator. 
+
+(Exempel: det finns ett skin som medföljer utbyggnadspacken The Sims™ Livin' It Up och går att ladda ner från
+http://thesims.com som ska ha en hatt, men hatten syns inte eftersom den ligger som en separat accessoarfil 
+Detta skin kommer att sakna toppen av huvudet.)
+
+
+Måla
+----
+Målarverktyget ger dig möjlighet att måla din sim i 2D- eller 3D-läge. Du väljer det här verktyget på huvudmenyn
+genom att klicka på “Måla”-knappen.  
+På verktygspanelen längst ner på skärmen kan du välja bland olika färger och texturer att måla med. Du kan vrida 
+ditt skin åt alla håll för att måla det eller rätta till eventuella misstag du har gjort.
+
+När du har målat klart din sim klickar du på "Klar" för att komma tillbaka till  
+huvudskärmen (där du kan spara ditt nya skin) och din målade sim har nu ersatt det skin
+som fanns från början. Spelets standardskin finns fortfarande kvar om du inte sparar över
+det, men du måste starta om The Sims™ Creator för att kunna se och arbeta med det igen. 
+
+Spara
+-----
+Spara-skärmen ger dig möjlighet att spara ditt modifierade skin. Du ger helt enkelt  
+ditt skin ett namn och klickar på Spara. Ditt nya skin sparas i din skins-mapp 
+(standardsökväg: \Program\Maxis\The Sims\GameData\Skins).
+
+
+Renderingsalternativ
+--------------------
+Genom att trycka på P får du upp Renderingsvalen. Här kan du växla mellan OpenGL och programrendering. 
+
+De nyare grafikkorten utnyttjar kompatibilitetsinställningarna. Genom att slå på alternativet Dela GL-resurser
+ökas målningshastigheten. Genom att slå på alternativet Sim-modellcache förbättras bildfrekvensen när du
+arbetar med modellerna. Dessa funktioner kräver att du startar om The Sims™ Creator.
+
+Om du har ändrat någon av inställningarna i The Sims™ Creator och det kraschar när du startar innebär det
+att ditt grafikkort inte klarar av inställningarna. Nästa gång du startar programmet kommer det att köras
+i programläget. 
+
+Om du vill välja renderingsläge via kommandoraden kan du skriva in:
+För programvaruläge skriver du: TheSimsCreator.exe -rS  
+För OpenGL skriver du: TheSimsCreator.exe -rO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

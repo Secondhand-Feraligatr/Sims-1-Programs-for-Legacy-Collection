@@ -1,0 +1,76 @@
+//This file isn't used by 
+
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+
+Title="Help"
+
+//Layout=(Name="Standard" Style="Y")
+
+Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip
+		Ratio1=1.0	// Sliver
+		Ratio2=0.0	// RightTip
+	)
+	GUIDummyImage(
+		ImageName = "Help_TL"
+	)
+	
+	GUIDummyImage(
+		ImageName = "Help_T"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "Help_TR"
+	)
+)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+	GUIDummyImage(
+		ImageName = "Help_L"
+		Stretch = 1
+	)
+	GUIRegion(
+		BackgroundColor=(Red=0 Green=0 Blue=82)
+		GUISpacer(Height = 10)
+		GUITextArea( //This text area is actually redifined in the manager so the manager also sets up the color and font etc...
+			Content="Example header" 
+			Font="SimsHelpTitleFont" 
+			TextColor=(Red=1.0 Blue=0.0 Green=1.0) 
+			FixedHeight=18 Placement="Center"
+			Rigging="Caption"
+		)
+		GUIRuleOff()
+		GUITextArea(
+			Content="Some help for the Sims game.  The text should be able to break across lines."
+			Font="SimsHelpBodyFont"
+			TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+		)
+		GUIButtonSims(Label="Close" Action="Parent::CloseHelpFrame")		
+	)
+	GUIDummyImage(
+		ImageName = "Help_R"
+		Stretch = 1
+	)
+)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip
+		Ratio1=1.0	// Sliver
+		Ratio2=0.0	// RightTip
+	)
+	GUIDummyImage(
+		ImageName = "Help_BL"
+	)
+	
+	GUIDummyImage(
+		ImageName = "Help_B"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "Help_BR"
+	)
+)

@@ -1,0 +1,87 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+Width=500
+Height=600
+
+Title="Help"
+
+Manager=(Name="SimsHelpScreen"
+
+	Title="Paint Screen"	// This must be specified
+
+	// Make changes from here ...
+	Content=GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUISpacer(Width=8 Height=0)
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y"
+				Ratio0=0.0
+				Ratio1=1.0
+				Ratio2=0.0
+				Ratio3=1.0
+				Ratio4=0.0
+				Ratio5=1.0
+				Ratio6=0.0
+				Ratio7=1.0
+				Ratio8=0.0
+				Ratio9=1.0
+				Ratio10=0.0
+				Ratio11=1.0
+				Ratio12=0.0
+				Ratio13=1.0
+			)
+			GUITextArea(
+				Content="Use this screen to paint your Sim using the 2D and 3D views."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="You can change your 3D view direction using the 'Front', 'Back', 'Left', 'Right', 'Top' and 'Bottom' buttons on the top of the 3D panel. You can get a closer view by clicking the 'Head' or 'Body' buttons. Click on the wireframe button to show or hide the wireframe."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="The tool panel at the bottom of the screen allows you to paint, move and save your Sim. On the left are the tool buttons. You can Undo or Redo changes with the arrow buttons. The Color Picker tool can be used to choose a color from the 2D or 3D views. The Pan, Zoom and Rotate tools allow you to move your Sim. If you click on the Rotate tool you may pan, zoom and rotate the same way you were able to on the start screen of The Sims(TM) Creator. To paint your Sim, choose the Color Paintbrush or the Texture Paintbrush."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="Use the slider to change your paintbrush's scale, feather, and strength."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="The right side of the panel has the color swatch and a color picker. The color swatch shows the current foreground color, background color, and a few preset colors. The foreground color will be the color used with the Color Paintbrush tool and the background color will be the color used with the Eraser tool. You can choose a preset color by left clicking, or store the foreground color by right clicking. Clicking within the color picker changes the current foreground color."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="When you select the Texture Paintbrush, the right side of the panel shows a texture selector. Choose the texture you want to paint with from there. If you would like to import your own textures, you must go to the Sim Wardrobe screen."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="When you are finished painting your Sim click 'Done' to return to the main screen. Click 'Cancel' to undo all your painting and return to the main screen."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+		)
+		GUISpacer(Width=8 Height=0)
+	)
+	// ... to here.
+)

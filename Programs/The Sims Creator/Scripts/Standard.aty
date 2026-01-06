@@ -1,0 +1,113 @@
+/**************************************************************************************
+ ********** Basic types
+ **************************************************************************************/
+Color=(
+		Red=0.0
+		Green=0.0
+		Blue=0.0
+		Alpha=0.0
+	)
+
+Font=(
+	Face=""	// "Arial", "System", "Tahoma", ...
+	Size=10.0
+	Color=Color(
+		Red=1.0
+		Green=1.0
+		Blue=1.0
+	)
+	Bold=0
+	Italic=0
+	Underline=0
+	Strikethrough=0
+)
+
+SimsViewportBackgroundGradient=(
+	Gradient=(
+		ColorTL=(Red=0 Green=214 Blue=238)
+		ColorTR=(Red=0 Green=213 Blue=238)
+		ColorBL=(Red=1 Green=34 Blue=154)
+		ColorBR=(Red=1 Green=34 Blue=154)
+	)
+)
+
+
+
+
+/**************************************************************************************
+ ********** Base toolwindow types
+ **************************************************************************************/
+RHXToolWindowManager=()
+
+RHXToolWindow=(
+	WindowStructure=""
+	X=0.0		Y=0.0
+	Width=300.0	Height=0.0
+	Visible=1				/* The view menu toggles this property. If this is 1, the window IS visible. */
+	NormalVisibility=1		/* Indicates if it is visible when _toolWindowsVisible is TRUE. */
+)
+
+RHXPopupWindow=()
+
+/**************************************************************************************
+ ********** Progress dialogs
+ **************************************************************************************/
+ProgressProperties=(
+	Progress=0.0	// Value to be displayed
+	RangeMin=0.0
+	RangeMax=1.0
+	Message=UIString()	// No message
+	Title="The Sims Creator"	// Constant over the life of the progress bar, so no need for a UIString
+
+	Cancelled=0	// Hasn't been cancelled yet
+	Stopping=0	// Hasn't been stopped
+	LiveUpdate=1	// Live Update on
+)
+
+
+/**************************************************************************************
+ ********** Base Wizard types
+ **************************************************************************************/
+RHXWizard=(
+	Data=()			// All data specific to the wizard is entered here.
+	CurrentStage=""	/* This node is watched by the wizard manager.  When the node changes, the
+	 * current stage of the corresponding wizard is changed. Usually, the wizard calls 
+	 * "RequestNextStage" or "RequestPreviousStage" to do this. */
+)
+
+RHWizardStage=(
+	NextStage=""
+	Action=""	/* Leave blank to launch a window.  Otherwise, the given action is executed.
+	 * If an action is executed, it should call "RequestNextStage", "RequestPreviousStage", or "EndWizard" when it completes. */
+)
+
+/**************************************************************************************
+ ********** Base brush types
+ **************************************************************************************/
+SimpleBrush=
+	(
+		Name="Soft 0.1"
+		Scale=0.100000
+		Aspect=0.500000
+		Spacing=0.150000
+		Rotation=0.000000
+		Strength=0.400000
+		Color=Color
+			(
+				Red=0.000000
+				Green=0.000000
+				Blue=0.000000
+				Alpha=0.000000
+				Brightness=1.000000
+			)
+		Feather=1.000000
+		Profile=0
+		PressAffectsScale=0
+		PressAffectsStrength=1
+		PaintOperation=0
+		PencilMode=2
+		PaintMode=0	// 0 for solid color, 1 for texture paint
+		TextureSwatchIndex=0
+		TextureCupboard=0
+		DefaultPreset = 9
+	)

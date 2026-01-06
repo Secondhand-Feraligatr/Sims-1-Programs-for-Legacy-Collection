@@ -1,0 +1,148 @@
+/**************************************************************************************
+ ********** nVidia types
+ **************************************************************************************/
+/*
+"Operation" means one of ...
+	GL_NONE, GL_TEXTURE_1D, GL_TEXTURE_2D, GL_TEXTURE_RECTANGLE_NV, GL_TEXTURE_3D,
+	GL_TEXTURE_CUBE_MAP_ARB, GL_PASS_THROUGH_NV, GL_CULL_FRAGMENT_NV
+	GL_OFFSET_TEXTURE_2D_NV, GL_OFFSET_TEXTURE_2D_SCALE_NV, 
+	GL_OFFSET_TEXTURE_RECTANGLE_NV, GL_OFFSET_TEXTURE_RECTANGLE_SCALE_NV,
+	GL_DEPENDENT_AR_TEXTURE_2D_NV, GL_DEPENDENT_GB_TEXTURE_2D_NV, 
+	GL_DOT_PRODUCT_NV, GL_DOT_PRODUCT_TEXTURE_2D_NV, 
+	GL_DOT_PRODUCT_TEXTURE_RECTANGLE_NV, GL_DOT_PRODUCT_TEXTURE_3D_NV,
+	GL_DOT_PRODUCT_TEXTURE_CUBE_MAP_NV, GL_DOT_PRODUCT_REFLECT_CUBE_MAP_NV
+	GL_DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV, GL_DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV
+	GL_DOT_PRODUCT_DEPTH_REPLACE_NV
+
+*/
+
+NVTextureStage=(
+	Operation=""
+	PreviousTextureInput="Previous"	// or an integer in the range 0-7
+)
+
+/*
+"Register" means one of ...
+	GL_ZERO, GL_CONSTANT_COLOR0_NV, GL_CONSTANT_COLOR1_NV, 
+	GL_FOG, GL_PRIMARY_COLOR_NV, GL_SECONDARY_COLOR_NV, 
+	GL_SPARE0_NV, GL_SPARE1_NV, GL_TEXTURE0_ARB, 
+	GL_TEXTURE1_ARB, ...
+
+"Mapping" means one of ...
+	GL_UNSIGNED_IDENTITY_NV, GL_UNSIGNED_INVERT_NV,
+	GL_EXPAND_NORMAL_NV, GL_EXPAND_NEGATE_NV, 
+	GL_HALF_BIAS_NORMAL_NV, GL_HALF_BIAS_NEGATE_NV,
+	GL_SIGNED_IDENTITY_NV, GL_SIGNED_NEGATE_NV
+
+"ComponentUsage" is always "RGB" or "Alpha" when used in a the RGB portion of a combiner; it is
+"Alpha" or "Blue" when used in a the Alpha portion of a combiner.
+*/
+
+NVRegisterCombiner=(
+	RGBPortion=(	// Set up the RGB portion
+		InputA=(
+			Input="GL_PRIMARY_COLOR_NV"	// Register
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="RGB"	// or "Alpha"
+		)
+		InputB=(
+			Input="GL_PRIMARY_COLOR_NV"
+			Mapping="GL_UNSIGNED_IDENTITY_NV"
+			ComponentUsage="RGB"
+		)
+		InputC=(
+			Input="GL_PRIMARY_COLOR_NV"
+			Mapping="GL_UNSIGNED_IDENTITY_NV"
+			ComponentUsage="RGB"
+		)
+		InputD=(
+			Input="GL_PRIMARY_COLOR_NV"
+			Mapping="GL_UNSIGNED_IDENTITY_NV"
+			ComponentUsage="RGB"
+		)
+		Output=(
+			abOutput=""	// Register to write a*b to
+			cdOutput=""	// Register to write c*d to
+			sumOutput=""	// Register to write ab+cd.	 Cannot be used if muxOutput is defined.
+			muxOutput=""	// Register to write ab or cd, depending upon spare0.	 Cannot be used if sumOutput is defined.
+			scale=1.0	// or 2.0, 4.0, or 0.5.
+			bias=0.0	// or -0.5.  To make matters more interesting, must be 0.0 when scale=0.5 or scale=4.0.
+			abDotProduct=0
+			cdDotProduct=0
+		)
+	)
+	AlphaPortion=(	// Set up the alpha portion
+		InputA=(
+			Input="GL_PRIMARY_COLOR_NV"	// Register
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="GL_ALPHA"	// or "RGB"
+		)
+		InputB=(
+			Input="GL_PRIMARY_COLOR_NV"	// Register
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="GL_ALPHA"	// or "RGB"
+		)
+		InputC=(
+			Input="GL_PRIMARY_COLOR_NV"	// Register
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="GL_ALPHA"	// or "RGB"
+		)
+		InputD=(
+			Input="GL_PRIMARY_COLOR_NV"	// Register
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="GL_ALPHA"	// or "RGB"
+		)
+		Output=(
+			abOutput=""	// Register to write a*b to
+			cdOutput=""	// Register to write c*d to
+			sumOutput=""	// Register to write ab+cd.	 Cannot be used if muxOutput is defined.
+			muxOutput="GL_SPARE0_NV"	// Register to write ab or cd, depending upon spare0.	 Cannot be used if sumOutput is defined.
+			scale=1.0	// or 2.0, 4.0, or 0.5.
+			bias=0.0	// or -0.5.  To make matters more interesting, must be 0.0 when scale=0.5 or scale=4.0.
+			abDotProduct=0
+			cdDotProduct=0
+		)
+	)
+)
+
+// The RGB portion's input registers may also use GL_E_TIMES_F_NV or GL_SPARE0_PLUS_SECONDARY_COLOR_NV.
+
+NVRegisterCombinerFinal=(
+	RGBPortion=(
+		InputA=(
+			Input="GL_FOG"	// Register, or GL_E_TIMES_F_NV
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="RGB"	// "RGB"/"Alpha"
+		)
+		InputB=(
+			Input="GL_SPARE0_PLUS_SECONDARY_COLOR_NV"	// Register, or GL_E_TIMES_F_NV, or GL_SPARE0_PLUS_SECONDARY_COLOR_NV
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="RGB"	// "RGB"/"Alpha"
+		)
+		InputC=(
+			Input="GL_FOG"	// Register, or GL_E_TIMES_F_NV, or GL_SPARE0_PLUS_SECONDARY_COLOR_NV
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="RGB"	// "RGB"/"Alpha"
+		)
+		InputD=(
+			Input="GL_ZERO"	// Register, or GL_E_TIMES_F_NV, or GL_SPARE0_PLUS_SECONDARY_COLOR_NV
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="RGB"	// "RGB"/"Alpha"
+		)
+		InputE=(
+			Input="GL_ZERO"	// Register
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="RGB"	// "RGB"/"Alpha"
+		)
+		InputF=(
+			Input="GL_ZERO"	// Register
+			Mapping="GL_UNSIGNED_IDENTITY_NV"	// Mapping
+			ComponentUsage="RGB"	// "RGB"/"Alpha"
+		)
+	)
+	AlphaPortion=(
+		Input="GL_SPARE0_NV"	// Register
+		Mapping="GL_UNSIGNED_IDENTITY_NV"
+		ComponentUsage="Alpha"
+	)
+)

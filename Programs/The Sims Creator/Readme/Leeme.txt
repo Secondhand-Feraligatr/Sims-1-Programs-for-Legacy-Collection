@@ -1,0 +1,108 @@
+El Creador de Los Sims™
+Documento Readme
+http://thesims.ea.com
+14 marzo 2002
+MAXIS - Electronic Arts
+Versión 1.1
+Índice
+
+General
+Introducción
+Pantalla principal/inicial
+Asistente fotográfico
+Vestuario de los Sims
+Colorear
+Guardar
+Opciones de generación
+
+General
+-------
+Para obtener información actualizada sobre Los Sims™ y El Creador de Los Sims™ visita:
+http://www.thesims.com.
+También puedes visitar páginas creadas por fans y encontrar foros, FAQ (preguntas frecuentes), explicaciones y consejos. No olvides dar una vuelta por la zona de chat de nuestra web para charlar con otros jugadores.
+ 
+
+Introducción
+------------
+El Creador de Los Sims™ te permite colorear tu Sim, ponerle una nueva cara a su cabeza, añadirle un logotipo y cambiarle de ropa.
+
+El Creador de Los Sims™ lee los datos de tu carpeta Skins de Los Sims™ y de todas las expansiones.
+Carpeta predeterminada: \Archivos de Programa\Maxis\Los Sims\GameData\Skins y \Archivos de Programa\Maxis\Los Sims\ExpansionPack...). 
+La herramienta El Creador de Los Sims™ te permitirá modificar skins de Los Sims™ 1.0, de las expansiones que hayas instalado así como cualquier skin de Los Sims™ que hayas descargado de Internet.
+
+
+Pantalla principal/inicial
+-----------------
+Aquí es donde puedes elegir las principales características físicas de tus Sims como son la cabeza y el cuerpo.
+Además, en esta pantalla también puedes cambiar la edad, el sexo y el tono de piel del Sim que quieras modificar. En la ventana Vista previa 3D puedes ver tu Sim desde distintos ángulos.
+
+
+
+Asistente fotográfico
+----------------------
+El Asistente fotográfico es una herramienta para importar fotografías de forma que puedas utilizarlas para las cabezas de los Sims. Puedes utilizar los siguientes tipos de archivos fotográficos compatibles con El Creador de Los Sims™: .png, .jpg, .tga, .bmp y .tif. 
+
+Primer paso: "Cargar una imagen"
+     -	En el Menú principal, haz clic en "Asistente fotográfico" 
+     -	Haz clic en "Cargar cara" y busca la fotografía que deseas importar.
+     -	Utiliza los deslizadores "Rotación" y "Tamaño" para colocar la cara de forma que quede encuadrada dentro de los bordes del recuadro.
+     -	Haz clic en "Siguiente>" cuando hayas terminado.
+
+Segundo paso: "Edición"
+Una vez importada la fotografía, la siguiente pantalla detalla las opciones de edición disponibles para editar la cara de tu Sim. 
+
+Consejo: Utiliza la estructura metálica y los deslizadores de máscara para ayudar a situar la imagen sobre la cabeza, de esta forma podrás alinear los ojos y la nariz. 
+
+
+Vestuario de los Sims
+----------------------
+La Sección Vestuario de los Sims contiene las herramientas necesarias para vestir a tu Sim. Puedes optar entre añadir accesorios a la indumentaria original del Sim o hacer clic en "Desvestir" para empezar desde el principio. También puedes superponer las prendas seleccionando más prendas. Esta herramienta incluye la posibilidad de seleccionar e importar nuevos materiales para las prendas de vestir de los Sims. Para importar nuevos materiales haz clic en "Cargar textura" y busca el archivo fotográfico que deseas importar. Al igual que ocurre con el Asistente fotográfico, los únicos formatos de archivos fotográficos que se pueden emplear son: .png, .jpg, .tga, .bmp, y tif. Para obtener un mejor resultado las fotografías de materiales deben ser de 8 bit o 256 colores.  
+
+Al hacer clic en el botón Añadir logo accederás a la pantalla del Selector de logos. 
+En esta pantalla puedes añadir logotipos/imágenes a tu Sim en la vista 2D y ver cómo quedará en Los Sims™ en la vista 3D.   
+Puedes elegir entre los logotipos que se incluyen o añadir tus propios logotipos con el botón Cargar logo (en El Creador de Los Sims™ puedes utilizar archivos con las extensiones .png, .jpg, .tga, .bmp, y .tif. Para obtener el mejor resultado los archivos deben ser de 8 bit o 256 colores).
+
+Por desgracia, El Creador de Los Sims™ no puede añadir o eliminar sombreros. Hay algunas cabezas que llevan sombreros que forman parte del skin y resulta imposible eliminarlos. Por otro lado, algunas cabezas llevan sombreros en Los Sims™ que no aparecen en El Creador de Los Sims™, no hay forma de modificar estos sombreros en El Creador de Los Sims™ porque no forman parte del skin. Asimismo, algunos skins pueden llevar accesorios que son combinaciones independientes y que no se mostrarán en El Creador de Los Sims™.
+
+(Ejemplo: Hay un skin que se incluye en la expansión Los Sims™: Más Vivos que Nunca y que puedes descargar desde http://thesims.com, este skin debería llevar un sombrero pero este accesorio no aparece porque es un archivo de accesorio independiente, por lo que el skin perderá la parte superior de su cabeza.)
+
+
+Colorear
+--------
+La herramienta Colorear te permite colorear tu Sim en la vista 2D o 3D. Puedes acceder a esta opción desde el Menú principal haciendo clic en el botón "Colorear".
+El panel de herramientas de la parte inferior de la pantalla te permite aplicar diferentes colores y texturas. Además, puedes mover el skin a tu gusto para colorearlo y corregir cualquier fallo que hayas podido cometer.
+
+Cuando hayas terminado de colorear tu Sim haz clic en "Hecho" para volver a la Pantalla principal(donde podrás guardar tu nuevo skin) y tu Sim coloreado ocupará el lugar del skin original. El skin predeterminado seguirá estando ahí a menos que lo sobrescribas, pero tendrás que reiniciar El Creador de Los Sims™ para volver a ver el skin predeterminado y trabajar con él. 
+
+Guardar
+-------
+La pantalla Guardar te permite guardar tu skin modificado. Solo tienes que dar un nombre al skin y hacer clic en Guardar. El nuevo skin se guardará en tu carpeta de skins
+(Carpeta predeterminada: \Archivos de programa\Maxis\Los Sims\GameData\Skins).
+
+
+Opciones de generación
+--------------------------
+Pulsa P para acceder a las Preferencias de generación. Desde aquí puedes cambiar de OpenGL a Software. 
+
+Las tarjetas gráficas más modernas aprovechan las opciones de compatibilidad. Al activar la opción Compartir Recursos GL aumentará la velocidad de coloreado. Al activar la opción Caché de Modelos Sims se acelerará la frecuencia de interacción con los modelos. Estas características te exigirán que reinicies El Creador de Los Sims™. 
+
+Si has cambiado cualquiera de las Opciones del Creador de Los Sims™ y este se cuelga al intentar ejecutar el programa significa que tu tarjeta gráfica no soporta estas opciones. La próxima vez que ejecutes el programa lo hará en modo Software.
+
+Para configurar el modo de generación desde la línea de comandos puedes escribir lo siguiente:
+Para funcionar en modo Software: TheSimsCreator.exe -rS  
+Para funcionar en modo OpenGL: TheSimsCreator.exe -rO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

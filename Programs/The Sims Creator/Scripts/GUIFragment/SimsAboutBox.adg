@@ -1,0 +1,85 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+
+Width=500
+Height=350
+
+
+Title="Credits"
+
+Manager=(Name="SimsHelpScreen"
+
+	//Title="Credits"	// This must be specified
+	Title=""	// This must be specified
+
+	RemoveTitle = 1
+
+	// Make changes from here ...
+	Content=GUIScrollingCredits(
+		BackgroundImage = "SimsAboutBox"
+		XLoc = 37
+		YLoc = 27
+		ScrollWidth = 354
+		ScrollHeight = 106
+		Speed = 35
+
+		Title0 = "The Sims(TM) Creator"
+		Logo0 = "RightHemisphereCreditsLogo"
+		Name0 = "Aaron Robinson"
+		Name1 = "Andrew Howes"
+		Name2 = "Brian Lomas"
+		Name3 = "Bryan Moodie"
+		Name4 = "Charis Kumpula"
+		Name5 = "Chih-Kuo Chuang"
+		Name6 = "Chris Blackbourn"
+		Name7 = "Damien Connolly"
+		Name8 = "David Revill"
+		Name9 = "David Rhoades"
+		Name10 = "Glenn Collins"
+		Name11 = "Hugh Malan"
+		Name12 = "Jeannie Revill"
+		Name13 = "John Zurek"
+		Name14 = "Kent Barber"
+		Name15 = "Mark Thomas"
+		Name16 = "Mary Alice Krayecki"
+		Name17 = "Matthew Simmonds"
+		Name18 = "Michael Lynch"
+		Name19 = "Peter Dansted"
+		Name20 = "Scott Boness"
+		Name21 = "Stephen Long"
+		Name22 = "Trude Mattingly"
+
+		Title23 = ""
+		Name23 = ""
+
+		Title24 = ""/*"Maxis Team"*/
+		Logo24 = "MaxisCreditsLogo"
+		Name24 = ""
+
+		Title25 = "Producer"
+		Name25 = "Brooke Harris"
+
+		Title26 = "Engineering Support"
+		Name26 = "David Miller"
+
+		Title27 = "Testers"
+		Name27 = "Shan Simpson"
+		Name28 = "Aaron Keppel"
+
+		Title29 = "Special Thanks"
+		Name29 = "Sinjin Bain"
+		Name30 = "Tim LeTourneau"
+		Name31 = "Sean Baity"
+		Name32 = "Patrick Barrett"
+		Name33 = "Alex Fennell"
+		Name34 = "Sebastian Hyde"
+		Name35 = "Fred Dieckmann"
+		Name36 = "and all of the employees of Maxis who"
+		Name37 = "continue to make The Sims(TM) an incredible game."
+
+		Logo38 = "DeepCharacterCreditsLogo"
+		Name38 = ""
+	
+	)
+)

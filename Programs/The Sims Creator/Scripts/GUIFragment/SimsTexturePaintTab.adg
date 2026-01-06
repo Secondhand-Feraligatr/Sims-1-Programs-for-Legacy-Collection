@@ -1,0 +1,31 @@
+TexturePainting = GUIRegion (
+	Icon = "SimsTextureTab"
+
+	Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0)
+	GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+
+		GUISpacer( Width=8 Height=0 )
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+			GUISpacer(Width=0 Height=0)
+			GUISimsTextureSwatch(
+				Target="CurrentTextureSwatch"
+				GridWidth=0		// auto sized
+				GridHeight=2
+				TileWidth=40
+				TileHeight=40
+				TileTexture=1
+				Source = 1
+				Reversed=1
+			)
+			GUISpacer(Width=0 Height=0)
+		)
+		GUISpacer( Width=8 Height=90 )
+	)
+	GUIRegion(
+		Layout=(Name="Equal" Style="Y")
+		GUIButtonSims( Label="Done" Action="Parent::GotoStartScreen" ToolTip="Go Back" EnabledTarget ="EnableNormalButtons")
+		GUIButtonSims( Label="Cancel" Action="Parent::CancelPaint" ToolTip="Cancel" EnabledTarget ="EnableNormalButtons")
+	)
+)

@@ -1,0 +1,75 @@
+Fill=(	//also called paint-bucket and bucket-tool
+	IsFeathered=1
+	Tolerance=0.1
+)
+
+//SelectTool=(	//?? confusion here between selectTool etc
+//	Feather=0.1
+//)
+
+
+LassoSelect=(Feather=0.0)
+RectSelect=(Feather=0.0)
+PolyWand=(Feather=0.0)
+LassoSelect=(Resize=0.0)
+RectSelect=(Resize=0.0)
+PolyWand=(Resize=0.0)
+
+Navigate=()
+
+MagicWand=(
+	IsFeathered=1
+	Tolerance=0.1
+)
+
+
+MoveObject=(
+//		TestProperty=1
+//		TestReal=0.5
+	WorldSpace = 0
+)
+
+MoveUV=(
+)
+
+PolyWand=(
+	Tolerance=0.0
+)
+
+Select=(
+	Selecting=1
+	Other=1
+)
+
+ScaleObject=(
+	WorldSpace = 0
+)
+
+RotateObject=(
+	WorldSpace = 0
+)
+
+RotateLight=()
+Erase=()
+Paint=()
+EyeDropper=()
+Pan=()
+Zoom2D=()
+Smudge=()
+Text=()
+Clone=()
+
+ElipseSelect=(Feather=0.0)
+PolySelect=(Feather=0.0)
+
+
+//Line=()
+//Circle=()
+//Rectangle=()
+//Polygon=()
+
+Global=(
+	SelectBackFaces=0
+	GrowAcrossSeams=0
+	GrowthMetric=0
+)

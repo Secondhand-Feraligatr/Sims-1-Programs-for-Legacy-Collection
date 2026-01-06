@@ -1,0 +1,648 @@
+	BumpShineCombinerCollection=(
+		
+		//GL_TEXTURE0_ARB		= diffuse (+opacity in alpha)
+		//GL_TEXTURE1_ARB		= normal-bump (+specular in alpha)
+		//GL_TEXTURE2_ARB		= normalize map for bump
+		//GL_TEXTURE3_ARB		= normalize map for specularity
+		//GL_CONSTANT_COLOR0_NV	= diffuse light color
+		//GL_CONSTANT_COLOR1_NV	= ambient light color
+
+		//Normalize the normal-bump with both normalize maps for bump and specular
+		Combiner0=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_TEXTURE2_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+				InputB=(Input="GL_TEXTURE1_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+				InputC=(Input="GL_TEXTURE3_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+				InputD=(Input="GL_TEXTURE1_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+				Output=(
+					abOutput="GL_PRIMARY_COLOR_NV"		//Normalized normal-bump for bump
+					cdOutput="GL_SECONDARY_COLOR_NV"	//Normalized normal-bump for specular
+					abDotProduct=1
+					cdDotProduct=1
+				)
+			)
+		)
+		
+		//Multiply the diffuse with the amb-light color and also with the normalized bump map
+		Combiner1=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputC=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				Output=(
+					abOutput="GL_SPARE1_NV"			//Diffuse by amb-light
+					cdOutput="GL_PRIMARY_COLOR_NV"	//Diffuse by normalized bump map
+				)
+			)
+		)
+
+		//Refine the specular and Multiply the dif-light color by the bump map
+		Combiner2=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputC=(Input="GL_PRIMARY_COLOR_NV"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_CONSTANT_COLOR0_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				Output=(
+					abOutput="GL_SECONDARY_COLOR_NV"	//Refined specular
+					cdOutput="GL_PRIMARY_COLOR_NV"		//Bump
+				)
+			)
+		)
+		
+		//Refine the specular some more
+		Combiner3=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputC=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+				InputD=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+				Output=(
+					abOutput="GL_SECONDARY_COLOR_NV"	//Refined Specular
+				)
+			)
+		)
+
+		//Refine the specular yet again
+		Combiner4=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputC=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+				InputD=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+				Output=(
+					abOutput="GL_SECONDARY_COLOR_NV"	//Refined Specular
+				)
+			)
+		)
+		
+		//Add the dif-light color to the diffuse color (NOTE that the GL_ZERO's are inverted to '1')
+		Combiner5=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+				InputC=(Input="GL_SPARE1_NV"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+				Output=(
+					sumOutput="GL_PRIMARY_COLOR_NV"		//Diffuse color (finished)
+				)
+			)
+		)
+
+		//Multiply the specular level by the amb-light color
+		Combiner6=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputC=(Input="GL_SECONDARY_COLOR_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				Output=(
+					abOutput="GL_DISCARD_NV"
+					cdOutput="GL_SECONDARY_COLOR_NV"	//Specular color
+				)
+			)
+		)
+
+		//Multiply specular color by the specular map (in the alpha channel of tex1)
+		Combiner7=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputC=(Input="GL_TEXTURE1_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV"	ComponentUsage="GL_ALPHA")
+				InputD=(Input="GL_SECONDARY_COLOR_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				Output=(
+					abOutput="GL_DISCARD_NV"
+					cdOutput="GL_SECONDARY_COLOR_NV"	//Specular (finished)
+				)
+			)
+		)
+
+		//Combine the Diffuse and Specular color. Also output the unchanged opacity from tex0(alpha)
+		CombinerFinal=NVRegisterCombinerFinal(
+
+
+			RGBPortion=(
+				InputA=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV" )
+				InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+				InputC=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_SECONDARY_COLOR_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputE=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputF=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+			)
+			AlphaPortion=(
+				Input="GL_TEXTURE0_ARB"					Mapping="GL_UNSIGNED_IDENTITY_NV"
+			)
+
+
+
+/*
+			// Passthru
+			RGBPortion=(
+				InputA=(Input="GL_TEXTURE1_ARB"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_INVERT_NV")
+				InputC=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputE=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputF=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputG=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+			)
+			AlphaPortion=(
+				Input="GL_TEXTURE1_ARB"				Mapping="GL_UNSIGNED_IDENTITY_NV"
+			)
+*/
+
+		)
+	)	//END BumpShine
+
+
+		/****************************************************************************************
+		 ****************************************************************************************/
+
+
+	BumpCombinerCollection=(
+		
+		//GL_TEXTURE0_ARB		= diffuse (+opacity in alpha)
+		//GL_TEXTURE1_ARB		= normal-bump (+specular in alpha)
+		//GL_TEXTURE2_ARB		= normalize map for bump
+		//GL_TEXTURE3_ARB		= normalize map for specularity
+		//GL_CONSTANT_COLOR0_NV	= diffuse light color
+		//GL_CONSTANT_COLOR1_NV	= ambient light color
+
+		//Normalize the normal-bump with the normalize map for bump
+		Combiner0=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_TEXTURE2_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+				InputB=(Input="GL_TEXTURE1_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+				Output=(
+					abOutput="GL_PRIMARY_COLOR_NV"		//Normalized normal-bump for bump
+					abDotProduct=1
+				)
+			)
+		)
+		
+		//Multiply the diffuse with the amb-light color and also with the normalized bump map
+		Combiner1=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputC=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				Output=(
+					abOutput="GL_SPARE1_NV"			//Diffuse by amb-light
+					cdOutput="GL_PRIMARY_COLOR_NV"	//Diffuse by normalized bump map
+				)
+			)
+		)
+
+		//Multiply the dif-light color by the bump map
+		Combiner2=NVRegisterCombiner(
+			RGBPortion=(
+				InputC=(Input="GL_PRIMARY_COLOR_NV"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_CONSTANT_COLOR0_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				Output=(
+					cdOutput="GL_PRIMARY_COLOR_NV"		//Bump
+				)
+			)
+		)
+		
+		//Add the dif-light color to the diffuse color (NOTE that the GL_ZERO's are inverted to '1')
+		Combiner3=NVRegisterCombiner(
+			RGBPortion=(
+				InputA=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+				InputC=(Input="GL_SPARE1_NV"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+				Output=(
+					sumOutput="GL_PRIMARY_COLOR_NV"		//Diffuse color (finished)
+				)
+			)
+		)
+
+		//Output the diffuse color and unchanged opacity from tex0(alpha)
+		CombinerFinal=NVRegisterCombinerFinal(
+
+
+			RGBPortion=(
+				InputA=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV" )
+				InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+				InputC=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+			)
+			AlphaPortion=(
+				Input="GL_TEXTURE0_ARB"					Mapping="GL_UNSIGNED_IDENTITY_NV"
+			)
+
+
+/*
+			// Passthru
+			RGBPortion=(
+				InputA=(Input="GL_TEXTURE1_ARB"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputB=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_INVERT_NV")
+				InputC=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputD=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputE=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputF=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				InputG=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+			)
+			AlphaPortion=(
+				Input="GL_TEXTURE1_ARB"				Mapping="GL_UNSIGNED_IDENTITY_NV"
+			)
+*/
+
+		)
+	)	//END Bump
+
+
+		/****************************************************************************************
+		 ****************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Bump
+		TestNVCombinerCollection_Orig=(
+			Combiner0=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE2_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+					InputB=(Input="GL_TEXTURE1_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+					Output=(abOutput="GL_PRIMARY_COLOR_NV"	abDotProduct=1)
+				)
+			)
+			Combiner1=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_CONSTANT_COLOR0_NV"	Mapping="GL_SIGNED_IDENTITY_NV")
+//					InputC=(Input="GL_ZERO"					Mapping="GL_HALF_BIAS_NEGATE_NV") // 0.5 (should be 1.0 )
+					InputC=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV") // 1.0 (should be 1.0 )
+					InputD=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_SIGNED_IDENTITY_NV")
+					Output=(sumOutput="GL_SECONDARY_COLOR_NV")
+				)
+			)
+			CombinerFinal=NVRegisterCombinerFinal(
+				RGBPortion=(
+//					InputA=(Input="GL_SECONDARY_COLOR_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+//					InputB=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputA=(Input="GL_ZERO"	Mapping="GL_HALF_BIAS_NEGATE_NV")
+					InputB=(Input="GL_ZERO"			Mapping="GL_HALF_BIAS_NEGATE_NV")
+					InputC=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				)
+			)
+		)
+
+//SpecularBump
+		SpecularBumpCombinerCollection=(
+			
+			Combiner0=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE0_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+					InputB=(Input="GL_TEXTURE1_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+//					InputC=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+//					InputC=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV") // 1.0 (should be 1.0 )
+					InputC=(Input="GL_TEXTURE3_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+					InputD=(Input="GL_TEXTURE1_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+					Output=(
+						sumOutput="GL_DISCARD_NV"
+						abOutput="GL_PRIMARY_COLOR_NV"
+						cdOutput="GL_SECONDARY_COLOR_NV"
+						abDotProduct=1
+						cdDotProduct=1
+					)
+				)
+			)
+			
+			Combiner1=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputC=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					Output=(
+						sumOutput="GL_DISCARD_NV"
+						abOutput="GL_SPARE1_NV"
+						cdOutput="GL_PRIMARY_COLOR_NV"
+					)
+				)
+			)
+
+			Combiner2=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputC=(Input="GL_PRIMARY_COLOR_NV"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_CONSTANT_COLOR0_NV"						Mapping="GL_UNSIGNED_IDENTITY_NV")
+					Output=(
+						abOutput="GL_SECONDARY_COLOR_NV"	abDotProduct=0
+						cdOutput="GL_PRIMARY_COLOR_NV"
+						)
+				)
+			)
+			
+
+			Combiner3=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputC=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+					Output=(abOutput="GL_SECONDARY_COLOR_NV"	abDotProduct=0)
+				)
+			)
+			Combiner4=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+//					InputB=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+					InputC=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"						Mapping="GL_SIGNED_IDENTITY_NV")
+					Output=(abOutput="GL_SECONDARY_COLOR_NV"	abDotProduct=0)
+				)
+			)
+			
+			Combiner5=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+					InputC=(Input="GL_SPARE1_NV"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+					Output=(sumOutput="GL_PRIMARY_COLOR_NV")
+				)
+			)
+			Combiner6=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_ZERO"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputC=(Input="GL_SECONDARY_COLOR_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+					Output=(
+						abOutput="GL_DISCARD_NV"
+						cdOutput="GL_SECONDARY_COLOR_NV"
+					)
+				)
+			)
+			CombinerFinal=NVRegisterCombinerFinal(
+				RGBPortion=(
+					InputA=(Input="GL_PRIMARY_COLOR_NV"			Mapping="GL_UNSIGNED_IDENTITY_NV" )
+					InputB=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_INVERT_NV")
+					InputC=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_SECONDARY_COLOR_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputE=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputF=(Input="GL_ZERO"				Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputG=(Input="GL_ZERO"				Mapping="GL_UNSIGNED_IDENTITY_NV")
+				)
+			)
+
+			/*
+			CombinerFinal=NVRegisterCombinerFinal(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE0_ARB"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_ZERO"					Mapping="GL_EXPAND_NEGATE_NV")
+					InputC=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputE=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputF=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputG=(Input="GL_ZERO"					Mapping="GL_UNSIGNED_IDENTITY_NV")
+				)
+				//AlphaPortion
+			)
+			
+			Combiner3=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputC=(Input="GL_ZERO"					Mapping="GL_SIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"					Mapping="GL_SIGNED_IDENTITY_NV")
+					Output=(abOutput="GL_SECONDARY_COLOR_NV"	abDotProduct=0)
+				)
+			)
+
+			Combiner4=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE4_ARB"				Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_SECONDARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputC=(Input="GL_ZERO"					Mapping="GL_SIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"					Mapping="GL_SIGNED_IDENTITY_NV")
+					Output=(abOutput="GL_SECONDARY_COLOR_NV"	abDotProduct=0)
+				)
+			)
+*/
+		)	//END specularbump
+
+
+
+
+		/****************************************************************************************
+		 ****************************************************************************************/
+		LaFortuneCombinerCollection_Test=(
+			Combiner0=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE2_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+					InputB=(Input="GL_TEXTURE1_ARB"	Mapping="GL_EXPAND_NORMAL_NV")
+					Output=(abOutput="GL_PRIMARY_COLOR_NV"	abDotProduct=1)
+				)
+			)
+			Combiner1=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_PRIMARY_COLOR_NV"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_CONSTANT_COLOR0_NV"	Mapping="GL_SIGNED_IDENTITY_NV")
+					InputC=(Input="GL_ZERO"					Mapping="GL_HALF_BIAS_NEGATE_NV") // 0.5 (should be 1.0 )
+					InputD=(Input="GL_CONSTANT_COLOR1_NV"	Mapping="GL_SIGNED_IDENTITY_NV")
+					Output=(sumOutput="GL_PRIMARY_COLOR_NV")
+				)
+			)
+			CombinerFinal=NVRegisterCombinerFinal(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE2_ARB"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_INVERT_NV")
+					InputC=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+				)
+			)
+		)
+		/****************************************************************************************
+		 ****************************************************************************************/
+		LaFortuneCombinerCollection=(
+			/*
+			Combiner0=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE0_ARB"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_ZERO"				Mapping="GL_UNSIGNED_INVERT_NV")	// 1.0
+					InputC=(Input="GL_TEXTURE1_ARB"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"				Mapping="GL_UNSIGNED_INVERT_NV")	// 1.0
+					Output=(sumOutput="GL_PRIMARY_COLOR_NV")	// Compute tex0 + tex1
+				)
+			)
+			Combiner1=NVRegisterCombiner(
+				RGBPortion=(
+					InputA=(Input="GL_PRIMARY_COLOR_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_ZERO"				Mapping="GL_UNSIGNED_INVERT_NV")	// 1.0
+					InputC=(Input="GL_TEXTURE2_ARB"		Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_ZERO"				Mapping="GL_UNSIGNED_INVERT_NV")	// 1.0
+					Output=(sumOutput="GL_PRIMARY_COLOR_NV")	// Compute primary + tex1; ie tex0+tex1+tex2
+				)
+			)
+			*/
+			// TO DO: Modulate by light color, and surfaceNormal * normalizedVector to light.  This should be done per-vertex.
+			CombinerFinal=NVRegisterCombinerFinal(
+				RGBPortion=(
+					InputA=(Input="GL_TEXTURE0_ARB"	Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputB=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_INVERT_NV")
+					InputC=(Input="GL_ZERO"			Mapping="GL_UNSIGNED_IDENTITY_NV")
+					InputD=(Input="GL_CONSTANT_COLOR0_NV"	Mapping="GL_UNSIGNED_IDENTITY_NV")	// Mix with diffuse color
+				)
+			)
+		)
+		/****************************************************************************************
+		 ****************************************************************************************/
+
+/*
+GL_NONE - Always generates a (0,0,0,0) texture unit RGBA result.
+           Equivalent to disabling all texture targets in conventional
+           OpenGL.
+GL_TEXTURE_1D - Accesses a 1D texture via (s/q).
+
+GL_TEXTURE_2D - Accesses a 2D texture via (s/q,t/q).
+
+GL_TEXTURE_RECTANGLE_NV - Accesses a rectangular texture via (s/q,t/q).
+
+GL_TEXTURE_3D - Accesses a 3D texture via (s/q,t/q,r/q).
+
+GL_TEXTURE_CUBE_MAP_ARB - Accesses a cube map texture via (s,t,r).
+
+<special modes>
+
+GL_PASS_THROUGH_NV - Converts a texture coordinate (s,t,r,q)
+          directly to a [0,1] clamped (r,g,b,a) texture unit RGBA result.
+
+GL_CULL_FRAGMENT_NV - Culls the fragment based on the whether each
+          (s,t,r,q) is "greater than or equal to zero" or "less than zero".
+
+<dependent textures>
+
+GL_OFFSET_TEXTURE_2D_NV - Transforms the signed (ds,dt) components
+          of a previous texture unit by a 2x2 floating-point matrix and
+          then uses the result to offset the stage's texture coordinates
+          for a 2D non-projective texture.
+
+GL_OFFSET_TEXTURE_2D_SCALE_NV - Same as above except the magnitude
+          component of the previous texture unit result scales the red,
+          green, and blue components of the unsigned RGBA texture 2D
+          access.
+
+GL_OFFSET_TEXTURE_RECTANGLE_NV - Similar to GL_OFFSET_TEXTURE_2D_NV
+          except that the texture access is into a rectangular
+          non-projective texture.
+
+GL_OFFSET_TEXTURE_RECTANGLE_SCALE_NV - Similar to
+          GL_OFFSET_TEXTURE_2D_SCALE_NV except that the texture access is
+          into a rectangular non-projective texture.
+
+GL_DEPENDENT_AR_TEXTURE_2D_NV - Converts the alpha and red
+          components of a previous shader result into an (s,t) texture
+          coordinate set to access a 2D non-projective texture.
+
+GL_DEPENDENT_GB_TEXTURE_2D_NV - Converts the green and blue
+          components of a previous shader result into an (s,t) texture
+          coordinate set to access a 2D non-projective texture.
+
+<dot product textures>
+
+GL_DOT_PRODUCT_NV - Computes the dot product of the texture
+          shader's texture coordinate set (s,t,r) with some mapping of the
+          components of a previous texture shader result. The component
+          mapping depends on the type (RGBA or HILO) and signedness of
+          the stage's previous texture input. Other dot product texture
+          programs use the result of this program to compose a texture
+           coordinate set for a dependent texture access. The color result
+           is undefined.
+
+GL_DOT_PRODUCT_TEXTURE_2D_NV - When preceded by a GL_DOT_PRODUCT_NV
+           program in the previous texture shader stage, computes a second
+           similar dot product and composes the two dot products into (s,t)
+           texture coordinate set to access a 2D non-projective texture.
+
+GL_DOT_PRODUCT_TEXTURE_RECTANGLE_NV - Similar to
+           GL_DOT_PRODUCT_TEXTURE_2D_NV except that the texture acces is into
+           a rectangular non-projective texture.
+
+GL_DOT_PRODUCT_TEXTURE_3D_NV - When preceded by two GL_DOT_PRODUCT_NV
+           programs in the previous two texture shader stages, computes a
+           third similar dot product and composes the three dot products
+           into (s,t,r) texture coordinate set to access a 3D non-projective
+           texture.
+
+GL_DOT_PRODUCT_TEXTURE_CUBE_MAP_NV - When preceded by two
+           GL_DOT_PRODUCT_NV programs in the previous two texture shader
+           stages, computes a third similar dot product and composes the
+           three dot products into (s,t,r) texture coordinate set to access
+           a cube map texture.
+
+GL_DOT_PRODUCT_REFLECT_CUBE_MAP_NV - When preceded by two
+           GL_DOT_PRODUCT_NV programs in the previous two texture shader
+           stages, computes a third similar dot product and composes the
+           three dot products into a normal vector (Nx,Ny,Nz). An eye
+           vector (Ex,Ey,Ez) is composed from the q texture coordinates of
+           the three stages. A reflection vector (Rx,Ry,Rz) is computed
+           based on the normal and eye vectors. The reflection vector
+           forms an (s,t,r) texture coordinate set to access a cube map
+           texture.
+
+GL_DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV - Operates like
+           DOT_PRODUCT_REFLECT_CUBE_MAP_NV except that the eye vector
+           (Ex,Ey,Ez) is a user-defined constant rather than composed from
+           the q coordinates of the three stages.
+
+GL_DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV - When used instead of the second
+           GL_DOT_PRODUCT_NV program preceding
+           a GL_DOT_PRODUCT_REFLECT_CUBE_MAP_NV or
+           GL_DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV stage, the normal
+           vector forms an (s,t,r) texture coordinate set to access a
+           cube map texture.
+
+<dot product depth replace>
+
+GL_DOT_PRODUCT_DEPTH_REPLACE_NV - When preceded by a GL_DOT_PRODUCT_NV
+           program in the previous texture shader stage, computes a second
+           similar dot product and replaces the fragment's window-space
+           depth value with the first dot product results divided by
+           the second. The texture unit RGBA result is (0,0,0,0).
+*/
+
+	// Example texture shader usage
+		TestNVTextureStageCollection=(
+			Stage0=NVTextureStage(
+				Mode=""
+			)
+		)

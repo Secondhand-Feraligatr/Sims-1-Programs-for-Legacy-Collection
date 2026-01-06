@@ -1,0 +1,2761 @@
+RHWizGamePainterSims=RHXWizard(
+	// All data used by the wizard is stored here
+	Data=(
+		TextureViewMode = "All"
+		ModelViewMode = "All"
+		ModelViewDirection = "Front"
+		Blend = 0.5
+		Tint = 0.5
+		Stylize = 0.0
+		Saturation = 0.5
+		Mode = 0
+
+		ImageScale = 0.5
+		ImageRotate = 0.5	//0..1, 0.5=centered
+		MaskWidth= 0.75
+		MaskHeight= 0.96
+		MaskStrength = 1.0
+		MaskFeather = 0.3
+		MaskOffsetX = 0.5
+		MaskOffsetY = 0.43
+		ProjectionLength = 0.3
+
+		OpenGLOptionsEnabled = 0
+		MainRenderer = 0 //0 = software 1=opengl
+
+		WireFrame = 0
+		ShowMask=0
+
+		PaintMode=-1	// Solid color (0) or texture (1)?  -1 means not selected
+		PaintTabMode = 0 //ColorTab (0) TextureTab (1)
+
+		CurrentTextureSwatch = 0
+		CurrentLogo = -1
+		// Centered at 218, 47; width is 60, height is 40
+		//	218/256 = 0.8515625
+		//	47/256 = 0.18359375
+		CurrentLogoX=0.8515625
+		CurrentLogoY=0.18359375
+		// 60/256 = 0.234375
+		// 40/256 = 0.15625
+		CurrentLogoScale = 0.2344
+		CurrentLogoFlipped = 0
+
+		CurrentGarment = 0
+		EnableTextures = 1
+
+		CurrentHeadModel = 0
+		CurrentBodyModel = 1
+		//CurrentHandsModel = 2
+		CurrentLeftHandModel = 2
+		CurrentRightHandModel = 2
+
+		CurrentHeadShader = 0
+		CurrentBodyShader = 1
+		//CurrentHandShader = 2
+
+		CurrentHeadPage = 1
+		CurrentBodyPage = 1
+		CurrentLogoPage = 1
+
+		NumberOfHeadPages = 1
+		NumberOfBodyPages = 1
+		NumberOfLogoPages = 1
+
+		TotalHeads = 0
+		TotalBodies = 0
+		TotalLogos = 0
+
+		CurrentUpperGarmentPage = 1
+		CurrentLowerGarmentPage = 1
+		CurrentOtherGarmentPage = 1
+
+		NumberOfUpperGarmentPages = 1
+		NumberOfLowerGarmentPages = 1
+		NumberOfOtherGarmentPages = 1
+
+		TotalUpperGarments = 0
+		TotalLowerGarments = 0
+		TotalOtherGarments = 0
+
+		SimCharacterFilterVersion = 0
+		FileNameHead=UIString()
+		FileNameBody=UIString()
+		FileNameExtHead = ""
+		FileNameExtBody = ""
+		HeadSaveComplete="           "
+		BodySaveComplete="           "
+
+		PressedSound = "Pressed.wav"
+		DeniedSound = "Denied.wav"
+
+		EnableRadioButtons = 1 
+		EnableNormalButtons = 1 
+
+		ChildAdultRadio = 0
+		MaleFemaleRadio = 0
+		LgtMedDrkRadio = 0
+	)
+
+	EntryPoint=RHWizardStage(
+		Action="GotoStartScreen"
+	)
+
+/*************************************************************************************************************************************************************************/
+	StartScreen=RHWizardStage(
+		Geometry="Maximized"
+
+		RHWStyle="SimsWindow"
+//		RHWStyle="Normal"
+
+
+		Title="The Sims(TM) Creator"
+
+		Background="Gradient"
+		ColorTopLeft=(Red=0 Green=0 Blue=62)
+		ColorBottomLeft=(Red=0 Green=0 Blue=62)
+		ColorTopRight=(Red=0 Green=10 Blue=121)
+		ColorBottomRight=(Red=0 Green=10 Blue=121)		
+
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 Identifier="Number1")
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0 = 0.0 Ratio1 = 1.0 Ratio2 = 0.0 Ratio3 = 0.0 Ratio4 = 0.0 Ratio5 = 0.0 Identifier="Number2")
+			GUIRegion(
+				Layout=(Name="Standard" Style="X")
+				GUIDummyImage(
+					ImageName = "StartBarLeft"
+				)
+
+				GUIButton( NormalImage="Aboutrest" PressedImage="Aboutpressed" TouchedNormalImage="Abouthover" DisabledNormalImage="Aboutrest" DisabledPressedImage="Aboutpressed" DisabledTouchedNormalImage="Abouthover" Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsAboutBox'" ToolTip="Credits" EnabledTarget ="EnableNormalButtons") 
+				GUIDummyImage( ImageName = "StartBarLeftB" )
+			)
+			GUIRegion(
+				Layout=(Name="Ratio" Style="Y" Ratio0 = 1.0 Ratio1 = 0.0 Ratio2 = 1.0 Identifier="Number3")
+				GUIDummyImage(ImageName="StartBarTop" Stretch=1)
+				GUIRegion(
+					Background="Gradient"
+					ColorTopLeft=(Red=20 Green=43 Blue=115)
+					ColorBottomLeft=(Red=20 Green=43 Blue=115)
+					ColorTopRight=(Red=21 Green=57 Blue=134)
+					ColorBottomRight=(Red=21 Green=57 Blue=134)		
+
+					GUITextArea(Content="The Sims(TM) Creator" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0) /*BackgroundColor=(Red=21 Blue=129 Green=60)*/ FixedHeight=18 Placement="Center")
+				)
+				GUIDummyImage(ImageName="StartBarBottom" Stretch=1)
+			)
+
+			GUIDummyImage(
+				ImageName = "StartBarRight"
+			)
+
+			GUIButton(
+				NormalImage="MaxisWWWrest"
+				PressedImage="MaxisWWWpressed"
+				TouchedNormalImage="MaxisWWWhover"
+				DisabledNormalImage="MaxisWWWrest"
+				DisabledPressedImage="MaxisWWWpressed"
+				DisabledTouchedNormalImage="MaxisWWWhover"
+				Action="Parent::LaunchBrowser URL='www.thesims.com' "
+				ToolTip="The Sims(TM) Website"
+				EnabledTarget ="EnableNormalButtons"
+			)
+			GUIButton(
+				NormalImage="StartBarHelp_rest"
+				PressedImage="StartBarHelp_pressed"
+				TouchedNormalImage="StartBarHelp_hover"
+				DisabledNormalImage="StartBarHelp_rest"
+				DisabledPressedImage="StartBarHelp_pressed"
+				DisabledTouchedNormalImage="StartBarHelp_hover"
+				Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsHelpStartScreen'"
+				ToolTip="Help"
+				EnabledTarget ="EnableNormalButtons"
+			)
+
+			GUIButton(
+				NormalImage="StartBarExit_rest"
+				PressedImage="StartBarExit_pressed"
+				TouchedNormalImage="StartBarExit_hover"
+				DisabledNormalImage="StartBarExit_rest"
+				DisabledPressedImage="StartBarExit_pressed"
+				DisabledTouchedNormalImage="StartBarExit_hover"
+				Action="Parent::ExitGamesPainter"
+				ToolTip="Exit"
+				EnabledTarget ="EnableNormalButtons"			
+			)
+		)
+
+
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=1.0 Identifier="Number4")
+			//Left side buttons		
+			GUIRegion(
+				Manager=(
+					Name="SimsRoundedBorder"
+					RemoveSide = 1 //Remove left side
+					Content=GUIRegion(	
+						Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=1.0 Ratio5=0.0 Ratio6=1.0)
+						BackgroundColor=(Red=82 Green=143 Blue=203)
+						GUISpacer()
+						GUIRegion(
+							Layout=(Name="Standard" Style="Y")
+							GUIImageRadioButton(
+								DeselectedImage="SimsAdult_rest"
+								SelectedImage="SimsAdult_pressed"
+								TouchedDeselectedImage="SimsAdult_hover"
+
+								DisabledDeselectedImage="SimsAdult_rest"
+								DisabledSelectedImage="SimsAdult_pressed"
+								DisabledTouchedDeselectedImage="SimsAdult_hover"
+
+								Action="Parent::Adult"
+								ToolTip="Adult"
+								Target = "ChildAdultRadio"
+								Value = 0
+								EnabledTarget = "EnableRadioButtons"
+							)
+							GUISpacer(Height=5)
+							GUIImageRadioButton(
+								DeselectedImage="SimsChild_rest"
+								SelectedImage="SimsChild_pressed"
+								TouchedDeselectedImage="SimsChild_hover"
+
+								DisabledDeselectedImage="SimsChild_rest"
+								DisabledSelectedImage="SimsChild_pressed"
+								DisabledTouchedDeselectedImage="SimsChild_hover"
+
+								Action="Parent::Child"
+								ToolTip="Child"
+								Target = "ChildAdultRadio"
+								Value = 1
+								EnabledTarget = "EnableRadioButtons"
+							)
+						)
+						GUISpacer()
+						GUIRegion(
+							Layout=(Name="Standard" Style="Y")
+							GUIImageRadioButton(
+								DeselectedImage="SimsFemale_rest"
+								SelectedImage="SimsFemale_pressed"
+								TouchedDeselectedImage="SimsFemale_hover"
+
+								DisabledDeselectedImage="SimsFemale_rest"
+								DisabledSelectedImage="SimsFemale_pressed"
+								DisabledTouchedDeselectedImage="SimsFemale_hover"
+							
+								Action="Parent::Female"
+								ToolTip="Female"
+								Target = "MaleFemaleRadio"
+								Value = 1
+								EnabledTarget = "EnableRadioButtons"
+							)
+							GUISpacer(Height=5)
+							GUIImageRadioButton(
+								DeselectedImage="SimsMale_rest"
+								SelectedImage="SimsMale_pressed"
+								TouchedDeselectedImage="SimsMale_hover"
+
+								DisabledDeselectedImage="SimsMale_rest"
+								DisabledSelectedImage="SimsMale_pressed"
+								DisabledTouchedDeselectedImage="SimsMale_hover"
+							
+								Action="Parent::Male"
+								ToolTip="Male"
+								Target = "MaleFemaleRadio"
+								Value = 0
+								EnabledTarget = "EnableRadioButtons"
+							)
+						)
+						GUISpacer()
+						GUIRegion(
+							Layout=(Name="Standard" Style="Y")
+							GUIImageRadioButton(
+								DeselectedImage="SimsHandLgt_rest"
+								SelectedImage="SimsHandLgt_pressed"
+								TouchedDeselectedImage="SimsHandLgt_hover"
+
+								DisabledDeselectedImage="SimsHandLgt_rest"
+								DisabledSelectedImage="SimsHandLgt_pressed"
+								DisabledTouchedDeselectedImage="SimsHandLgt_hover"
+							
+
+								Action="Parent::LightSkin"
+								ToolTip="Light Skin"
+								Target = "LgtMedDrkRadio"
+								Value = 0
+								EnabledTarget = "EnableRadioButtons"
+							)
+							GUISpacer(Height=5)
+							GUIImageRadioButton(
+								DeselectedImage="SimsHandMed_rest"
+								SelectedImage="SimsHandMed_pressed"
+								TouchedDeselectedImage="SimsHandMed_hover"
+
+								DisabledDeselectedImage="SimsHandMed_rest"
+								DisabledSelectedImage="SimsHandMed_pressed"
+								DisabledTouchedDeselectedImage="SimsHandMed_hover"
+							
+								Action="Parent::MedSkin"
+								ToolTip="Medium Skin"
+								Target = "LgtMedDrkRadio"
+								Value = 1
+								EnabledTarget = "EnableRadioButtons"
+							)
+							GUISpacer(Height=5)
+							GUIImageRadioButton(
+								DeselectedImage="SimsHandDrk_rest"
+								SelectedImage="SimsHandDrk_pressed"
+								TouchedDeselectedImage="SimsHandDrk_hover"
+
+								DisabledDeselectedImage="SimsHandDrk_rest"
+								DisabledSelectedImage="SimsHandDrk_pressed"
+								DisabledTouchedDeselectedImage="SimsHandDrk_hover"
+							
+								Action="Parent::DarkSkin"
+								ToolTip="Dark Skin"
+								Target = "LgtMedDrkRadio"
+								Value = 2
+								EnabledTarget = "EnableRadioButtons"
+							)
+						)
+						GUISpacer()
+					)
+				)
+			)
+		
+			//The heads and bodies	
+			GUIRegion(
+				Manager=(
+					Name="SimsRoundedBorder"
+					RemoveSide = 0 //Remove left side
+					Content=GUIRegion(
+						Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+						GUISpacer(Width=20)
+						GUIRegion(	
+							//Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 Ratio3=1.0 Ratio4=0.0 Ratio5=0.0 RatioIdentifier="Number5")
+							Layout=(Name="Equal" Style="Y" RatioIdentifier="Number5")
+							GUIRegion(
+								Manager=(
+									Name="SimsRoundedBorder"
+									Content=GUIRegion(		
+										Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 )
+										GUISpacer(Height=10)
+										GUIRegion(
+											GUISpacer(Width = 353 Height = 148 RiggingState="Client")
+											Manager=(
+												Name="SimsModelSelector" 
+												NumberOfPages="NumberOfHeadPages" 
+												CurrentPage="CurrentHeadPage" 
+												Target="CurrentHeadModel" 
+												Rows = 2
+												Columns = 4
+												Width = 353 
+ 												Height = 148
+												SimCharacterFilterVersion="SimCharacterFilterVersion" 
+												ModelType="Head"
+												TotalModels="TotalHeads"
+												ZoomScale = 1.1
+											)
+										)
+										GUIRegion(
+											Layout=(Name="Standard" Style="Y")
+											GUISpacer(Width=0 Height = 10 )
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0 = 1.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0 Identifier="Number6")
+												GUISpacer( Width=0 Height=0  RiggingState="Client")
+												GUITextArea(Target="TotalHeads" TextColor=(Red=1.0 Blue =1.0 Green=1.0) FixedHeight=13 ReLayoutOnChange=1)
+												GUISpacer( Width=4 Height=0 )
+												GUITextArea(Content="Head Skins" TextColor=(Red=1.0 Blue =1.0 Green=1.0) FixedHeight=13)
+												GUISpacer( Width=0 Height=0 )
+											)		
+											GUISimsNumberChoice(Target="CurrentHeadPage" TargetMax = "NumberOfHeadPages" )
+											GUISpacer(Width=0 Height = 10 )
+										)	
+									)
+								)
+							)
+						
+							GUIRegion(
+								Manager=(
+									Name="SimsRoundedBorder"
+									Content=GUIRegion(	
+										Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 )
+										GUISpacer(Height=10)
+										GUIRegion(
+											GUISpacer(Width = 353 Height = 162)
+											Manager=(
+												Name="SimsModelSelector" 
+												NumberOfPages="NumberOfBodyPages" 
+												CurrentPage="CurrentBodyPage" 
+												Target="CurrentBodyModel" 
+												Rows = 2
+												Columns = 4
+												Width = 353
+												Height = 162
+												SimCharacterFilterVersion="SimCharacterFilterVersion" 
+												ModelType="Body"
+												TotalModels="TotalBodies"
+												ZoomScale = 0.8
+											)	
+										)
+										GUIRegion(
+											Layout=(Name="Standard" Style="Y")
+											GUISpacer(Width=0 Height = 10)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0 = 1.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0 Identifier="Number7")
+												GUISpacer( Width=0 Height=0 )
+												GUITextArea(Target="TotalBodies" TextColor=(Red=1.0 Blue =1.0 Green=1.0) FixedHeight=13 ReLayoutOnChange=1) 
+												GUISpacer( Width=4 Height=0 )
+												GUITextArea(Content="Body Skins" TextColor=(Red=1.0 Blue =1.0 Green=1.0) FixedHeight=13)
+												GUISpacer( Width=0 Height=0 )
+											)
+											GUISimsNumberChoice(Target="CurrentBodyPage" GridWidth=10 TargetMax="NumberOfBodyPages")
+											GUISpacer(Width=0 Height = 10)
+										)
+									)
+								)
+							)
+						//	GUISpacer(Height=10)
+						)
+						GUISpacer(Width=20)
+					)
+				)
+			)
+			
+			//The 3D view of the sim
+			GUIRegion(
+				Manager=(
+					Name="SimsRoundedBorder"
+					Content=GUIRegion(		
+						Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+						GUISpacer(Height = 5)
+						GUIRegion(				
+							Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+							GUIRegion(
+								Layout=(Name="Standard" Style="Y")
+								GUISpacer(Height = 5)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+									GUISpacer(Width=0 Height = 0 )
+									GUITextArea(Content='3D Preview' Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0))						
+									GUISpacer(Width=0 Height = 0 )
+								)	
+								GUISpacer(Height = 5)
+							)
+							GUIRegion(
+								Manager=(Name="SimsDownBevelBorder"
+									Content=GUIRegion(
+										Layout=(Name="Singleton")
+								
+										WorldView(
+											PopupMenuActive = 0
+											ViewMode="3D"
+											Background=SimsViewportBackgroundGradient()
+											ZoomExtentsScale = 0.7
+										)
+						
+									)
+								)
+							)
+							GUIRegion(
+								GUITextArea(Content='Left click and drag to rotate.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0))						
+								GUITextArea(Content='Right click and drag to zoom.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0))						
+								GUITextArea(Content='Middle or L and R click and drag to Pan.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0))						
+								GUITextArea(Content='Press R to reset the view.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0))						
+							)
+						)
+						GUISpacer(Height = 5)
+					)
+				)
+			)
+		)
+
+		GUIRegion(
+			Manager=(
+				Name="SimsRoundedBorder"
+				Content=GUIRegion(			
+					Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=1.0 Ratio5=0.0 Ratio6=1.0 Ratio7=0.0 Ratio8=1.0 Ratio9=0.0 Ratio10=1.0)
+					GUISpacer()
+					GUIButtonSims(
+						Label="Face Photo Wizard" 
+						Action="Parent::SetupEditFace"
+						ToolTip="Put your face on your Sim"
+						EnabledTarget ="EnableNormalButtons"
+					)		
+					GUISpacer()		
+					GUIButtonSims(
+						Label="Sims Wardrobe"
+						Action="Parent::GotoEditClothes"
+						ToolTip="Change your Sims clothes"
+						EnabledTarget ="EnableNormalButtons"
+					)
+					GUISpacer()
+					GUIButtonSims(
+						Label="Paint"
+						Action="Parent::GotoPaintScreen"
+						ToolTip="Paint your Sim"
+						EnabledTarget ="EnableNormalButtons"
+					)
+					GUISpacer()
+					GUIButtonSims(
+						Label="Save"
+						Action="Parent::GotoSaveScreen"
+						ToolTip="Save"
+						EnabledTarget ="EnableNormalButtons"
+					)
+					GUISpacer()
+					GUIButtonSims(
+						Label="Exit"
+						Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsExitDialog'"
+						ToolTip="Exit"
+						EnabledTarget ="EnableNormalButtons"
+					)
+					GUISpacer()
+				)
+			)
+		)
+	)
+
+	/*************************************************************************************************************************************************************************/
+
+	SaveScreen=RHWizardStage(
+		Geometry="Maximized"
+		RHWStyle="SimsWindow"
+
+		Background="Gradient"
+		ColorTopLeft=(Red=0 Green=0 Blue=62)
+		ColorBottomLeft=(Red=0 Green=0 Blue=62)
+		ColorTopRight=(Red=0 Green=10 Blue=121)
+		ColorBottomRight=(Red=0 Green=10 Blue=121)
+
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Identifier="Save top ratio")
+		//The title bar
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0 = 0.0 Ratio1 = 1.0 Ratio2 = 0.0 Ratio3 = 0.0 Ratio4 = 0.0 Ratio5 = 0.0 Identifier="Number2")
+			GUIRegion(
+				Layout=(Name="Standard" Style="X")
+				GUIDummyImage(
+					ImageName = "StartBarLeft"
+				)
+
+				GUIButton( NormalImage="Aboutrest" PressedImage="Aboutpressed" TouchedNormalImage="Abouthover" DisabledNormalImage="Aboutrest" DisabledPressedImage="Aboutpressed" DisabledTouchedNormalImage="Abouthover" Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsAboutBox'" ToolTip="Credits" EnabledTarget ="EnableNormalButtons") 
+				GUIDummyImage( ImageName = "StartBarLeftB" )
+			)
+			GUIRegion(
+				Layout=(Name="Ratio" Style="Y" Ratio0 = 1.0 Ratio1 = 0.0 Ratio2 = 1.0 Identifier="Number3")
+				GUIDummyImage(ImageName="StartBarTop" Stretch=1)
+				GUIRegion(
+					Background="Gradient"
+					ColorTopLeft=(Red=20 Green=43 Blue=115)
+					ColorBottomLeft=(Red=20 Green=43 Blue=115)
+					ColorTopRight=(Red=21 Green=57 Blue=134)
+					ColorBottomRight=(Red=21 Green=57 Blue=134)		
+
+					GUITextArea(Content="Save Sim" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0) /*BackgroundColor=(Red=21 Blue=129 Green=60)*/ FixedHeight=18 Placement="Center")
+				)
+				GUIDummyImage(ImageName="StartBarBottom" Stretch=1)
+			)
+
+			GUIDummyImage(
+				ImageName = "StartBarRight"
+			)
+
+			GUIButton(
+				NormalImage="MaxisWWWrest"
+				PressedImage="MaxisWWWpressed"
+				TouchedNormalImage="MaxisWWWhover"
+				DisabledNormalImage="MaxisWWWrest"
+				DisabledPressedImage="MaxisWWWpressed"
+				DisabledTouchedNormalImage="MaxisWWWhover"
+				Action="Parent::LaunchBrowser URL='www.thesims.com' "
+				ToolTip="The Sims(TM) Website"
+				EnabledTarget ="EnableNormalButtons"
+			)
+			GUIButton(
+				NormalImage="StartBarHelp_rest"
+				PressedImage="StartBarHelp_pressed"
+				TouchedNormalImage="StartBarHelp_hover"
+				DisabledNormalImage="StartBarHelp_rest"
+				DisabledPressedImage="StartBarHelp_pressed"
+				DisabledTouchedNormalImage="StartBarHelp_hover"
+				Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsHelpSaveScreen'"
+				ToolTip="Help"
+				EnabledTarget ="EnableNormalButtons"
+			)
+
+			GUIButton(
+				NormalImage="StartBarExit_rest"
+				PressedImage="StartBarExit_pressed"
+				TouchedNormalImage="StartBarExit_hover"
+				DisabledNormalImage="StartBarExit_rest"
+				DisabledPressedImage="StartBarExit_pressed"
+				DisabledTouchedNormalImage="StartBarExit_hover"
+				Action="Parent::ExitGamesPainter"
+				ToolTip="Exit"
+				EnabledTarget ="EnableNormalButtons"			
+			)
+		)
+		//Main Area
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 RespectChildRequests=1 Identifier="Save Vertical Spacing")
+			GUISpacer()
+			GUIRegion(
+				Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0 RespectChildRequests=1 Identifier="Save Horizontal Spacing")
+				GUISpacer()
+				GUIRegion(
+					Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0  Ratio3=0.0 Ratio4=0.0 Identifier="Save body/head Sections" RespectChildRequests=1)
+					GUIRegion(
+						Manager=(
+							Name="SimsRoundedBorder"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0  Ratio3=0.0 RespectChildRequests=1)
+								GUIRegion(
+									GUISpacer()
+									GUITextArea(Content="Head" Font="Label" Placement="Left" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+									GUISpacer()
+								)
+								GUISimsModelViewer(
+									ModelIDTarget = "CurrentHeadModel"
+									ZoomScale = 1.7
+									Width = 100
+									Height = 100
+									FixedSize = 1
+									//EnableRefresh = 0
+									MouseEnabled = 0
+								)
+								GUIRegion(
+									GUISpacer()
+									GUIRegion(
+										Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 Ratio3=0.0 Ratio4=0.0)
+										GUISpacer()
+										GUIRegion(
+											Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1 = 0.0 Ratio2=1.0)
+												GUITextArea(Content="Name" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+												GUISpacer()
+												GUITextField(Target="FileNameExtHead" Size=14 UpdateEveryKeyPress=1)
+											)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0)
+												GUITextArea(Content="FileName" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+												GUISpacer()
+												GUITextArea(Target="FileNameHead" ReLayoutOnChange=0  TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+											)
+											GUISpacer()
+										)
+										GUISpacer()
+										GUIButtonSims(Label="Save" Action="Parent::OKSaveHead" ToolTip="Save this head to disk" EnabledTarget ="EnableNormalButtons")
+										GUISpacer()
+									)
+								)
+								GUITextArea(Target="HeadSaveComplete" Font="Label"  TextColor=(Red=0.0 Blue =0.0 Green=1.0))
+							)
+						)
+						//GUISpacer(Width=99999 Height = 99999)
+					)
+					GUISpacer(Height = 5)
+					GUIRegion(
+						Manager=(
+							Name="SimsRoundedBorder"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0  Ratio3=0.0 RespectChildRequests=1)
+								GUIRegion(
+									GUISpacer()
+									GUITextArea(Content="Body" Font="Label" Placement="Left" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+									GUISpacer()
+								)
+								GUISimsModelViewer(
+									ModelIDTarget = "CurrentBodyModel"
+									ZoomScale = 1.7
+									Width = 100
+									Height = 100
+									FixedSize = 1
+									//EnableRefresh = 0
+									MouseEnabled = 0
+								)
+								GUIRegion(
+									GUISpacer()
+									GUIRegion(
+										Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 Ratio3=0.0 Ratio4=0.0)
+										GUISpacer()
+										GUIRegion(
+											Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1 = 0.0 Ratio2=1.0)
+												GUITextArea(Content="Name" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+												GUISpacer()
+												GUITextField(Target="FileNameExtBody" Size=14 UpdateEveryKeyPress=1)
+											)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0)
+												GUITextArea(Content="FileName" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+												GUISpacer()
+												GUITextArea(Target="FileNameBody" ReLayoutOnChange=0  TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+											)
+											GUISpacer()
+										)
+										GUISpacer()
+										GUIButtonSims(Label="Save" Action="Parent::OKSaveBody" ToolTip="Save this body to disk" EnabledTarget ="EnableNormalButtons")
+										GUISpacer()
+									)
+								)
+								GUITextArea(Target="BodySaveComplete" Font="Label"  TextColor=(Red=0.0 Blue =0.0 Green=1.0))
+							)
+						)
+						//GUISpacer(Width=99999 Height = 99999)
+					)
+					GUISpacer(Height = 5)
+					GUIRegion(
+						Manager=(
+							Name="SimsRoundedBorder"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="Y" Ratio0=0.9 Ratio1=0.1 Identifier="Save OK button Ratio")
+								GUISpacer()
+								GUIButtonSims(Label="Done" Action="Parent::OKSave" ToolTip="Return to main screen" EnabledTarget ="EnableNormalButtons")
+							)
+						)
+					)
+				)
+				GUISpacer()
+			)
+			GUISpacer()
+		)
+	)
+
+	/*************************************************************************************************************************************************************************/
+	ClothesScreen=RHWizardStage(
+		Geometry="Maximized"
+		RHWStyle="SimsWindow"
+		Title="The Sims(TM) Creator"
+
+		Background="Gradient"
+		ColorTopLeft=(Red=0 Green=0 Blue=62)
+		ColorBottomLeft=(Red=0 Green=0 Blue=62)
+		ColorTopRight=(Red=0 Green=10 Blue=121)
+		ColorBottomRight=(Red=0 Green=10 Blue=121)		
+
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0)
+
+		//The title bar
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0 = 0.0 Ratio1 = 1.0 Ratio2 = 0.0 Ratio3 = 0.0 Ratio4 = 0.0 Ratio5 = 0.0 Identifier="Number2")
+			GUIRegion(
+				Layout=(Name="Standard" Style="X")
+				GUIDummyImage(
+					ImageName = "StartBarLeft"
+				)
+
+				GUIButton( NormalImage="Aboutrest" PressedImage="Aboutpressed" TouchedNormalImage="Abouthover" DisabledNormalImage="Aboutrest" DisabledPressedImage="Aboutpressed" DisabledTouchedNormalImage="Abouthover" Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsAboutBox'" ToolTip="Credits" EnabledTarget ="EnableNormalButtons") 
+				GUIDummyImage( ImageName = "StartBarLeftB" )
+			)
+			GUIRegion(
+				Layout=(Name="Ratio" Style="Y" Ratio0 = 1.0 Ratio1 = 0.0 Ratio2 = 1.0 Identifier="Number3")
+				GUIDummyImage(ImageName="StartBarTop" Stretch=1)
+				GUIRegion(
+					Background="Gradient"
+					ColorTopLeft=(Red=20 Green=43 Blue=115)
+					ColorBottomLeft=(Red=20 Green=43 Blue=115)
+					ColorTopRight=(Red=21 Green=57 Blue=134)
+					ColorBottomRight=(Red=21 Green=57 Blue=134)		
+
+					GUITextArea(Content="Sims Wardrobe" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0) /*BackgroundColor=(Red=21 Blue=129 Green=60)*/ FixedHeight=18 Placement="Center")
+				)
+				GUIDummyImage(ImageName="StartBarBottom" Stretch=1)
+			)
+
+			GUIDummyImage(
+				ImageName = "StartBarRight"
+			)
+
+			GUIButton(
+				NormalImage="MaxisWWWrest"
+				PressedImage="MaxisWWWpressed"
+				TouchedNormalImage="MaxisWWWhover"
+				DisabledNormalImage="MaxisWWWrest"
+				DisabledPressedImage="MaxisWWWpressed"
+				DisabledTouchedNormalImage="MaxisWWWhover"
+				Action="Parent::LaunchBrowser URL='www.thesims.com' "
+				ToolTip="The Sims(TM) Website"
+				EnabledTarget ="EnableNormalButtons"
+			)
+			GUIButton(
+				NormalImage="StartBarHelp_rest"
+				PressedImage="StartBarHelp_pressed"
+				TouchedNormalImage="StartBarHelp_hover"
+				DisabledNormalImage="StartBarHelp_rest"
+				DisabledPressedImage="StartBarHelp_pressed"
+				DisabledTouchedNormalImage="StartBarHelp_hover"
+				Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsHelpClothesScreen'"
+				ToolTip="Help"
+				EnabledTarget ="EnableNormalButtons"
+			)
+
+			GUIButton(
+				NormalImage="StartBarExit_rest"
+				PressedImage="StartBarExit_pressed"
+				TouchedNormalImage="StartBarExit_hover"
+				DisabledNormalImage="StartBarExit_rest"
+				DisabledPressedImage="StartBarExit_pressed"
+				DisabledTouchedNormalImage="StartBarExit_hover"
+				Action="Parent::ExitGamesPainter"
+				ToolTip="Exit"
+				EnabledTarget ="EnableNormalButtons"			
+			)
+		)
+
+		// main area
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y"
+				Ratio0=0.0	// spacer
+				Ratio1=1.0	// center
+				Ratio2=0.0	// spacer
+			)
+			GUISpacer(Width=0 Height=5)
+
+			// main area
+			GUIRegion(
+				Layout=(Name="Ratio" Style="X"
+					Ratio0=0.0	// spacer
+					Ratio1=1.0	// center
+					Ratio2=0.0	// spacer
+				)
+
+				// left side spacer
+				GUISpacer(Width=5 Height=0)
+
+				GUIRegion(
+					Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0 Ratio2=0.0)
+
+					// center
+					GUIRegion(
+						Layout=(Name="Ratio" Style="X" Ratio0=0.4 Ratio1=0.6 RespectChildRequests=0)
+
+						// left hand side: clothes/accessories swatches
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0)
+							GUIRegion(
+								Layout=(Name="Ratio" Style="Y"
+									Ratio0=1.0
+									Ratio1=0.0
+									Ratio2=1.0
+									Ratio3=0.0
+									Ratio4=1.0
+								)
+								
+								// upper garment swatch
+								GUIRegion(
+									Manager=(
+										Name="SimsRoundedBorder"
+										Content=GUIRegion(
+											Layout=(Name="Ratio" Style="Y"
+												Ratio0=0.0
+												Ratio1=1.0
+												Ratio2=0.0
+												Ratio3=0.0
+											)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+												GUISpacer(Width=0 Height=0)
+												GUISimsTextureSwatch(
+													Enabled=1
+													Target="CurrentGarment"
+													TargetPage="CurrentUpperGarmentPage"
+													TargetMaxPage="NumberOfUpperGarmentPages"
+													TargetCount = "TotalUpperGarments"
+													Source=3
+													FilterSuffix="U"
+													GridWidth=0		//auto
+													GridHeight=2	//auto
+													TileWidth=66
+													TileHeight=66
+													HideButtons=1
+												)
+												GUISpacer(Width=0 Height=0)
+											)
+
+											GUISpacer( Width=0 Height=0 )
+
+											// page controller
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0 = 1.0 Ratio1=0.0 Ratio2 = 0.0 Ratio3 = 1.0)
+												GUISpacer( Width=0 Height=0 )
+												GUITextArea( Target="TotalUpperGarments" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+												GUITextArea(Content=" Upper body garments" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+												GUISpacer( Width=0 Height=0 )
+											)
+
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+												GUISpacer( Width=0 Height=0 )
+												GUISimsNumberChoice(
+													Target="CurrentUpperGarmentPage"
+													TargetMax = "NumberOfUpperGarmentPages"
+												)
+												GUISpacer( Width=0 Height=0 )
+											)
+										)
+									)
+								)
+
+								GUISpacer(Width=0 Height=5)
+
+								// lower garment swatch
+								GUIRegion(
+									Manager=(
+										Name="SimsRoundedBorder"
+										Content=GUIRegion(
+											Layout=(Name="Ratio" Style="Y"
+												Ratio0=0.0
+												Ratio1=1.0
+												Ratio2=0.0
+												Ratio3=0.0
+											)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+												GUISpacer(Width=5 Height=0)
+												GUISimsTextureSwatch(
+													Enabled=1
+													Target="CurrentGarment"
+													TargetPage="CurrentLowerGarmentPage"
+													TargetMaxPage="NumberOfLowerGarmentPages"
+													TargetCount = "TotalLowerGarments"
+													Source=3
+													FilterSuffix="L"
+													GridWidth=0		//auto
+													GridHeight=0	//auto
+													TileWidth=66
+													TileHeight=66
+													HideButtons=1
+												)
+												GUISpacer(Width=5 Height=0)
+											)
+
+											GUISpacer( Width=0 Height=0 )
+
+											// page controller
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0 = 1.0 Ratio1=0.0 Ratio2 = 0.0 Ratio3 = 1.0)
+												GUISpacer( Width=0 Height=0 )
+												GUITextArea( Target="TotalLowerGarments" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+												GUITextArea(Content=" Lower body garments" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+												GUISpacer( Width=0 Height=0 )
+											)
+
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+												GUISpacer( Width=0 Height=0 )
+												GUISimsNumberChoice(
+													Target="CurrentLowerGarmentPage"
+													TargetMax = "NumberOfLowerGarmentPages"
+												)
+												GUISpacer( Width=0 Height=0 )
+											)
+										)
+									)
+								)
+
+								GUISpacer(Width=0 Height=5)
+
+								// other garment swatch
+								GUIRegion(
+									Manager=(
+										Name="SimsRoundedBorder"
+										Content=GUIRegion(
+											Layout=(Name="Ratio" Style="Y"
+												Ratio0=0.0
+												Ratio1=1.0
+												Ratio2=0.0
+												Ratio3=0.0
+											)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+												GUISpacer(Width=0 Height=0)
+												GUISimsTextureSwatch(
+													Enabled=1
+													Target="CurrentGarment"
+													TargetPage="CurrentOtherGarmentPage"
+													TargetMaxPage="NumberOfOtherGarmentPages"
+													TargetCount = "TotalOtherGarments"
+													Source=3
+													FilterSuffix="A"
+													GridWidth=0		//auto
+													GridHeight=0	//auto
+													TileWidth=66
+													TileHeight=66
+													HideButtons=1
+												)
+												GUISpacer(Width=0 Height=0)
+											)
+
+											GUISpacer( Width=0 Height=0 )
+
+											// page controller
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0 = 1.0 Ratio1=0.0 Ratio2 = 0.0 Ratio3 = 1.0)
+												GUISpacer( Width=0 Height=0 )
+												GUITextArea( Target="TotalOtherGarments" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+												GUITextArea(Content=" Accessories" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+												GUISpacer( Width=0 Height=0 )
+											)
+
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+												GUISpacer( Width=0 Height=0 )
+												GUISimsNumberChoice(
+													Target="CurrentOtherGarmentPage"
+													TargetMax = "NumberOfOtherGarmentPages"
+												)
+												GUISpacer( Width=0 Height=0 )
+											)
+
+										)
+									)
+								)
+							)
+							GUISpacer(Width=5 Height=0)
+						) // end of left hand side
+
+						// right hand side
+						// 3d view, textures and logo
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" Ratio0=0.67 Ratio1=1.33)
+
+							// 3d view
+							GUIRegion(
+								Manager=(
+									Name="SimsRoundedBorder"
+									Content=GUIRegion(
+										Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+										GUISpacer(Width=20 Height=0)
+										GUIRegion(
+											Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+											GUISpacer(Width=0 Height=10)
+											GUIRegion(
+												Manager=(Name="SimsDownBevelBorder"
+													Content=GUIRegion(
+														WorldView(
+															PopupMenuActive = 0
+															FixedSize = 1
+															Width = 10000
+															Height = 10000
+															ViewMode="3D"
+															Background=SimsViewportBackgroundGradient()
+															ZoomExtentsScale = 0.7
+														)
+													)
+												)
+											)
+											GUISpacer(Width=0 Height=20)
+										)
+										GUISpacer(Width=20 Height=0)
+									)
+								)
+							)
+
+							// textures/logo
+							GUIRegion(
+								Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0)
+								GUISpacer(Width=5 Height=0)
+								GUIRegion(
+									Manager=(
+										Name="SimsRoundedBorder"
+										Content=GUIRegion(
+											Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 Ratio3=0.0)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 Ratio2=1.0)
+												GUISpacer(Width=0 Height=0)
+												GUITextArea(Content="Materials" Font="Label" TextColor=(Red=1.0 Blue =1.0 Green=1.0))
+												GUISpacer(Width=0 Height=0)
+											)
+											GUISimsTextureSwatch(
+												Enabled=1
+												Target="CurrentTextureSwatch"
+												GridWidth=0		// auto
+												GridHeight=0	// auto
+												TileWidth=40
+												TileHeight=40
+												Reversed=1
+												EnabledTarget = "EnableTextures"
+												//TileTexture=1
+											)
+											GUISpacer(Width=0 Height=5)
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=1.0 Ratio3=0.0RespectChildRequests=1)
+												GUISpacer(Width=0 Height=0)
+												GUIButtonSims(Label="Load Texture" Action="Parent::AddTexture" ToolTip="Add another material texture to the collection" EnabledTarget ="EnableNormalButtons") 
+												GUIButtonSims(Label="Add Logo" Action="Parent::GotoLogoScreen" ToolTip="Add a logo to your sims clothes" EnabledTarget ="EnableNormalButtons")
+												GUISpacer(Width=0 Height=0)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+					
+					GUISpacer(Width=0 Height=5)
+
+					// remove/ok/cancel buttons
+					GUIRegion(
+						Manager=(
+							Name="SimsRoundedBorder"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="X"
+									Ratio0=0.0
+									Ratio1=0.0
+									Ratio2=0.0
+									Ratio3=0.1
+									Ratio4=0.0
+									Ratio5=0.0
+									Ratio6=0.0
+									RespectChildRequests=1
+								)
+								GUIButtonSims(Label="Undo" Action="Parent::RemoveGarment" ToolTip="Remove the previous garment" EnabledTarget ="EnableNormalButtons")
+								GUISpacer(Width=10 Height=0)
+								GUIButtonSims(Label="Undress" Action="Parent::ApplyNakedSkin" ToolTip="Restart dressing this sim" EnabledTarget ="EnableNormalButtons")
+								GUISpacer(Width=0 Height=0)
+								GUIButtonSims(Label="Done" Action="Parent::OKClothes" ToolTip="Finish dressing this sim" EnabledTarget ="EnableNormalButtons")
+								GUISpacer(Width=10 Height=0)
+								GUIButtonSims(Label="Cancel" Action="Parent::CancelClothes" ToolTip="Return to the main screen without changing clothes" EnabledTarget ="EnableNormalButtons")
+							)
+						)
+					)
+				)
+
+				// right side spacer
+				GUISpacer(Width=5 Height=0)
+			)
+
+			GUISpacer(Width=0 Height=5)
+		)
+	)
+
+	/*************************************************************************************************************************************************************************/
+	ClothesLogoScreen=RHWizardStage(
+		Geometry="Maximized"
+		RHWStyle="SimsWindow"
+
+		GUIRegion(
+			Layout = (Name="Ratio" Style="Y"
+				Ratio0 = 0.0	// title bar
+				Ratio1 = 0.0	// spacer
+				Ratio2 = 1.0	// main area
+				Ratio3 = 0.0	// buttons
+				Identifier = "Logo Start Ratio"
+			)
+
+			Background="Gradient"
+			ColorTopLeft=(Red=0 Green=0 Blue=62)
+			ColorBottomLeft=(Red=0 Green=0 Blue=62)
+			ColorTopRight=(Red=0 Green=10 Blue=121)
+			ColorBottomRight=(Red=0 Green=10 Blue=121)	
+
+			//The title bar
+			GUIRegion(
+				Layout=(Name="Ratio" Style="X" Ratio0 = 0.0 Ratio1 = 1.0 Ratio2 = 0.0 Ratio3 = 0.0 Ratio4 = 0.0 Ratio5 = 0.0 Identifier="Number2")
+				GUIRegion(
+					Layout=(Name="Standard" Style="X")
+					GUIDummyImage(
+						ImageName = "StartBarLeft"
+					)
+
+					GUIButton( NormalImage="Aboutrest" PressedImage="Aboutpressed" TouchedNormalImage="Abouthover" DisabledNormalImage="Aboutrest" DisabledPressedImage="Aboutpressed" DisabledTouchedNormalImage="Abouthover" Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsAboutBox'" ToolTip="Credits" EnabledTarget ="EnableNormalButtons") 
+					GUIDummyImage( ImageName = "StartBarLeftB" )
+				)
+				GUIRegion(
+					Layout=(Name="Ratio" Style="Y" Ratio0 = 1.0 Ratio1 = 0.0 Ratio2 = 1.0 Identifier="Number3")
+					GUIDummyImage(ImageName="StartBarTop" Stretch=1)
+					GUIRegion(
+						Background="Gradient"
+						ColorTopLeft=(Red=20 Green=43 Blue=115)
+						ColorBottomLeft=(Red=20 Green=43 Blue=115)
+						ColorTopRight=(Red=21 Green=57 Blue=134)
+						ColorBottomRight=(Red=21 Green=57 Blue=134)		
+
+						GUITextArea(Content="Logo Selector" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0) /*BackgroundColor=(Red=21 Blue=129 Green=60)*/ FixedHeight=18 Placement="Center")
+					)
+					GUIDummyImage(ImageName="StartBarBottom" Stretch=1)
+				)
+
+				GUIDummyImage(
+					ImageName = "StartBarRight"
+				)
+
+				GUIButton(
+					NormalImage="MaxisWWWrest"
+					PressedImage="MaxisWWWpressed"
+					TouchedNormalImage="MaxisWWWhover"
+					DisabledNormalImage="MaxisWWWrest"
+					DisabledPressedImage="MaxisWWWpressed"
+					DisabledTouchedNormalImage="MaxisWWWhover"
+					Action="Parent::LaunchBrowser URL='www.thesims.com' "
+					ToolTip="The Sims(TM) Website"
+					EnabledTarget ="EnableNormalButtons"
+				)
+				GUIButton(
+					NormalImage="StartBarHelp_rest"
+					PressedImage="StartBarHelp_pressed"
+					TouchedNormalImage="StartBarHelp_hover"
+					DisabledNormalImage="StartBarHelp_rest"
+					DisabledPressedImage="StartBarHelp_pressed"
+					DisabledTouchedNormalImage="StartBarHelp_hover"
+					Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsHelpLogoScreen'"
+					ToolTip="Help"
+					EnabledTarget ="EnableNormalButtons"
+				)
+
+				GUIButton(
+					NormalImage="StartBarExit_rest"
+					PressedImage="StartBarExit_pressed"
+					TouchedNormalImage="StartBarExit_hover"
+					DisabledNormalImage="StartBarExit_rest"
+					DisabledPressedImage="StartBarExit_pressed"
+					DisabledTouchedNormalImage="StartBarExit_hover"
+					Action="Parent::ExitGamesPainter"
+					ToolTip="Exit"
+					EnabledTarget ="EnableNormalButtons"			
+				)
+			)
+
+			GUISpacer(Width=0 Height=5)
+
+			// main area
+			GUIRegion(
+				Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+				GUISpacer(Width = 5 Height = 0)
+				GUIRegion(
+					Layout=(Name="Ratio" Style="X"
+						Ratio0= 0.4    //Image and sliders
+						Ratio1= 0.0	// Spacer
+						Ratio2= 0.4    // 3D view
+						Ratio3= 0.0    // Spacer
+						Ratio4= 0.2    // Logo Picker
+						Identifier = "Logo Screen Main Area"
+						RespectChildRequests=0 
+					)
+					//Image and Sliders
+					GUIRegion(
+						Layout=(Name="Ratio" Style="Y"
+							Ratio0 = 1.0	// view
+							Ratio1 = 0.0	// Spacer
+							Ratio2 = 0.0    // Controls
+							Identifier = "Logo Screen Image and Sliders"
+						)
+						// views
+						GUIRegion(
+							Manager=(
+								Name="SimsRoundedBorder"
+								Content=GUIRegion(
+									Layout=(Name="Ratio" Style="Y"
+										Ratio0=1.0
+										Ratio1=0.0
+										Ratio2=1.0
+										Identifier = "Logo 2D placer"
+									)
+									GUISpacer(Width=0 Height=0);
+									GUIRegion(
+										Manager=(Name="SimsDownBevelBorder"
+											Content=GUIRegion(
+												BackgroundColor=(Red=0 Green=0 Blue=0)
+												Layout=(Name="Singleton")
+												GUISimsLogoPlacer()
+											)
+										)
+									)
+									GUISpacer(Width=0 Height=0);
+								)
+							)
+						)
+						GUISpacer(Width = 5 Height=0)
+						// controls
+						GUIRegion(
+							Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Identifier="I")
+							GUISpacer(Width=0 Height=5)
+							GUIRegion(
+								Layout=(Name="Equal" Style="X")
+								GUIRegion(
+									Manager=(
+										Name="SimsRoundedBorder"
+										Content=GUIRegion(
+											Layout=(Name="Equal" Style="Y")
+											GUIRegion(
+												Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Identifier="A")
+												GUIRegion(
+													Layout=(Name="Ratio" Style="X" Ratio0=0.15 Ratio1=0.85 RespectChildRequests=0 Identifier="B")
+													GUITextArea(Content="X:" Font="Label"  TextColor=(Red=1.0 Blue =1.0 Green=1.0))		
+													GUISlider(
+														SliderImage = "SimsSliderBar"
+														BarStartImage = "SimsSliderBarStart"
+														BarMiddleImage = "SimsSliderBarMiddle"
+														BarEndImage = "SimsSliderBarEnd"
+														Min=0.0
+														Max=1.0
+														Placement="Entire"
+														Style = 3
+														Target="CurrentLogoX"
+													)
+												)
+												GUISpacer(Width=0 Height=5)
+											)
+
+											GUIRegion(
+												Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Identifier="C")
+												GUIRegion(
+													Layout=(Name="Ratio" Style="X" Ratio0=0.15 Ratio1=0.85 RespectChildRequests=0  Identifier="D")
+													GUITextArea(Content="Y:" Font="Label"  TextColor=(Red=1.0 Blue =1.0 Green=1.0))		
+													GUIRegion(
+														Layout=(Name="Singleton")
+														GUISlider(
+															SliderImage = "SimsSliderBar"
+															BarStartImage = "SimsSliderBarStart"
+															BarMiddleImage = "SimsSliderBarMiddle"
+															BarEndImage = "SimsSliderBarEnd"
+															Min=0.0
+															Max=1.0
+															Placement="Entire"
+															Style = 3
+															Target="CurrentLogoY"
+														)
+													)
+												)
+												GUISpacer(Width=0 Height=5)
+											)
+
+											GUIRegion(
+												Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Identifier="E")
+												GUIRegion(
+													Layout=(Name="Ratio" Style="X" Ratio0=0.15 Ratio1=0.85 RespectChildRequests=0 Identifier="F")
+													GUITextArea(Content="Scale:" Font="Label"  TextColor=(Red=1.0 Blue =1.0 Green=1.0))		
+													GUISlider(
+														SliderImage = "SimsSliderBar"
+														BarStartImage = "SimsSliderBarStart"
+														BarMiddleImage = "SimsSliderBarMiddle"
+														BarEndImage = "SimsSliderBarEnd"
+														Min=0.0
+														Max=0.4
+														Placement="Entire"
+														Style = 3
+														Target="CurrentLogoScale"
+													)
+												)
+												GUISpacer(Width=0 Height=5)
+											)
+										)
+									)
+								)
+							)
+						)					
+					)
+					GUISpacer(Width = 5 Height = 0)
+					// 3d view
+					GUIRegion(
+						Manager=(
+							Name="SimsRoundedBorder"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+								GUISpacer(Width=20 Height=0)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+									GUISpacer(Width=0 Height=20)
+									GUIRegion(
+										Manager=(Name="SimsDownBevelBorder"
+											Content=GUIRegion(
+												Manager=(
+													Name="SimsScratchDataSource"
+													Source = "Scene"
+													Content=GUIRegion(
+														WorldView(
+															PopupMenuActive = 0
+															FixedSize = 1
+															Width = 10000
+															Height = 10000
+															ViewMode="3D"
+															Background=SimsViewportBackgroundGradient()
+															ZoomExtentsScale = 0.7
+														)
+													)
+												)
+											)
+										)
+									)
+									GUISpacer(Width=0 Height=20)
+								)
+								GUISpacer(Width=20 Height=0)
+							)
+						)
+					)
+					GUISpacer(Width = 5 Height = 0)
+					GUIRegion(
+						Manager=(
+							Name="SimsRoundedBorder"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Identifier="Logo")
+								GUISpacer(Width=5 Height=0)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0  Ratio1=1.0 Ratio2=0.0 Ratio3=0.0 Identifier="G")
+									GUITextArea(Content="Logos" Font="Label"  TextColor=(Red=1.0 Blue =1.0 Green=1.0))												
+									GUISimsTextureSwatch(
+										Enabled=1
+										Target="CurrentLogo"
+										GridWidth=0 //auto
+										GridHeight=0	// auto
+										TileWidth=40
+										TileHeight=40
+										Source = 2
+									)
+									GUISpacer(Width=0 Height=5)
+									GUIRegion(
+										Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0 Indentifier="Logo End buttons" RespectChildRequests=1)
+										GUISpacer(Width=0 Height=0)
+										GUIButtonSims(Label="Load Logo" Action="Parent::AddLogo" ToolTip="Add another Logo to the collection" EnabledTarget ="EnableNormalButtons") 
+										GUISpacer(Width=0 Height=0)
+									)
+								)
+							)
+						)
+					)
+				)
+				GUISpacer(Width=5 Height = 0)
+			)
+			GUIRegion(
+				Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+				GUISpacer(Width=5 Height=0)
+				GUIRegion(
+					Manager=(
+						Name="SimsRoundedBorder"
+						Content=GUIRegion(
+							Layout=(Name="Ratio" Style="X" Identifier="Logo End buttons" RespectChildRequests=1
+								Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=1.0 Ratio4=0.0 Ratio5=0.0 Ratio6=0.0
+							)
+							GUIButtonSims(Label="Flip Logo" Action="Parent::FlipLogo" ToolTip="Flip the selected logo on your sim" EnabledTarget ="EnableNormalButtons")
+							GUISpacer(Width=10 Height=0)
+							GUIButtonSims(Label="Apply Logo" Action="Parent::ApplyLogo" ToolTip="Apply the selected logo to your sim" EnabledTarget ="EnableNormalButtons")
+
+							GUISpacer(Width=0 Height=0)
+
+							GUIButtonSims(Label="Done" Action="Parent::OKLogo" ToolTip="Keep logos and return to the wardrobe" EnabledTarget ="EnableNormalButtons")
+							GUISpacer(Width=10 Height=0)
+							GUIButtonSims(Label="Cancel" Action="Parent::CancelLogo" ToolTip="Remove logos ans return to the wardrobe" EnabledTarget ="EnableNormalButtons")
+						)
+					)
+				)
+				GUISpacer(Width=5 Height=0)
+			)
+		)
+	)
+	
+
+
+
+
+
+
+
+
+
+
+	
+	/********************************************************************************************/
+	/********************************************************************************************/
+	/***************                                                             ****************/
+	/***************                    FACE PROJECTION SCREENS                  ****************/
+	/***************                                                             ****************/
+	/********************************************************************************************/
+	/********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+	FaceProjectionScreen1=RHWizardStage(
+		Geometry="Maximized"
+		RHWStyle="SimsWindow"
+		RHWPreferredSize=1
+		Title="The Sims(TM) Creator"
+
+
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=0.0)
+		Background="Gradient" ColorTopLeft=(Red=0 Green=0 Blue=62) ColorBottomLeft=(Red=0 Green=0 Blue=62) ColorTopRight=(Red=0 Green=10 Blue=121) ColorBottomRight=(Red=0 Green=10 Blue=121)
+
+		//TOP TITLE BAR
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0 = 0.0 Ratio1 = 1.0 Ratio2 = 0.0 Ratio3 = 0.0 Ratio4 = 0.0 Ratio5 = 0.0 Identifier="Number2")
+			GUIRegion(
+				Layout=(Name="Standard" Style="X")
+				GUIDummyImage(
+					ImageName = "StartBarLeft"
+				)
+
+				GUIButton( NormalImage="Aboutrest" PressedImage="Aboutpressed" TouchedNormalImage="Abouthover" DisabledNormalImage="Aboutrest" DisabledPressedImage="Aboutpressed" DisabledTouchedNormalImage="Abouthover" Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsAboutBox'" ToolTip="Credits" EnabledTarget ="EnableNormalButtons") 
+				GUIDummyImage( ImageName = "StartBarLeftB" )
+			)
+			GUIRegion(
+				Layout=(Name="Ratio" Style="Y" Ratio0 = 1.0 Ratio1 = 0.0 Ratio2 = 1.0 Identifier="Number3")
+				GUIDummyImage(ImageName="StartBarTop" Stretch=1)
+				GUIRegion(
+					Background="Gradient"
+					ColorTopLeft=(Red=20 Green=43 Blue=115)
+					ColorBottomLeft=(Red=20 Green=43 Blue=115)
+					ColorTopRight=(Red=21 Green=57 Blue=134)
+					ColorBottomRight=(Red=21 Green=57 Blue=134)		
+
+					GUITextArea(Content="Face Photo Wizard: Step 1" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0) /*BackgroundColor=(Red=21 Blue=129 Green=60)*/ FixedHeight=18 Placement="Center")
+				)
+				GUIDummyImage(ImageName="StartBarBottom" Stretch=1)
+			)
+
+			GUIDummyImage(
+				ImageName = "StartBarRight"
+			)
+
+			GUIButton(
+				NormalImage="MaxisWWWrest"
+				PressedImage="MaxisWWWpressed"
+				TouchedNormalImage="MaxisWWWhover"
+				DisabledNormalImage="MaxisWWWrest"
+				DisabledPressedImage="MaxisWWWpressed"
+				DisabledTouchedNormalImage="MaxisWWWhover"
+				Action="Parent::LaunchBrowser URL='www.thesims.com' "
+				ToolTip="The Sims(TM) Website"
+				EnabledTarget ="EnableNormalButtons"
+			)
+			GUIButton(
+				NormalImage="StartBarHelp_rest"
+				PressedImage="StartBarHelp_pressed"
+				TouchedNormalImage="StartBarHelp_hover"
+				DisabledNormalImage="StartBarHelp_rest"
+				DisabledPressedImage="StartBarHelp_pressed"
+				DisabledTouchedNormalImage="StartBarHelp_hover"
+				Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsHelpFaceScreen1'"
+				ToolTip="Help"
+				EnabledTarget ="EnableNormalButtons"
+			)
+
+			GUIButton(
+				NormalImage="StartBarExit_rest"
+				PressedImage="StartBarExit_pressed"
+				TouchedNormalImage="StartBarExit_hover"
+				DisabledNormalImage="StartBarExit_rest"
+				DisabledPressedImage="StartBarExit_pressed"
+				DisabledTouchedNormalImage="StartBarExit_hover"
+				Action="Parent::ExitGamesPainter"
+				ToolTip="Exit"
+				EnabledTarget ="EnableNormalButtons"			
+			)
+		)
+
+		GUISpacer(Height=5)
+
+		//PANELS
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0=0.5 Ratio1=0.5 RespectChildRequests=0)
+
+			//LEFT PANELS + SPACE BETWEEN LEFT & RIGHT PANELS
+			GUIRegion(
+				Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0)
+
+				//LEFT PANELS
+				GUIRegion(
+					Layout=(Name="Ratio" Style="Y" Ratio0=0.58 Ratio1=0.42 RespectChildRequests=0)
+
+					//BITMAP VIEW PANEL
+					GUIRegion(						
+						Manager=(Name="SimsRoundedBorderWide"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="X" Ratio0=0.6 Ratio1=0.4 RespectChildRequests=0)
+
+								//BITMAP VIEW
+								GUIRegion(
+									Manager=(Name="SimsDownBevelBorder"
+										Content=GUIRegion(
+											Layout=(Name="Singleton")
+											GUIImageSelect(
+												TransformToolActive = 0
+												ShowTransfromBorder = 1
+												EnablePan = 1
+												Blend="Blend" Tint="Tint" Stylize="Stylize" Saturation="Saturation"
+												ImageScale="ImageScale"
+												ImageRotate="ImageRotate" 
+											)
+										)
+									)
+								)
+
+								//BITMAP CONTROLS AND VERTICAL SPACER
+								GUIRegion(
+									Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0)
+
+									GUISpacer(Width=10)
+
+									//BITMAP CONTROLS
+									GUIRegion(
+										Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+
+										//BITMAP SLIDERS
+										GUIRegion(
+											Layout=(Name="Standard" Style="Y")
+											GUITextArea(Content="Rotate" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="ImageRotate" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Size" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="ImageScale" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+										)
+
+										GUISpacer()
+
+										GUIRegion(
+											Layout=(Name="Ratio" Style="X" RespectChildRequests=0 Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+											GUISpacer(Width=0 Height=0)
+											GUIButtonSims(Label="Load Face" Action="Parent::LoadFace" ToolTip="Load your own photo from disk" EnabledTarget ="EnableNormalButtons")
+											GUISpacer(Width=0 Height=0)
+										)
+									)
+								)
+							)
+						)
+					)
+
+					//INSTRUCTION PANEL AND SPACER
+					GUIRegion(
+						Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0)
+
+						GUISpacer(Height=5)
+
+						GUIRegion(
+							Manager=(Name="SimsRoundedBorder"
+								Content=GUIRegion(
+									GUITextArea(Content='Instructions:' Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0))
+									GUITextArea(Content='To put your face on the Sim model, follow these instructions.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUITextArea(Content='1) Select "Load Face" to load a face image file.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUITextArea(Content='2) Move your face to the center of the white box by clicking on and dragging the image to position the face inside the box.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUITextArea(Content='3) If the face is not straight, use "Rotate" to get the eyes level.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUITextArea(Content='4) Use the "Size" slider to fit the face into the box approximately as shown.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUITextArea(Content='5) When you are satisfied with the result, select "Next".' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUISpacer(Height=99999999)
+								)
+							)
+						)
+					)
+				)
+
+				GUISpacer(Width=10)
+			)
+
+			//RIGHT PANEL
+			GUIRegion(
+				Manager=(Name="SimsRoundedBorderWide"
+					Content=GUIRegion(
+						Layout=(Name="Ratio" Style="Y" Ratio0=0.5 Ratio1=0.0 Ratio2=0.5 Ratio3=0.0)
+						GUISpacer()
+						GUIDummyImage(ImageName="EditFaceImages" Blend=1)
+						GUISpacer()
+
+						//3D CONTROLS (COMPRESSED SO THE USER CAN'T SEE THEM BUT THEY STILL TAKE
+						//UP THE CORRECT VERTICAL SPACE FOR THE SCREEN LAYOUT)
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0 RespectChildRequests=0)
+
+							GUIRegion(
+								Layout=(Name="Singleton")
+								GUISpacer()
+							)
+
+							//3D CONTROLS + SPACE BETWEEN VIEW & CONTROLS
+							GUIRegion(
+								Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0)
+
+								GUISpacer(Height=10)
+
+								//3D CONTROLS
+								GUIRegion(
+									Layout=(Name="Ratio" Style="X" Ratio0=0.5 Ratio1=0.5 RespectChildRequests=0)
+
+									//LEFT CONTROL AREA + SPACE BETWEEN LEFT & RIGHT CONTROLS
+									GUIRegion(
+										Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0)
+
+										GUISpacer()
+
+										//LEFT CONTROLS + SPACE BETWEEN LEFT & RIGHT CONTROLS
+										GUIRegion(
+											Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0)
+
+											//LEFT CONTROLS
+											GUIRegion(
+												Layout=(Name="Standard" Style="Y")
+
+												GUITextArea(Content="Mask Width" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+												GUISlider(Target="MaskWidth" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+												GUITextArea(Content="Mask Height" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+												GUISlider(Target="MaskHeight" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+												GUITextArea(Content="Mask Left/Right" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+												GUISlider(Target="MaskOffsetX" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+												GUITextArea(Content="Mask Up/Down" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+												GUISlider(Target="MaskOffsetY" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											)
+
+											//SPACE BETWEEN LEFT & RIGHT CONTROLS
+											GUISpacer(Width=10)
+										)
+									)
+
+									//RIGHT CONTROL AREA
+									GUIRegion(
+										Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0)
+
+										GUISpacer()
+
+										//RIGHT CONTROLS
+										GUIRegion(
+											Layout=(Name="Standard" Style="Y")
+
+											//RIGHT BUTTONS
+											GUIRegion(
+												Layout=(Name="Ratio" Style="X" Ratio0=0.4 Ratio1=0.0 Ratio2=0.2 Ratio3=0.0 Ratio4=0.4)
+
+												GUISpacer()
+												GUICheckBoxButton(Target="WireFrame" ToolTip="Wire Frame" UncheckedImage="SimsWireButton_rest" TouchedUncheckedImage="SimsWireButton_hover" TouchedCheckedImage="SimsWireButton_hover" CheckedImage="SimsWireButton_pressed")
+												GUISpacer()
+												GUICheckBoxButton(Target="ShowMask" ToolTip="Mask" UncheckedImage="SimsMaskButton_rest" TouchedUncheckedImage="SimsMaskButton_hover" TouchedCheckedImage="SimsMaskButton_hover" CheckedImage="SimsMaskButton_pressed")
+												GUISpacer()
+											)
+
+											GUITextArea(Content="Blend" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="MaskStrength" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Feather" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="MaskFeather" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+										)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+
+
+		GUISpacer(Height=5)
+
+		//BOTTOM BUTTON BAR
+		GUIRegion(
+			Manager=(Name="SimsRoundedBorder"
+				Content=GUIRegion(
+					Layout=(Name="Ratio" Style="X" RespectChildRequests=1 Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=0.0 Ratio5=1.0 Ratio6=0.0)
+					GUIButtonSims(Label="< Back" Action="Parent::CancelFace" ToolTip="Return to previous screen" EnabledTarget ="EnableNormalButtons")
+					GUISpacer(Width=10 Height=0)
+					GUIButtonSims(Label="Reset" Action="Parent::ResetFaceProjectionValues" ToolTip="Reset controls" EnabledTarget ="EnableNormalButtons") 
+					GUISpacer(Width=10 Height=0)
+					GUIButtonSims(Label="Next >" Action="Parent::GotoEditFace2" ToolTip="Continue to next screen" EnabledTarget ="EnableNormalButtons") 
+					GUISpacer(Width=0 Height=0)
+					GUIButtonSims(Label="Cancel" Action="Parent::CancelFace" ToolTip="Quit the Face Photo Wizard" EnabledTarget ="EnableNormalButtons")
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+	FaceProjectionScreen2=RHWizardStage(
+		Geometry="Maximized"
+		RHWStyle="SimsWindow"
+		RHWPreferredSize=1
+		Title="The Sims(TM) Creator"
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=0.0)
+		Background="Gradient" ColorTopLeft=(Red=0 Green=0 Blue=62) ColorBottomLeft=(Red=0 Green=0 Blue=62) ColorTopRight=(Red=0 Green=10 Blue=121) ColorBottomRight=(Red=0 Green=10 Blue=121)
+
+		//TOP TITLE BAR
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0 = 0.0 Ratio1 = 1.0 Ratio2 = 0.0 Ratio3 = 0.0 Ratio4 = 0.0 Ratio5 = 0.0 Identifier="Number2")
+			GUIRegion(
+				Layout=(Name="Standard" Style="X")
+				GUIDummyImage(
+					ImageName = "StartBarLeft"
+				)
+
+				GUIButton( NormalImage="Aboutrest" PressedImage="Aboutpressed" TouchedNormalImage="Abouthover" DisabledNormalImage="Aboutrest" DisabledPressedImage="Aboutpressed" DisabledTouchedNormalImage="Abouthover" Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsAboutBox'" ToolTip="Credits" EnabledTarget ="EnableNormalButtons") 
+				GUIDummyImage( ImageName = "StartBarLeftB" )
+			)
+			GUIRegion(
+				Layout=(Name="Ratio" Style="Y" Ratio0 = 1.0 Ratio1 = 0.0 Ratio2 = 1.0 Identifier="Number3")
+				GUIDummyImage(ImageName="StartBarTop" Stretch=1)
+				GUIRegion(
+					Background="Gradient"
+					ColorTopLeft=(Red=20 Green=43 Blue=115)
+					ColorBottomLeft=(Red=20 Green=43 Blue=115)
+					ColorTopRight=(Red=21 Green=57 Blue=134)
+					ColorBottomRight=(Red=21 Green=57 Blue=134)		
+
+					GUITextArea(Content="Face Photo Wizard: Step 2" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0) /*BackgroundColor=(Red=21 Blue=129 Green=60)*/ FixedHeight=18 Placement="Center")
+				)
+				GUIDummyImage(ImageName="StartBarBottom" Stretch=1)
+			)
+
+			GUIDummyImage(
+				ImageName = "StartBarRight"
+			)
+
+			GUIButton(
+				NormalImage="MaxisWWWrest"
+				PressedImage="MaxisWWWpressed"
+				TouchedNormalImage="MaxisWWWhover"
+				DisabledNormalImage="MaxisWWWrest"
+				DisabledPressedImage="MaxisWWWpressed"
+				DisabledTouchedNormalImage="MaxisWWWhover"
+				Action="Parent::LaunchBrowser URL='www.thesims.com' "
+				ToolTip="The Sims(TM) Website"
+				EnabledTarget ="EnableNormalButtons"
+			)
+			GUIButton(
+				NormalImage="StartBarHelp_rest"
+				PressedImage="StartBarHelp_pressed"
+				TouchedNormalImage="StartBarHelp_hover"
+				DisabledNormalImage="StartBarHelp_rest"
+				DisabledPressedImage="StartBarHelp_pressed"
+				DisabledTouchedNormalImage="StartBarHelp_hover"
+				Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsHelpFaceScreen4'"
+				ToolTip="Help"
+				EnabledTarget ="EnableNormalButtons"
+			)
+
+			GUIButton(
+				NormalImage="StartBarExit_rest"
+				PressedImage="StartBarExit_pressed"
+				TouchedNormalImage="StartBarExit_hover"
+				DisabledNormalImage="StartBarExit_rest"
+				DisabledPressedImage="StartBarExit_pressed"
+				DisabledTouchedNormalImage="StartBarExit_hover"
+				Action="Parent::ExitGamesPainter"
+				ToolTip="Exit"
+				EnabledTarget ="EnableNormalButtons"			
+			)
+		)
+
+		GUISpacer(Height=5)
+
+		//PANELS
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0=0.5 Ratio1=0.5 RespectChildRequests=0)
+
+			//LEFT PANELS + SPACE BETWEEN LEFT & RIGHT PANELS
+			GUIRegion(
+				Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0)
+
+				//LEFT PANELS
+				GUIRegion(
+					Layout=(Name="Ratio" Style="Y" Ratio0=0.58 Ratio1=0.42 RespectChildRequests=0)
+
+					//BITMAP VIEW PANEL
+					GUIRegion(						
+						Manager=(Name="SimsRoundedBorderWide"
+							Content=GUIRegion(
+								Layout=(Name="Ratio" Style="X" Ratio0=0.6 Ratio1=0.4 RespectChildRequests=0)
+
+								//BITMAP VIEW
+								GUIRegion(
+									Manager=(Name="SimsDownBevelBorder"
+										Content=GUIRegion(
+											Layout=(Name="Singleton")
+											GUIImageSelect(
+												Blend="Blend" Tint="Tint" Stylize="Stylize" Saturation="Saturation"
+												ImageScale="ImageScale"
+												ImageRotate="ImageRotate" 
+											)
+										)
+									)
+								)
+
+								//BITMAP CONTROLS AND VERTICAL SPACER
+								GUIRegion(
+									Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0)
+
+									GUISpacer(Width=10)
+
+									//BITMAP CONTROLS
+									GUIRegion(
+										Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+
+										//BITMAP SLIDERS
+										GUIRegion(
+											Layout=(Name="Standard" Style="Y")
+											GUITextArea(Content="Rotate" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="ImageRotate" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Size" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="ImageScale" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Tint" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="Tint" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Saturation" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="Saturation" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Stylize" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="Stylize" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+										)
+
+										GUISpacer()
+
+										GUIRegion(
+											Layout=(Name="Ratio" Style="X" RespectChildRequests=0 Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+											GUISpacer(Width=0 Height=0)
+											GUIButtonSims(Label="Load Face" Action="Parent::LoadFace" ToolTip="Load your own photo from disk" EnabledTarget ="EnableNormalButtons")
+											GUISpacer(Width=0 Height=0)
+										)
+									)
+								)
+							)
+						)
+					)
+
+					//INSTRUCTION PANEL AND SPACER
+					GUIRegion(
+						Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0)
+
+						GUISpacer(Height=5)
+
+						GUIRegion(
+							Manager=(Name="SimsRoundedBorder"
+								Content=GUIRegion(
+									GUITextArea(Content='Instructions:' Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0))
+									GUITextArea(Content='1) Adjust the framing box by moving the white handles to a better position around the face.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUITextArea(Content='2) Adjust the look of the image by using "Tint", "Saturation", and "Stylize" sliders.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUITextArea(Content='3) Adjust the mask on the face using the mask sliders and the wire frame tool so the image sits on the skin to your liking.' Font="SimsHelpBodyFont" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+									GUISpacer(Height=99999999)
+								)
+							)
+						)
+					)
+				)
+
+				GUISpacer(Width=10)
+			)
+
+			//RIGHT PANEL
+			GUIRegion(
+				Manager=(Name="SimsRoundedBorderWide"
+					Content=GUIRegion(
+						Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0)
+
+						//3D VIEW
+						GUIRegion(
+							Manager=(Name="SimsDownBevelBorder"
+								Content=GUIRegion(
+									Layout=(Name="Singleton")
+									GUIBasicProjection(
+										Mode="Mode" Blend="Blend" Tint="Tint" Stylize="Stylize" Saturation="Saturation"
+										WireFrame="WireFrame" ImageScale="ImageScale"
+										ImageRotate="ImageRotate" MaskWidth="MaskWidth"
+										MaskHeight="MaskHeight" MaskFeather="MaskFeather"
+										MaskStrength="MaskStrength" ShowMask="ShowMask"
+										MaskOffsetX="MaskOffsetX" MaskOffsetY="MaskOffsetY"
+										ProjectionLength="ProjectionLength"
+										Background=SimsViewportBackgroundGradient()
+									)
+								)
+							)
+						)
+
+						//3D CONTROLS + SPACE BETWEEN VIEW & CONTROLS
+						GUIRegion(
+							Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0)
+
+							GUISpacer(Height=10)
+
+							//3D CONTROLS
+							GUIRegion(
+								Layout=(Name="Ratio" Style="X" Ratio0=0.5 Ratio1=0.5 RespectChildRequests=0)
+
+								//LEFT CONTROL AREA + SPACE BETWEEN LEFT & RIGHT CONTROLS
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0)
+
+									GUISpacer()
+
+									//LEFT CONTROLS + SPACE BETWEEN LEFT & RIGHT CONTROLS
+									GUIRegion(
+										Layout=(Name="Ratio" Style="X" Ratio0=1.0 Ratio1=0.0)
+
+										//LEFT CONTROLS
+										GUIRegion(
+											Layout=(Name="Standard" Style="Y")
+
+											GUITextArea(Content="Mask Up/Down" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="MaskOffsetY" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Mask Left/Right" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="MaskOffsetX" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Mask Width" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))
+											GUISlider(Target="MaskWidth" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+											GUITextArea(Content="Mask Height" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+											GUISlider(Target="MaskHeight" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+										)
+
+										//SPACE BETWEEN LEFT & RIGHT CONTROLS
+										GUISpacer(Width=10)
+									)
+								)
+
+								//RIGHT CONTROL AREA
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0)
+
+									GUISpacer()
+
+									//RIGHT CONTROLS
+									GUIRegion(
+										Layout=(Name="Standard" Style="Y")
+
+										//RIGHT BUTTONS
+										GUIRegion(
+											Layout=(Name="Ratio" Style="X" Ratio0=0.4 Ratio1=0.0 Ratio2=0.2 Ratio3=0.0 Ratio4=0.4)
+
+											GUISpacer()
+											GUICheckBoxButton(Target="ShowMask" ToolTip="Mask" UncheckedImage="SimsMaskButton_rest" TouchedUncheckedImage="SimsMaskButton_hover" TouchedCheckedImage="SimsMaskButton_hover" CheckedImage="SimsMaskButton_pressed")
+											GUISpacer()
+											GUICheckBoxButton(Target="WireFrame" ToolTip="Wire Frame" UncheckedImage="SimsWireButton_rest" TouchedUncheckedImage="SimsWireButton_hover"  TouchedCheckedImage="SimsWireButton_hover" CheckedImage="SimsWireButton_pressed")
+											GUISpacer()
+										)
+
+										GUITextArea(Content="Blend" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+										GUISlider(Target="MaskStrength" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+										GUITextArea(Content="Feather" Font="Label" TextColor=(Red=1.0 Blue=1.0 Green=1.0))		
+										GUISlider(Target="MaskFeather" SliderImage="SimsSliderBar" BarStartImage="SimsSliderBarStart" BarMiddleImage="SimsSliderBarMiddle" BarEndImage="SimsSliderBarEnd" Min=0.0 Max=1.0 Placement="Entire" Style=3)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+
+		GUISpacer(Height=5)
+
+		//BOTTOM BUTTON BAR
+		GUIRegion(
+			Manager=(Name="SimsRoundedBorder"
+				Content=GUIRegion(
+					Layout=(Name="Ratio" Style="X" RespectChildRequests=1 Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=1.0 Ratio4=0.0 Ratio5=0.0 Ratio6=0.0)
+
+					GUIButtonSims(Label="< Back" Action="Parent::GotoEditFace1" ToolTip="Return to previous screen" EnabledTarget ="EnableNormalButtons")
+					GUISpacer(Width=10 Height=0)
+					GUIButtonSims(Label="Reset" Action="Parent::ResetFaceProjectionValues" ToolTip="Reset controls" EnabledTarget ="EnableNormalButtons")
+					GUISpacer(Width=0 Height=0)
+					GUIButtonSims(Label="Done" Action="Parent::OKFace" ToolTip="Finish the Face Photo Wizard" EnabledTarget ="EnableNormalButtons")
+					GUISpacer(Width=10 Height=0)
+					GUIButtonSims(Label="Cancel" Action="Parent::CancelFace" ToolTip="Quit the Face Photo Wizard" EnabledTarget ="EnableNormalButtons")
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/********************************************************************************************/
+	/********************************************************************************************/
+	/***************                                                             ****************/
+	/***************                END OF FACE PROJECTION SCREENS               ****************/
+	/***************                                                             ****************/
+	/********************************************************************************************/
+	/********************************************************************************************/
+
+
+	SplitModelEditor=RHWizardStage(
+		Geometry="Maximized"
+		Layout=(
+			Name="Ratio" 
+			Style="Y"
+			Ratio0 = 0.0
+			Ratio1 = 1.0
+			Ratio2 = 0.0
+		)
+		RHWStyle="SimsWindow"
+		RHWPreferredSize=1	// Resize so that the window matches the preferred size.
+		Title="The Sims(TM) Creator"
+		Background="Gradient" ColorTopLeft=(Red=0 Green=0 Blue=62) ColorBottomLeft=(Red=0 Green=0 Blue=62) ColorTopRight=(Red=0 Green=10 Blue=121) ColorBottomRight=(Red=0 Green=10 Blue=121)
+
+
+		//Top Bar
+	//The title bar
+		GUIRegion(
+			Layout=(Name="Ratio" Style="X" Ratio0 = 0.0 Ratio1 = 1.0 Ratio2 = 0.0 Ratio3 = 0.0 Ratio4 = 0.0 Ratio5 = 0.0 Identifier="Number2")
+			GUIRegion(
+				Layout=(Name="Standard" Style="X")
+				GUIDummyImage(
+					ImageName = "StartBarLeft"
+				)
+
+				GUIButton( NormalImage="Aboutrest" PressedImage="Aboutpressed" TouchedNormalImage="Abouthover" DisabledNormalImage="Aboutrest" DisabledPressedImage="Aboutpressed" DisabledTouchedNormalImage="Abouthover" Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsAboutBox'" ToolTip="Credits" EnabledTarget ="EnableNormalButtons") 
+				GUIDummyImage( ImageName = "StartBarLeftB" )
+			)
+			GUIRegion(
+				Layout=(Name="Ratio" Style="Y" Ratio0 = 1.0 Ratio1 = 0.0 Ratio2 = 1.0 Identifier="Number3")
+				GUIDummyImage(ImageName="StartBarTop" Stretch=1)
+				GUIRegion(
+					Background="Gradient"
+					ColorTopLeft=(Red=20 Green=43 Blue=115)
+					ColorBottomLeft=(Red=20 Green=43 Blue=115)
+					ColorTopRight=(Red=21 Green=57 Blue=134)
+					ColorBottomRight=(Red=21 Green=57 Blue=134)		
+
+					GUITextArea(Content="Paint" Font="SimsHelpTitleFont" TextColor=(Red=1.0 Blue=0.0 Green=1.0) /*BackgroundColor=(Red=21 Blue=129 Green=60)*/ FixedHeight=18 Placement="Center")
+				)
+				GUIDummyImage(ImageName="StartBarBottom" Stretch=1)
+			)
+
+			GUIDummyImage(
+				ImageName = "StartBarRight"
+			)
+
+			GUIButton(
+				NormalImage="MaxisWWWrest"
+				PressedImage="MaxisWWWpressed"
+				TouchedNormalImage="MaxisWWWhover"
+				DisabledNormalImage="MaxisWWWrest"
+				DisabledPressedImage="MaxisWWWpressed"
+				DisabledTouchedNormalImage="MaxisWWWhover"
+				Action="Parent::LaunchBrowser URL='www.thesims.com' "
+				ToolTip="The Sims(TM) Website"
+				EnabledTarget ="EnableNormalButtons"
+			)
+			GUIButton(
+				NormalImage="StartBarHelp_rest"
+				PressedImage="StartBarHelp_pressed"
+				TouchedNormalImage="StartBarHelp_hover"
+				DisabledNormalImage="StartBarHelp_rest"
+				DisabledPressedImage="StartBarHelp_pressed"
+				DisabledTouchedNormalImage="StartBarHelp_hover"
+				Action="Parent::ActivateHelpFrame Structure='GUIFragment:SimsHelpPaintScreen'"
+				ToolTip="Help"
+				EnabledTarget ="EnableNormalButtons"
+			)
+
+			GUIButton(
+				NormalImage="StartBarExit_rest"
+				PressedImage="StartBarExit_pressed"
+				TouchedNormalImage="StartBarExit_hover"
+				DisabledNormalImage="StartBarExit_rest"
+				DisabledPressedImage="StartBarExit_pressed"
+				DisabledTouchedNormalImage="StartBarExit_hover"
+				Action="Parent::ExitGamesPainter"
+				ToolTip="Exit"
+				EnabledTarget ="EnableNormalButtons"			
+			)
+		)
+
+
+		GUIRegion(
+			Layout=(Name="Equal" Style="X")
+			GUIRegion(
+				Manager=(
+					Name="SimsRoundedBorder"
+					Content=GUIRegion(
+						Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0)
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" 
+//								Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0 Ratio5=0.0 Ratio6=0.0
+								Ratio0=0.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0 Ratio4=0.0
+							)
+
+							GUISpacer(Width=10 Height=52)
+							GUIDummyImage(
+								ImageName = "Sims2DButton"
+								Blend = 1
+							)
+
+//							GUISpacer(Width=10 Height=0)
+//							GUICheckBoxButton(
+//								UncheckedImage = "SimsWireButton_rest"
+//								TouchedUncheckedImage = "SimsWireButton_rest"
+//								CheckedImage = "SimsWireButton_pressed"
+//								Action="Parent::ViewWire3D"
+//								Target="Wireframe"
+//								ToolTip="Toggle Wireframe"
+//							)
+							
+							GUISpacer(Width=0 Height=0)
+
+							GUIRegion(
+								Layout=(Name="Standard" Style="X")
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0)
+									GUISpacer(Width=0 Height=4)
+
+									GUIButtonSims(
+										Label="All"
+										Action="Parent::ViewAll2D"
+										ToolTip="View All Of The Sim"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+/*
+									GUIButton(
+										NormalImage="SimsAll_rest"
+										PressedImage="SimsAll_pressed"
+										TouchedNormalImage="SimsAll_hover"
+										Action="Parent::ViewAll2D"
+										ToolTip="View All Of The Sim"
+										EnabledTarget ="EnableNormalButtons"
+									)
+*/
+									GUISpacer(Width=0 Height=0)
+								)
+								GUISpacer(Width=0 Height=0)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0)
+									GUISpacer(Width=0 Height=4)
+
+									GUIButtonSims(
+										Label="Head"
+										Action="Parent::ViewHead2D"
+										ToolTip="View The Head"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+									GUIButtonSims(
+										Label="Body"
+										Action="Parent::ViewBody2D"
+										ToolTip="View The Body"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+/*
+									GUIButton(
+										NormalImage="SimsHead_rest"
+										PressedImage="SimsHead_pressed"
+										TouchedNormalImage="SimsHead_hover"
+										Action="Parent::ViewHead2D"
+										ToolTip="View The Head"
+									)
+									GUISpacer(Width=0 Height=4)
+									GUIButton(
+										NormalImage="SimsBody_rest"
+										PressedImage="SimsBody_pressed"
+										TouchedNormalImage="SimsBody_hover"
+										Action="Parent::ViewBody2D"
+										ToolTip="View The Body"
+									)
+									GUISpacer(Width=0 Height=0)
+*/
+								)
+							)
+							GUISpacer(Width=10 Height=0)
+						)
+
+						GUISpacer(Width=0 Height=5)
+
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+							GUISpacer(Width=10 Height=0)
+							GUIRegion(
+								Manager=(Name="SimsDownBevelBorder"
+									Content=GUIRegion(
+										Manager=(
+											Name = "SimsTextureViewer"
+											ViewModeTarget = "TextureViewMode"
+										)
+									)
+								)
+							)
+							GUISpacer(Width=10 Height=0)
+						)
+
+						GUISpacer(Width=0 Height=10)
+					)
+				)
+			)
+
+			GUIRegion(
+				Manager=(
+					Name="SimsRoundedBorder"
+					Content=GUIRegion(
+						Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0 Ratio3=0.0)
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0 Ratio5=0.0 Ratio6=0.0)
+
+							GUISpacer(Width=10 Height=0)
+							GUIDummyImage(
+								ImageName = "Sims3DButton"
+								Blend = 1
+							)
+							GUISpacer(Width=10 Height=0)
+							GUICheckBoxButton(
+								Target="WireFrame"
+								ToolTip="Toggle Wire Frame"
+								UncheckedImage="SimsWireButton_rest"
+								TouchedUncheckedImage="SimsWireButton_hover"
+								CheckedImage="SimsWireButton_pressed"
+								Action="Parent::ViewWire3D"
+							)
+							GUISpacer(Width=0 Height=0)
+							GUIRegion(
+								Layout=(Name="Standard" Style="X")
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0)
+									GUISpacer(Width=0 Height=4)
+									GUIButtonSims(
+										Label="Front"
+										Action="Parent::ViewFront"
+										ToolTip="View From The Front"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+									GUIButtonSims(
+										Label="Back"
+										Action="Parent::ViewBack"
+										ToolTip="View From The Back"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+/*
+									GUISpacer(Width=0 Height=4)
+									GUIButton(
+										NormalImage="SimsFront_rest"
+										PressedImage="SimsFront_pressed"
+										TouchedNormalImage="SimsFront_hover"
+										Action="Parent::ViewFront"
+										ToolTip="View From The Front"
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=4)
+									GUIButton(
+										NormalImage="SimsBack_rest"
+										PressedImage="SimsBack_pressed"
+										TouchedNormalImage="SimsBack_hover"
+										Action="Parent::ViewBack"
+										ToolTip="View From The Back"
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+*/
+								)
+								GUISpacer(Width=0 Height=0)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0)
+									GUISpacer(Width=0 Height=4)
+									GUIButtonSims(
+										Label="Left"
+										Action="Parent::ViewLeft"
+										ToolTip="View From The Left"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+									GUIButtonSims(
+										Label="Right"
+										Action="Parent::ViewRight"
+										ToolTip="View From The Right"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+/*
+									GUIButton(
+										NormalImage="SimsLeft_rest"
+										PressedImage="SimsLeft_pressed"
+										TouchedNormalImage="SimsLeft_hover"
+										Action="Parent::ViewLeft"
+										ToolTip="View From The Left"
+									)
+									GUISpacer(Width=0 Height=4)
+									GUIButton(
+										NormalImage="SimsRight_rest"
+										PressedImage="SimsRight_pressed"
+										TouchedNormalImage="SimsRight_hover"
+										Action="Parent::ViewRight"
+										ToolTip="View From The Right"
+									)
+									GUISpacer(Width=0 Height=0)
+*/
+								)
+								GUISpacer(Width=0 Height=0)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0)
+									GUISpacer(Width=0 Height=4)
+									GUIButtonSims(
+										Label="Top"
+										Action="Parent::ViewTop"
+										ToolTip="View From The Top"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+									GUIButtonSims(
+										Label="Bottom"
+										Action="Parent::ViewBottom"
+										ToolTip="View From The Bottom"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+/*
+									GUIButton(
+										NormalImage="SimsTop_rest"
+										PressedImage="SimsTop_pressed"
+										TouchedNormalImage="SimsTop_hover"
+										Action="Parent::ViewTop"
+										ToolTip="View From The Top"
+									)
+									GUISpacer(Width=0 Height=4)
+									GUIButton(
+										NormalImage="SimsBottom_rest"
+										PressedImage="SimsBottom_pressed"
+										TouchedNormalImage="SimsBottom_hover"
+										Action="Parent::ViewBottom"
+										ToolTip="View From The Bottom"
+									)
+									GUISpacer(Width=0 Height=0)
+*/
+								)
+							/*
+								GUISpacer(Width=4 Height=0)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0)
+									GUISpacer(Width=0 Height=4)
+									GUIButton(
+										NormalImage="SimsAll_rest"
+										PressedImage="SimsAll_pressed"
+										TouchedNormalImage="SimsAll_hover"
+										Action="Parent::ViewAll3D"
+										ToolTip="View All Of The Sim"
+									)
+									GUISpacer(Width=0 Height=0)
+								)
+								*/
+								GUISpacer(Width=0 Height=0)
+								GUIRegion(
+									Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0)
+									GUISpacer(Width=0 Height=4)
+									GUIButtonSims(
+										Label="Head"
+										Action="Parent::ViewHead3D"
+										ToolTip="View The Head"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+									GUIButtonSims(
+										Label="Body"
+										Action="Parent::ViewBody3D"
+										ToolTip="View The Body"
+										Style=3
+										EnabledTarget ="EnableNormalButtons"
+									)
+									GUISpacer(Width=0 Height=0)
+
+/*
+									GUIButton(
+										NormalImage="SimsHead_rest"
+										PressedImage="SimsHead_pressed"
+										TouchedNormalImage="SimsHead_hover"
+										Action="Parent::ViewHead3D"
+										ToolTip="View The Head"
+									)
+									GUISpacer(Width=0 Height=4)
+									GUIButton(
+										NormalImage="SimsBody_rest"
+										PressedImage="SimsBody_pressed"
+										TouchedNormalImage="SimsBody_hover"
+										Action="Parent::ViewBody3D"
+										ToolTip="View The Body"
+									)
+									GUISpacer(Width=0 Height=0)
+*/
+								)
+							)
+							GUISpacer(Width=10 Height=0)
+						)
+
+						GUISpacer(Width=0 Height=5)
+
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+							GUISpacer(Width=10 Height=0)
+							GUIRegion(
+								Manager=(Name="SimsDownBevelBorder"
+									Content=GUIRegion(
+										Manager=(
+											Name = "SimsModelPartViewer"
+											ViewModeTarget = "ModelViewMode"
+											ViewDirectionTarget = "ModelViewDirection"
+										)
+									)
+								)
+							)
+							GUISpacer(Width=10 Height=0)
+						)
+
+						GUISpacer(Width=0 Height=10)
+					)
+				)
+			)
+		)
+
+
+		GUIRegion(
+			Manager=(
+				Name="SimsRoundedBorder"
+				Content=GUIRegion(
+					Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0 Identifier="SimsPaintPanel")
+
+		/*			GUIRegion(
+						Layout=(Name="Standard" Style="Y")
+						GUIDummyImage(
+							ImageName = "SimsPaintModeTop"
+							ToolTip="You are in Painting Mode"
+						)
+						GUIButton(
+							NormalImage="SimsPaintModeBottom"
+							PressedImage="SimsPaintModeBottom"
+							Width=50
+							Height=50
+							Action="Parent::GotoStartScreen"
+							ToolTip="Go Back"
+						)
+					)
+		*/
+
+					GUIRegion(
+						Layout=(Name="Standard" Style="X")
+						GUIRegion(
+							Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0)
+							GUISpacer( Width=135 Height=0)
+							GUIRegion(
+								Layout=(Name="Ratio" Style="Y" Ratio0=1.0 Ratio1=0.0 Ratio2=0.0 Ratio3=0.0 Ratio4=1.0)
+								GUISpacer( Width=0 Height=0 )
+								GUIRegion(
+									Layout=(Name="Standard" Style="X")
+									GUIImageRadioButton (
+										Value=0
+										Target="PaintMode"
+										Action="Parent::SelectPaintTool"
+										SelectedImage="SimsBrushSmallGreen"
+										DeselectedImage="SimsBrushSmallWhite"
+										DeselectedImageFilter="GreyScale"
+										TouchedDeselectedImageFilter="GreyScale"
+										Width=34
+										Height=40
+										ToolTip="Color Paintbrush Tool"
+									)
+
+									GUIDummyImage(
+										ImageName="SimsToolDividerUp"
+										Blend=1
+									)
+
+									GUIImageRadioButton (
+										Value=1
+										Target="PaintMode"
+										Action="Parent::SelectPaintTool"
+										SelectedImage="SimsBrushSmallGreenTexture"
+										DeselectedImage="SimsBrushSmallWhiteTexture"
+										DeselectedImageFilter="GreyScale"
+										TouchedDeselectedImageFilter="GreyScale"
+										Width=34
+										Height=40
+										ToolTip="Texture Paintbrush Tool"
+									)
+									GUIDummyImage(
+										ImageName="SimsToolDividerUp"
+										Blend=1
+									)
+									GUIImageRadioButton (
+										Value=129
+										Target="AppData.System.CurrentToolIndex"
+										SelectedImage="SimsEraserGreen"
+										DeselectedImage="SimsEraserWhite"
+										Action="Parent::SelectColorPaintTab"
+										ImageCopyMode=1
+										Width=34
+										Height=40
+										ToolTip="Eraser Tool"
+									)
+									GUIDummyImage(
+										ImageName="SimsToolDividerUp"
+										Blend=1
+									)
+
+									GUIImageRadioButton (
+										Value=1051
+										Target="AppData.System.CurrentToolIndex"
+										SelectedImage="SimsColorPickerGreen"
+										DeselectedImage="SimsColorPickerWhite"
+										Action="Parent::SelectColorPaintTab"
+										Width=34
+										Height=40
+										ToolTip="Color Picker Tool"
+									)
+								)
+
+								GUIDummyImage(
+									ImageName="SimsToolDividerAcross"
+									Blend=1
+									Stretch=1
+								)
+
+								GUIRegion(
+									Layout=(Name="Standard" Style="X")
+									GUIButton(
+										NormalImage="SimsUndoWhite"
+										PressedImage="SimsUndoGreen"
+										Width=34
+										Height=40
+										Action="CurrentView::Undo"
+										ToolTip="Undo"
+									)
+
+									GUIDummyImage(
+										ImageName="SimsToolDividerDown"
+										Blend=1
+									)
+									GUIButton(
+										NormalImage="SimsRedoWhite"
+										PressedImage="SimsRedoGreen"
+										Width=34
+										Height=40
+										Action="CurrentView::Redo"
+										ToolTip="Redo"
+									)
+									GUIDummyImage(
+										ImageName="SimsToolDividerDown"
+										Blend=1
+									)
+									GUIImageRadioButton (
+										Value=514
+										Target="AppData.System.CurrentToolIndex"
+										SelectedImage="SimsZoomGreen"
+										DeselectedImage="SimsZoomWhite"
+										Width=34
+										Height=40
+										ToolTip="Zoom Tool"
+									)
+									
+									GUIDummyImage(
+										ImageName="SimsToolDividerDown"
+										Blend=1
+									)
+									GUIImageRadioButton (
+										Value=515
+										Target="AppData.System.CurrentToolIndex"
+										SelectedImage="SimsPanGreen"
+										DeselectedImage="SimsPanWhite"
+										Width=34
+										Height=40
+										ToolTip="Pan Tool"
+									)
+								)
+								GUISpacer( Width=0 Height=0 )
+							)
+						)
+						GUIImageRadioButton (
+							Value=400
+							Target="AppData.System.CurrentToolIndex"
+							SelectedImage="SimsRotateGreen"
+							DeselectedImage="SimsRotateWhite"
+							Width=34
+							Height=40
+							ToolTip="Rotate Tool"
+						)
+					)
+					GUIRegion(
+						Layout=(Name="Standard" Style="X")
+						GUISpacer( Width=8 Height=0 )
+						GUIBrushPreview(
+							Width = 73
+							Height = 73
+						)
+						GUISpacer( Width=8 Height=0 )
+					)
+					GUIRegion(
+						Layout=(Name="Ratio" Style="X"
+							Ratio0=0.4 Ratio1=0.6
+							Identifier="SimsPaintBrushAndToolSettings"
+							RespectChildRequests=0
+						)
+						GUIRegion(
+							Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=0.0 Ratio2=1.0 Identifier="SimsPaintBrushSettings")
+							GUIRegion(
+								Layout=(Name="Ratio" Style="Y" Ratio0=0.5 Ratio1=1.0 Ratio2=1.0 Ratio3=1.0 Ratio4=0.5)
+								GUISpacer( Width=0 Height=0 )
+								GUITextArea(Content="Scale" TextColor=(Red=1.0 Blue =1.0 Green=1.0))		
+								GUITextArea(Content="Feather" TextColor=(Red=1.0 Blue =1.0 Green=1.0))		
+								GUITextArea(Content="Strength" TextColor=(Red=1.0 Blue =1.0 Green=1.0))		
+								GUISpacer( Width=0 Height=0 )
+							)
+							GUISpacer( Width=8 Height=0 )
+							GUIRegion(
+								Layout=(Name="Ratio" Style="Y" Ratio0=0.5 Ratio1=1.0 Ratio2=1.0 Ratio3=1.0 Ratio4=0.5)
+								GUISpacer( Width=0 Height=0 )
+								GUISlider (
+									Target="AppData.CurrentPainterSettings.Brush9.Scale"
+									SliderImage = "SimsSliderBar"
+									BarStartImage = "SimsSliderBarStart"
+									BarMiddleImage = "SimsSliderBarMiddle"
+									BarEndImage = "SimsSliderBarEnd"
+									Min=0.0
+									Max=1.0
+									Placement="Entire"
+									Style = 3
+								)
+								GUISlider (
+									Target="AppData.CurrentPainterSettings.Brush9.Feather"
+									SliderImage = "SimsSliderBar"
+									BarStartImage = "SimsSliderBarStart"
+									BarMiddleImage = "SimsSliderBarMiddle"
+									BarEndImage = "SimsSliderBarEnd"
+									Min=0.0
+									Max=1.0
+									Placement="Entire"
+									Style = 3
+								)
+								GUISlider (
+									Target="AppData.CurrentPainterSettings.Brush9.Strength"
+									SliderImage = "SimsSliderBar"
+									BarStartImage = "SimsSliderBarStart"
+									BarMiddleImage = "SimsSliderBarMiddle"
+									BarEndImage = "SimsSliderBarEnd"
+									Min=0.0
+									Max=1.0
+									Placement="Entire"
+									Style = 3
+								)
+								GUISpacer( Width=0 Height=0 )
+							)
+						)
+
+						TabBody=GUIRegion(
+							Layout=(Name="Exclusive")
+
+							// Tab display now controlled by manager
+							Manager=(Name="ToolProperties" ToolIndexAddress="PaintTabMode"	ToolPropertiesAddress=""
+								(Index=0 Editor="GUIFragment:SimsColorPaintTab")
+								(Index=1 Editor="GUIFragment:SimsTexturePaintTab")
+							)
+							// Previous structure now in those two files
+						)
+					)
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,64 @@
+Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip0
+		Ratio1=0.0	// LeftTip1
+		Ratio2=1.0	// Sliver
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindTL"
+		Blend = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindTLR"
+		Blend = 1
+	)
+	
+	GUIDummyImage(
+		ImageName = "SimsWindTSliver2"
+		Stretch = 1
+	)
+)
+ActiveRegion=GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0)
+	GUIRegion(
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUIDummyImage(
+			ImageName = "SimsWindTLB"
+			Blend = 1
+		)
+		GUIDummyImage(
+			ImageName = "SimsWindLSliver"
+			Stretch = 1
+		)
+		GUIDummyImage(
+			ImageName = "SimsWindBLT"
+			Blend = 1
+		)
+	)
+	ActiveRegion=GUIRegion(
+		Layout=(Name="Singleton")
+		BackgroundColor=(Red=82 Green=143 Blue=203)
+	)
+
+)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip0
+		Ratio1=0.0	// LeftTip1
+		Ratio2=1.0	// Sliver
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindBL"
+		Blend = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindBLR"
+		Blend = 1
+	)
+	
+	GUIDummyImage(
+		ImageName = "SimsWindBSliver2"
+		Stretch = 1
+	)
+)

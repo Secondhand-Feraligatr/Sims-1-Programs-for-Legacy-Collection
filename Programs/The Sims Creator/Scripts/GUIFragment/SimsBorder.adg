@@ -1,0 +1,102 @@
+Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip0
+		Ratio1=0.0	// LeftTip1
+		Ratio2=1.0	// Sliver
+		Ratio3=0.0	// RightTip0
+		Ratio4=0.0	// RightTip1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindTL"
+		Blend = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindTLR"
+		Blend = 1
+	)
+	
+	GUIDummyImage(
+		ImageName = "SimsWindTSliver"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindTRL"
+		Blend = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindTR"
+		Blend = 1
+	)
+)
+ActiveRegion=GUIRegion(
+	Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+	GUIRegion(
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUIDummyImage(
+			ImageName = "SimsWindTLB"
+			Blend = 1
+		)
+		GUIDummyImage(
+			ImageName = "SimsWindLSliver"
+			Stretch = 1
+		)
+		GUIDummyImage(
+			ImageName = "SimsWindBLT"
+			Blend = 1
+		)
+	)
+	ActiveRegion=GUIRegion(
+		Layout=(Name="Singleton")
+		Background="Gradient"
+		ColorTopLeft=(Red=82 Green=143 Blue=203)
+		ColorBottomLeft=(Red=82 Green=143 Blue=203)
+		ColorTopRight=(Red=24 Green=67 Blue=155)
+		ColorBottomRight=(Red=24 Green=67 Blue=155)
+	)
+	GUIRegion(
+		Layout=(Name="Ratio" Style="Y" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUIDummyImage(
+			ImageName = "SimsWindTRB"
+			Blend = 1
+		)
+		GUIDummyImage(
+			ImageName = "SimsWindRSliver"
+			Stretch = 1
+		)
+		GUIDummyImage(
+			ImageName = "SimsWindBRT"
+			Blend = 1
+		)
+	)
+)
+GUIRegion(
+	Layout=(Name="Ratio" Style="X" RespectChildRequests=1
+		Ratio0=0.0	// LeftTip0
+		Ratio1=0.0	// LeftTip1
+		Ratio2=1.0	// Sliver
+		Ratio3=0.0	// RightTip0
+		Ratio4=0.0	// RightTip1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindBL"
+		Blend = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindBLR"
+		Blend = 1
+	)
+	
+	GUIDummyImage(
+		ImageName = "SimsWindBSliver"
+		Stretch = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindBRL"
+		Blend = 1
+	)
+	GUIDummyImage(
+		ImageName = "SimsWindBR"
+		Blend = 1
+	)
+)

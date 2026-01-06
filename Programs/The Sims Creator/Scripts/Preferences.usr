@@ -1,0 +1,18 @@
+Preferences=
+	(
+		RecentFileList=
+			(
+				NumRecentFiles=6
+			)
+		RenderOptions=
+			(
+				SimsMainRenderer=1
+				Renderer2D=1
+				Renderer3D=1
+				DefaultMaterial=2
+				ShutdownSuccess=1
+			)
+		Language="English"
+		GLUseGlobalManagers=0
+		GLUseModelCaching=0
+	)

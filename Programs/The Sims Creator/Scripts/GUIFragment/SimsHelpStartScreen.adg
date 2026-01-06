@@ -1,0 +1,72 @@
+RHWStyle="BareSimsPopupWindow"
+RHWResizableX=0
+RHWResizableY=0
+Width = 400
+Height = 500;
+
+Title="Help"
+
+Manager=(Name="SimsHelpScreen"
+
+	Title="The Sims(TM) Creator"	// This must be specified
+
+	// Make changes from here ...
+	Content=GUIRegion(
+		Layout=(Name="Ratio" Style="X" Ratio0=0.0 Ratio1=1.0 Ratio2=0.0)
+		GUISpacer(Width=8 Height=0)
+		GUIRegion(
+			Layout=(Name="Ratio" Style="Y"
+				Ratio0=0.0
+				Ratio1=1.0
+				Ratio2=0.0
+				Ratio3=1.0
+				Ratio4=0.0
+				Ratio5=1.0
+				Ratio6=0.0
+				Ratio7=1.0
+				Ratio8=0.0
+				Ratio9=1.0
+			)
+			GUITextArea(
+				Content="Use The Sims(TM) Creator to customize the look of all your Sims. Just click on a head and a body to choose a Sim to customize."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="Change which heads and bodies are displayed by clicking the Adult, Child, Gender, and Skin Tone icons on the left."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="Preview your Sim from different angles in the 3D view."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+			GUITextArea(
+				Content="Pressing P will bring up the Rendering Preferences. From here you can change from OpenGL to Software. More recent graphics cards can take advantage of the compatibility settings. By turning on the Share GL Resources it will increase the painting speed. Turning on the Cache Sims Models will speed up the frame rate of interacting with the models. These features will require a restart of The Sims(TM) Creator."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+
+			GUITextArea(
+				Content="You can access the Face Photo Wizard, Sims Wardrobe, and Paint from here. When you are done don't forget to save your work."
+				Font="SimsHelpBodyFont"
+				TextColor=(Red=1.0 Blue =1.0 Green=1.0)
+			)
+			GUISpacer(Width=0 Height=0)
+
+		)
+		GUISpacer(Width=8 Height=0)
+
+		// Add new GUITextAreas here, sliders, scrollers, images, ...
+	)
+	// ... to here.
+)

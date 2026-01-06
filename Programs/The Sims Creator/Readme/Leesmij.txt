@@ -1,0 +1,107 @@
+The Sims™ Creator
+Leesmij
+http://thesims.ea.com
+14 maart, 2002
+MAXIS - Electronic Arts
+Versie 1.1
+
+Inhoudsopgave
+
+Algemeen
+Overzicht
+Start-/Beginscherm
+Foto Wizard
+Sims kledingkast
+Schilderen
+Opslaan
+Instellingen voor rendering
+
+Algemeen
+--------
+Voor de meest recente informatie over The Sims™ en The Sims™ Creator surf je naar:
+http://www.thesims.com.
+Op deze site vind je fansites, berichten en FAQ's (veelgestelde vragen), walkthroughs en hints. Breng een bezoekje aan de chatruimte op deze site om met andere spelers te chatten.  
+
+Overzicht
+---------
+Met The Sims™ Creator kun je je Sim beschilderen, een nieuw gezicht op het hoofd van je Sim zetten, logo's op je Sim plakken en de kleding van je Sim veranderen. 
+
+The Sims™ Creator leest de gegevens uit de map 'Skins' van The Sims™ en de mappen van alle uitbreidingspakketen 
+(standaardmap: \Program Files\Maxis\The Sims\GameData\Skins en \Program Files\Maxis\The Sims\ExpansionPack...). 
+Met The Sims™ Creator kun je het uiterlijk veranderen van de Sims uit The Sims™ 1.0, uit geïnstalleerde Sims-uitbreidingspakketten en van alle overige Sims-kleding die je eventueel gedownload hebt. 
+
+
+Start-/Beginscherm
+------------------
+Hier kies je de belangrijkste fysieke kenmerken van je Sims, zoals het hoofd en het lichaam.  
+Je kunt ook de leeftijd, het geslacht en de huidskleur veranderen van de Sim die je in dit scherm wilt aanpassen. In het scherm 3D-preview kun je je Sim vanuit veel verschillende gezichtspunten bekijken. 
+
+
+Foto Wizard
+------------
+Via de Foto Wizard kun je foto's importeren, zodat je deze kunt gebruiken voor de hoofden van je Sims. The Sims™ Creator kan alleen fotobestanden importeren met de volgende extensies: .png, .jpg, .tga, .bmp of .tif. 
+
+Stap één: 'Foto laden'
+     -	Klik in het beginscherm op 'Foto Wizard'
+     -	Klik op 'Gezicht laden' en selecteer de foto die je wilt importeren
+     -	Gebruik de schuifbalken 'Draaien' en 'Formaat' om het gezicht zo te plaatsen dat het in het selectievak past. 
+     -	Klik op 'Volgende>' als je klaar bent. 
+
+Stap twee:  'Bewerken'
+Als de foto geïmporteerd is, heb je in het volgende menuscherm allerlei mogelijkheden om het gezicht van je Sim te bewerken. 
+
+Tip: gebruik het raster en de maskerschuifbalken om de foto op het hoofd te positioneren. Het is ook handig om het raster te gebruiken voor het uitlijnen van neus en ogen. 
+
+
+Sims kledingkast
+----------------
+In de Sims kledingkast vind je alles om je Sim aan te kleden. Je kunt de oorspronkelijke kleding van je Sim voorzien van accessoires of op 'Uitkleden' klikken om helemaal opnieuw te beginnen. Je kunt je Sim meerdere lagen kleding  aantrekken door gewoon meerdere kledingstukken te selecteren. In dit menu heb je ook de mogelijkheid om nieuwe stoffen voor de kleding van de Sims te importeren. Als je een nieuwe stof wilt importeren, klik je op 'Stof laden' en ga je naar het fotobestand dat je wilt importeren. Net als bij de Foto Wizard kan The Sims™ Creator alleen bestanden met de volgende extensies importeren: 
+.png, .jpg, .tga, .bmp, of tif. Voor het beste resultaat worden 8-bits of 256-kleurenfoto's aanbevolen.  
+
+Als je op de knop 'Logo toevoegen' klikt, kom je in het scherm Logokeuze terecht.  
+Hier kun je in het 2D-venster logo's/plaatjes op je Sim plakken en vervolgens in het 3D-venster kijken hoe het er in The Sims™ uit komt te zien.  
+Maak een keuze uit de beschikbare logo's of voeg je eigen logo toe door op de knop 'Logo laden' te klikken (bestanden met de extensies .png, .jpg, .tga, .bmp, of .tif kunnen door The Sims™ Creator geïmporteerd worden. Voor het beste resultaat worden 8-bits of 256-kleurenbestanden aanbevolen).
+
+Jammer genoeg kan The Sims™ Creator geen hoofddeksels toevoegen of verwijderen. Op sommige hoofden zitten hoofddeksels die onderdeel van het model zijn. Deze kunnen niet verwijderd worden. Bovendien zijn er hoofden met hoofddeksels die in The Sims™ voorkomen, maar die niet in The Sims™ Creator te zien zijn. Je kunt deze hoofddeksels niet wijzigen in The Sims™ Creator omdat zij geen onderdeel van het model zijn. Sommige modellen hebben ook accessoires die uit afzonderlijke lagen samengesteld zijn. Ook die krijg je niet te zien in The Sims™ Creator.  
+
+(Voorbeeld: er is een model in het uitbreidingspakket The Sims™: Het rijke leven, ook beschikbaar als download van http://thesims.com, waar een hoofddeksel op zou moeten zitten. Maar dat hoofddeksel zie je niet omdat het een apart accessoirebestand is. Dit model zal dus een stuk van zijn hoofd missen.) 
+
+
+Schilderen
+----------
+Met het Schildergereedschap kun je je Sim in 2D of in 3D beschilderen. Klik hiervoor in het beginscherm op de knop 'Schilderen'. Het gereedschappenpaneel onder in het scherm geeft je de mogelijkheid om met heel veel verschillende kleuren en stoffen te schilderen. Je kunt het model alle kanten op draaien zodat je overal goed bijkomt en eventuele fouten makkelijk herstellen. 
+
+Als je klaar bent met het beschilderen van je Sim, keer je terug naar het beginscherm door op 'Klaar' te klikken. (Hier kun je nu je nieuwe model opslaan). De Sim die je beschilderd hebt, heeft de plaats ingenomen van het oorspronkelijke model. Het standaardmodel is er nog steeds, tenzij je het hebt overschreven, maar je moet The Sims™ Creator opnieuw starten om het standaardmodel weer te zien te krijgen en er iets mee te kunnen doen.  
+
+Opslaan
+-------
+In het scherm Opslaan kun je je gewijzigde model opslaan. Geef het een naam en klik op 'Opslaan'. Het nieuwe model wordt opgeslagen in de map 'Skins' 
+(standaardmap: \Program Files\Maxis\The Sims\GameData\Skins).
+
+
+Instellingen voor rendering
+--------------------------
+Als je op de P-toets drukt, verschijnen de voorkeuren voor rendering. Hier kun je wisselen tussen OpenGL en Software.  
+
+Nieuwere grafische kaarten kunnen gebruikmaken van de compatibiliteitsinstellingen. Door 'GL-bronnen delen' aan te zetten, kun je sneller schilderen. Door 'Sims-modellen cachen' aan te zetten, kun je de frame-rate van de modellen verhogen, en er sneller mee werken. Deze opties worden pas actief als je The Sims™ Creator opnieuw start. 
+
+Als je de instellingen voor rendering in The Sims™ Creator hebt gewijzigd en het programma vervolgens crasht als je het draait, betekent dit dat je grafische kaart deze instellingen niet ondersteunt. De volgende keer dat je het programma draait, wordt de instelling Software gekozen.   
+
+Om de rendering in te stellen vanuit de opdrachtregel, typ je
+voor Software: TheSimsCreator.exe -rS  
+voor OpenGL: TheSimsCreator.exe -rO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

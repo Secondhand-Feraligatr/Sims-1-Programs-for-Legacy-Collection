@@ -1,0 +1,105 @@
+Die Sims™-Creator
+Readme 
+http://thesims.ea.com
+14. März 2002
+MAXIS - Electronic Arts
+Version 1.1
+
+Inhalt
+
+Allgemeines
+Übersicht
+Hauptmenü
+Foto-Tool
+Sim-Kleiderschrank
+Malen
+Speichern
+Rendering-Optionen
+
+Allgemeines
+-----------
+Die neuesten Informationen über Die Sims™ und den Die Sims™-Creator findest Du unter: http://www.thesims.com.
+Hier gibt es Fansites, Schwarze Bretter, Häufige Fragen, Walkthroughs und Hints. Im Chat kannst Du Dich mit anderen Spielern austauschen. 
+
+Übersicht
+---------
+Mit dem Die Sims™-Creator kannst Du Deinen Sim bemalen, ihm ein neues Gesicht geben, ihn mit Logos versehen und ihn völlig neu einkleiden. 
+
+Der Die Sims™-Creator liest die Daten aus den Skins-Ordnern von Die Sims™ und den dazugehörigen Erweiterungspacks (Standardordner: \Programme\Maxis\Die Sims\GameData\Skins und \Programme\Maxis\Die Sims\Expansion Pack ...). 
+Du kannst Skins aus Die Sims™ 1.0, installierten Erweiterungspacks und aus dem Internet heruntergeladene Skins bearbeiten. 
+
+
+Hauptmenü
+---------
+Im Hauptmenü mußt Du zunächst einen Kopf und einen Körper für Deinen Sim wählen. 
+Dann kannst Du Alter, Geschlecht und Hautfarbe festlegen. In der 3D-Ansicht hast Du die Möglichkeit, Dir Deinen Sim aus verschiedenen Perspektiven anzusehen. 
+
+
+Foto-Tool
+-----------------
+Mit dem Foto-Tool können Fotos (Gesichter) importiert werden. Die dazu verwendeten Bilddateien müssen in einem der folgenden Dateiformate vorliegen: .png, .jpg, .tga, .bmp oder .tif. 
+
+Schritt eins: "Ein Bild laden"
+     -	Klicke im Hauptmenü auf "Foto-Tool".
+     -	Klicke auf "Gesicht laden" und suche nach dem Foto, das Du importieren möchtest.
+     -	Verwende die Schieberegler "Drehen" und "Größe", um den Kopf optimal im Kästchen zu plazieren. 
+     -	Klicke auf "Weiter>". 
+
+Schritt zwei:  "Bearbeiten"
+Hast Du das Foto importiert, werden im nächsten Bildschirm die verschiedenen Optionen zur Bearbeitung des Bildes angezeigt. 
+
+Tip: Verwende das Gitternetz und die Masken-Schieberegler, um das Bild zu positionieren und somit Augen und Nase optimal auszurichten. 
+
+
+Sim-Kleiderschrank
+-------------------
+Im Bildschirm Sim-Kleiderschrank findest Du verschiedene Tools zum Einkleiden Deines Sims. Du kannst Deinen Sim mit Accessoires schmücken oder auf "Ausziehen" klicken, um ihn völlig neu einzukleiden. Du hast außerdem die Möglichkeit, Deinem Sim mehrere Kleidungsstücke übereinander anzuziehen, indem Du einfach  auf weitere Kleidungsstücke klickst. Des Weiteren ist es möglich, Materialien für die Kleidung zu bestimmen beziehungsweise neue Materialien zu importieren. Möchtest Du zusätzliche Materialien importieren, klicke einfach auf "Textur laden" und suche nach der Bilddatei, die Du importieren möchtest. Die dazu verwendeten Bilddateien müssen in einem der folgenden Dateiformate vorliegen: .png, .jpg, .tga, .bmp oder tif. Die besten Ergebnisse erzielst Du mit 8-Bit-Fotos (256 Farben).
+ 
+Klickst Du auf "Logo hinzuf.", gelangst Du zur Logo-Auswahl. 
+In diesem Bildschirm hast Du die Möglichkeit, Deinen Sim in der 2D-Ansicht mit Logos zu versehen. In der 3D-Ansicht kannst Du Dir dann das Ergebnis betrachten.  
+Wähle eines der abgebildeten Logos oder füge selbst Logos hinzu, indem Du auf "Logo laden" klickst. Die dazu verwendeten Bilddateien müssen in einem der folgenden Dateiformate vorliegen: .png, .jpg, .tga, .bmp oder .tif. 
+Die besten Ergebnisse erzielst Du mit 8-Bit-Fotos (256 Farben). 
+
+Mit dem Die Sims™-Creator können leider keine Hüte hinzugefügt oder entfernt werden. Es gibt einige Köpfe mit Hüten, bei denen die Hüte ein fester Bestandteil des Skins sind, sie können also nicht gelöscht werden. In Die Sims™ gibt es einige Skins mit Hüten, die jedoch im Die Sims™-Creator nicht angezeigt werden. Bei diesen Skins ist der Hut kein fester Bestandteil, deshalb können diese Köpfe nicht verwendet werden.
+Dasselbe gilt für Skins mit Accessoires: Die Accessoires sind keine festen Bestandteile und können ebenfalls nicht im Die Sims™-Creator angezeigt werden. 
+
+(Beispiel: Im Erweiterungspack Die Sims™ - Das volle Leben ist ein Skin enthalten, der auch von der Website http://thesims.com heruntergeladen werden kann. Auf dem Kopf befindet sich normalerweise ein Hut, da dieser Hut jedoch in einer separaten Accessoire-Datei enthalten ist, fehlt bei diesem Kopf der obere Teil.)
+
+
+Malen
+-----
+Mit dem Malen-Tool kannst Du Deinen Sim in der 2D- oder der 3D-Ansicht anmalen. Klicke dazu im Hauptmenü auf "Malen".  
+Unten im Bildschirm findest Du Icons, die Dir das Malen mit verschiedenen Farben und die Auswahl unterschiedlicher Texturen ermöglichen. Du kannst Deinen Sim in der Ansicht bewegen und "Malfehler" rückgängig machen.
+
+Bist Du mit Deinem Kunstobjekt zufrieden, klicke einfach auf "Fertig". Du gelangst dann zum Hauptmenü zurück, wo Du Deinen neuen Sim speichern kannst. Nun wird Dein neuer Sim im Bildschirm angezeigt. Der Standard-Skin Deines Sims bleibt so lange erhalten, bis Du ihn mit einem anderen Skin überschreibst. Möchtest Du den Standard-Skin noch einmal bearbeiten, mußt Du den Die Sims™-Creator neu starten. 
+
+Speichern
+---------
+In diesem Bildschirm kannst Du Deinen Sim speichern. Gib einen Namen ein und klicke dann auf "Speichern". Dein neuer Sim wird in Deinem Skin-Ordner gespeichert (Standardordner: \Programme\Maxis\Die Sims\GameData\Skins).
+
+
+Rendering-Optionen
+------------------
+Drückst Du auf P, werden die Rendering-Einstellungen eingeblendet. Hier kannst Du zwischen OpenGL und Software wählen. 
+
+Verfügst Du über eine neue Grafikkarte, kannst Du auf die Kompatibilitätseinstellungen zugreifen. Schaltest Du die Option GL-Ressourcen teilen ein, wird die Geschwindigkeit beim Malen erhöht. Aktivierst Du die Option Cache Sims-Modelle, wird die Bildrate bei der Interaktion mit den Modellen beschleunigt. Greifst Du auf diese Features zu, mußt Du den Die Sims™-Creator neu starten.
+
+Hast Du Einstellungen des Die Sims™-Creators geändert und stürzt der Computer dann ab, bedeutet dies, daß Deine Grafikkarte die von Dir vorgenommenen Einstellungen nicht verarbeiten kann. Der Rendering-Modus wird dann wieder auf Software eingestellt.
+
+Du kannst den Rendering-Modus auch über die Befehlszeile ändern, indem Du dort für die Einstellung Software TheSimsCreator.exe -rS und für die Einstellung OpenGL TheSimsCreator.exe -rO eingibst.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

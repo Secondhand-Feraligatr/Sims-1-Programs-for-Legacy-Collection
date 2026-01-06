@@ -1,0 +1,267 @@
+ 
+          |                    
+           |                                             
+ Accessories| Dodatki
+ Lower body garments| Ubiór dolnej po³owy cia³a
+ Upper body garments| Ubiór górnej po³owy cia³a
+%S%%S~%%%S~|%S%%S~%%%S~
+%d|%d
+*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw|*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw
+1) Adjust the framing box by moving the white handles to a better position around the face.|1) Ustaw prostok¹tn¹ ramkê, przesuwaj¹c bia³e znaczniki, by dobrze obejmowa³a obrys twarzy.
+1) Move|1) Przesun
+1) Select "Load Face" to load a face image file.|1) Kliknij na przycisku "Wczytaj portret", aby wczytaæ plik z fotografi¹ twarzy.
+2) Adjust the look of the image by using "Tint", "Saturation", and "Stylize" sliders.|2) Wyreguluj wygl¹d twarzy za pomoc¹ suwaków "Odcieñ", "Nasycenie" i "Stylizacja".
+2) Move your face to the center of the white box by clicking on and dragging the image to position the face inside the box.|2) Umieœæ twarz poœrodku bia³ego prostok¹ta, klikaj¹c na niej i przeci¹gaj¹c j¹ na odpowiednie miejsce.
+2) Rotate|2) Obróc
+3) Adjust the mask on the face using the mask sliders and the wire frame tool so the image sits on the skin to your liking.|3) Wyreguluj maskê na twarzy, korzystaj¹c z suwaków maski i narzêdzia  modelu kreskowego, aby obraz by³ odpowiednio dopasowany do skóry.
+3) If the face is not straight, use "Rotate" to get the eyes level.|3) Jeœli twarz nie jest ustawiona pionowo, u¿yj opcji obrotu, by oczy znalaz³y siê na linii poziomej.
+3) Scale|3) Skaluj
+3D Preview|Podgl¹d 3D
+4) Use the "Size" slider to fit the face into the box approximately as shown.|4) Suwak wielkoœci umo¿liwia dopasowanie twarzy do rozmiarów prostok¹ta.
+5) When you are satisfied with the result, select "Next".|5) Gdy wynik bêdzie zadowalaj¹cy, kliknij na przycisku "Dalej".
+< Back|< Powrót
+Aaron Keppel|Aaron Keppel
+Aaron Robinson|Aaron Robinson
+Activating these options will increase the performance of opengl.|Uaktywnienie tych opcji przyspieszy dzia³anie opengl.
+Add Logo|Dodaj logo
+Add a logo to your sims clothes|Umieœæ logo na ubiorze Sima
+Add another Logo to the collection|Dodaj do kolekcji nowe logo
+Add another material texture to the collection|Dodaj do kolekcji now¹ teksturê materia³u
+Adult|Doros³y
+Alex Fennell|Alex Fennell
+All|Wszystkie 
+All Files (*.*)|Wszystkie pliki (*.*)
+All Image Files (%s)|Wszystkie pliki graficzne (%s)
+All~*.*~|Wszystkie~*.*~
+Andrew Howes|Andrew Howes
+Any unsaved changes will be lost, are you sure you want to quit?|Niezapisane zmiany zostan¹ utracone, czy na pewno chcesz opuœciæ program?
+Apply Logo|Zastosuj logo
+Apply the selected logo to your sim|Umieœæ wybrany emblemat na swoim Simie
+Back|Ty³
+Blend|Zmieszaj
+Body|Cia³o
+Body Saved|Cia³o zapisane
+Body Skins|Skóry cia³a
+Bottom|Dó³
+Brian Lomas|Brian Lomas
+Brooke Harris|Brooke Harris
+Bryan Moodie|Bryan Moodie
+Cancel|Anuluj
+Can't add logo images FROM the logo directory!|B³¹d
+Can't add material textures FROM the texture directory!|B³¹d
+Change which heads and bodies are displayed by clicking the Adult, Child, Gender, and Skin Tone icons on the left.|Kategoriê wyœwietlanych g³ów i cia³ zmienia siê, klikaj¹c na ikonach doros³ego, dziecka, p³ci i karnacji (po lewej).
+Change your Sims clothes|Zmieñ ubiór Sima
+Changing these options will require a restart of The Sims(TM) Creator.|Zmiana tych opcji bêdzie wymagaæ ponownego uruchomienia programu The Sims™ Creator.
+Charis Kumpula|Charis Kumpula
+Chih-Kuo Chuang|Chih-Kuo Chuang
+Child|Dziecko
+Choose from the selection of logos on the right to add to your Sim's clothing. If you would like to add a second logo, click on the 'Apply Logo' button and select another logo for your Sim.|Z listy po prawej wybierz logo, które chcesz umieœciæ na ubiorze Sima. Jeœli chcesz dodaæ drugie logo, kliknij na przycisku "Dodaj logo" i wybierz drugi symbol.
+Chris Blackbourn|Chris Blackbourn
+Click 'Done' when you are finished.|Gdy skoñczysz, kliknij na "Gotów".
+Click 'Next' to continue.|Kliknij na "Dalej", by kontynuowaæ.
+Click the '?' button if you get stuck.|Jeœli siê pogubisz, kliknij na przycisku "?".
+Click the 'Load Face' button to load an image from disk (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|W celu wczytania portretu z dysku kliknij na przycisku "Wczytaj portret" (obs³ugiwane formaty plików to .png, .jpg, .tga, .bmp i .tif).
+Close|Zamknij
+Color Paintbrush Tool|Pêdzel koloru
+Color Picker Tool|Selektor koloru
+Continue to next screen|Przejœcie do nastêpnego ekranu
+Credits|Twórcy
+Damien Connolly|Damien Connolly
+Dark Skin|Ciemna karnacja
+David Miller|David Miller
+David Revill|David Revill
+David Rhoades|David Rhoades
+Done|Gotów
+Drag the logo in the left window or use the X-Y sliders to position the logo on the Sim.|Przeci¹gnij logo w lewym oknie lub u¿yj suwaków X-Y, by umieœciæ emblemat w odpowiednim miejscu.
+Engineering Support|Wsparcie techniczne
+Eraser Tool|Gumka
+Error|B³¹d
+Exit|Wyjœcie
+Face Photo Wizard|Czarodziej portretu
+Face Photo Wizard Step 1|Czarodziej portretu etap 1
+Face Photo Wizard Step 2|Czarodziej portretu etap 2
+Face Photo Wizard: Step 1|Czarodziej portretu: etap 1
+Face Photo Wizard: Step 2|Czarodziej portretu: etap 2
+Feather|Piórko
+Female|Kobieta
+File:|Plik:
+File already exists|Ten plik ju¿ istnieje
+File exists|Plik istnieje
+FileName|NazwaPliku
+Finish dressing this sim|Zakoñczenie ubierania Sima
+Finish the Face Photo Wizard|Zamkniêcie czarodzieja portretu
+Flip Logo|Odwróæ logo
+Flip the selected logo on your sim|Odwraca wybrane logo na Twoim Simie
+Front|Przód
+Glenn Collins|Glenn Collins
+Go Back|Wróæ
+Head|G³owa
+Head Saved|G³owa zapisana
+Head Skins|"Skóry" g³owy
+Help|Pomoc
+Hugh Malan|Hugh Malan
+If you need to load a new image you can do so here by clicking on 'Load Face' (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Jeœli potrzebujesz wczytaæ nowy obraz, mo¿esz to zrobiæ, klikaj¹c na "Wczytaj portret" (obs³ugiwane formaty plików to .png, .jpg, .tga, .bmp i .tif).
+Instructions:|Wskazówki:
+Jeannie Revill|Jeannie Revill
+John Zurek|John Zurek
+Keep logos and return to the wardrobe|Zachowaj emblematy i wróæ do garderoby
+Kent Barber|Kent Barber
+Left|Z lewej
+Left click and drag to rotate.|Kliknij LPM i przeci¹gnij mysz¹, by obracaæ.
+Light Skin|Jasna karnacja
+Load Face|Wczytaj portret
+Load Logo|Wczytaj logo
+Load Texture|Wczytaj teksturê
+Load your own photo from disk|Wczytaj w³asn¹ fotografiê z dysku
+Loading|Wczytywanie
+Logo Selector|Selektor logo
+Logos|Emblematy
+Main renderer|G³ówny renderer
+Male|Mê¿czyzna
+Mark Thomas|Mark Thomas
+Mary Alice Krayecki|Mary Alice Krayecki
+Mask|Maska
+Mask Height|Wysokoœæ maski
+Mask Left/Right|Maska w lewo/prawo
+Mask Model|Model maski
+Mask Up/Down|Maska w górê/dó³
+Mask Width|Szerokoœæ maski
+Material|Materia³
+Materials|Materia³y
+Matthew Simmonds|Matthew Simmonds
+Medium Skin|Œrednia karnacja
+Michael Lynch|Michael Lynch
+Middle or L and R click and drag to Pan.|Aby przesuwaæ widok, kliknij œrodkowym przyciskiem myszy lub LPM i PPM równoczeœnie, i przeci¹gnij.
+Name|Nazwa
+Next >|Dalej >
+No|Nie
+No files saved|Brak zapisanych plików
+OFF|WY£.
+ON|W£.
+Once you have saved the models press the 'Done' button.  (Note: You do not have to save both the head and the body. You can save just one of them if you want to.)|Po zapisaniu modeli kliknij na przycisku "Gotów".  (Uwaga: nie musisz zapisywaæ i g³owy, i cia³a. Jeœli chcesz, mo¿esz zapisaæ tylko jeden z elementów.)
+OpenGL  |OpenGL 
+OpenGL Compatibility|Kompatybilny OpenGL
+Paint|Malowanie
+Paint Screen|Ekran malowania
+Paint your Sim|Pomaluj swojego Sima
+Pan Tool|Narzêdzie przesuwu
+Parsing CMX files...|Dekompilacja plików CMX...
+Patrick Barrett|Patrick Barrett
+Perspective|Perspektywa
+Peter Dansted|Peter Dansted
+Please load a picture of a face to continue.|Aby kontynuowaæ, wczytaj obraz twarzy.
+Position the face so it fills the box in the left window by dragging it with your mouse and using the 'Size' and 'Rotate' sliders. Try to leave the ears and hair in the picture inside the box.|Umieœæ twarz w lewym oknie w taki sposób, aby wype³nia³a prostok¹t. W tym celu przeci¹gaj j¹ mysz¹ i skorzystaj z suwaków wielkoœci i obrotu. Postaraj siê, by uszy i w³osy portretu pozosta³y wewn¹trz prostok¹ta.
+Preparing Body Work Area...|Przygotowanie obszaru roboczego cia³a...
+Preparing Head Work Area...|Przygotowanie obszaru roboczego g³owy...
+Preparing to remove body images|Przygotowanie do usuniêcia obrazów cia³a
+Preparing to remove body models|Przygotowanie do usuniêcia modeli cia³a
+Preparing to remove body shaders|Przygotowanie do usuniêcia cieniowania cia³a
+Preparing to remove head images|Przygotowanie do usuniêcia obrazów g³owy
+Preparing to remove head models|Przygotowanie do usuniêcia modeli g³owy
+Preparing to remove head shaders|Przygotowanie do usuniêcia cieniowania g³owy
+Press R to reset the view.|Naciœnij R, by zresetowaæ widok.
+Pressing P will bring up the Rendering Preferences. From here you can change from OpenGL to Software. More recent graphics cards can take advantage of the compatibility settings. By turning on the Share GL Resources it will increase the painting speed. Turning on the Cache Sims Models will speed up the frame rate of interacting with the models. These features will require a restart of The Sims(TM) Creator.|Naciœniêcie klawisza P spowoduje wywo³anie opcji renderowania. Tutaj mo¿esz prze³¹czaæ siê miêdzy renderowaniem OpenGL a programowym. Wiêkszoœæ produkowanych obecnie kart graficznych mo¿e wykorzystywaæ ustawienia kompatybilne. W³¹czenie opcji "Dziel zasoby GL" zwiêkszy szybkoœæ malowania. W³¹czenie bufora modeli Simów zwiêkszy p³ynnoœæ animacji podczas oddzia³ywania na modele. Zmiana tych funkcji wymaga ponownego uruchomienia programu The Sims™ Creator.
+Pressing the 'Reset' button will reset all the sliders and the control box.|Klikniêcie na przycisku "Przywróæ" spowoduje przywrócenie pierwotnych pozycji wszystkich suwaków w oknie kontrolnym.
+Pressing the 'Reset' button will set the sliders back to their starting positions and will center the photo again.|Klikniêcie na przycisku "Przywróæ" spowoduje przywrócenie pierwotnych pozycji suwaków i ponowne wyœrodkowanie fotografii.
+Preview your Sim from different angles in the 3D view.|Obejrzyj swojego Sima z ró¿nych punktów widzenia widoku trójwymiarowego.
+Producer|Producent
+Projection Image|Obraz projekcji
+Put your face on your Sim|Daj Simowi w³asn¹ twarz
+Quit the Face Photo Wizard|Zamkniêcie czarodzieja portretu
+Redo|Powtórz
+Remember that you can click 'Back' at any time to read instructions from a previous screen.|Pamiêtaj, ¿e w dowolnej chwili mo¿esz klikn¹æ na przycisku "Powrót", aby przeczytaæ wskazówki na poprzednim ekranie.
+Remove logos ans return to the wardrobe|Usuñ emblematy i wróæ do garderoby
+Remove the previous garment|Usuñ poprzedni¹ czêœæ ubioru
+Removing body images|Usuwanie obrazów cia³a
+Removing body models|Usuwanie modeli cia³a
+Removing body shaders|Usuwanie cieniowania cia³a
+Removing head images|Usuwanie obrazów g³owy
+Removing head models|Usuwanie modeli g³owy
+Removing head shaders|Usuwanie cieniowania g³owy
+Render Settings|Ustawienia renderowania
+Reset|Przywróæ
+Reset controls|Przywrócenie ustawieñ pocz¹tkowych
+Restart dressing this sim|Ponowne rozpoczêcie ubierania
+Return to main screen|Powrót do ekranu g³ównego
+Return to previous screen|Powrót do poprzedniego ekranu
+Return to the main screen without changing clothes|Powrót do ekranu g³ównego bez zmiany ubioru
+Right|Z prawej
+Right click and drag to zoom.|Kliknij PPM i przeci¹gnij mysz¹, by powiêkszyæ obraz.
+Rotate|Obróæ
+Rotate Tool|Narzêdzie obrotu
+Saturation|Nasycenie
+Save|Zapis
+Save Sim|Zapisz Sima
+Save this body to disk|Zapisz cia³o na dysk
+Save this head to disk|Zapisz g³owê na dysk
+Scale|Skala
+Scale:|Skala:
+Scott Boness|Scott Boness
+Sean Baity|Sean Baity
+Sebastian Hyde|Sebastian Hyde
+Shan Simpson|Shan Simpson
+Share GL Resources|Dzielenie zasobów GL
+Sims Model Caching|Bufor modeli Simów
+Sims Wardrobe|Garderoba Simów
+Sinjin Bain|Sinjin Bain
+Size|Rozmiar
+Software|Programowe
+Special Thanks|Specjalne podziêkowania otrzymuj¹
+Stephen Long|Stephen Long
+Strength|Si³a
+Stylize|Stylizacja
+Testers|Testerzy
+Texture Paintbrush Tool|Pêdzel tekstur
+The Sims Wardrobe allows you to change your Sim's clothes. You can choose which garment you would like your Sim to wear from the left, and then you can choose a material for that garment from the right. You can layer the garments on your Sim by clicking on more garments. You may also choose any accessories you wish to place on your Sim from the left but you are only allowed to change the material on certain accessories.|Garderoba Simów umo¿liwia przebieranie Twoich postaci. Stroje, które ma za³o¿yæ Twój Sim, mo¿esz wybieraæ po lewej, a tkaninê, z której strój ma byæ wykonany - po prawej. Mo¿esz za³o¿yæ Simowi wiêcej warstw ubioru, klikaj¹c na dodatkowych strojach. Mo¿esz te¿ wybieraæ po lewej dowolne dodatki, w które chcesz zaopatrzyæ Sima, lecz w tym przypadku dozwolona jest jedynie zmiana materia³u krawata i szalika.
+The Sims(TM) Creator|The Sims™ Creator
+The Sims(TM) Website|Witryna The Sims™
+The right side of the panel has the color swatch and a color picker. The color swatch shows the current foreground color, background color, and a few preset colors. The foreground color will be the color used with the Color Paintbrush tool and the background color will be the color used with the Eraser tool. You can choose a preset color by left clicking, or store the foreground color by right clicking. Clicking within the color picker changes the current foreground color.|Prawa strona paska zawiera paletê kolorów i selektor kolorów. Paleta kolorów pokazuje bie¿¹cy kolor wierzchni, kolor t³a i kilka ustalonych kolorów. Kolor wierzchni to barwa nak³adana pêdzlem kolorów, natomiast kolor t³a - barwa nak³adana gumk¹. Mo¿esz wybieraæ dowolny z ustalonych kolorów, klikaj¹c na nim LPM, lub zapisywaæ w jego miejscu kolor wierzchni, klikaj¹c PMM. Klikniêcie na selektorze kolorów powoduje zmianê koloru wierzchniego.
+The tool panel at the bottom of the screen allows you to paint, move and save your Sim. On the left are the tool buttons. You can Undo or Redo changes with the arrow buttons. The Color Picker tool can be used to choose a color from the 2D or 3D views. The Pan, Zoom and Rotate tools allow you to move your Sim. If you click on the Rotate tool you may pan, zoom and rotate the same way you were able to on the start screen of The Sims(TM) Creator. To paint your Sim, choose the Color Paintbrush or the Texture Paintbrush.|Pasek narzêdziowy u do³u ekranu umo¿liwia malowanie, przesuwanie i zapisywanie Sima. Z lewej strony znajduj¹ siê przyciski narzêdziowe. Przyciski strza³ek cofnij i powtórz umo¿liwiaj¹ anulowanie lub powtarzanie wprowadzanych zmian. Selektor koloru s³u¿y do wybierania koloru z widoku 2D lub 3D. Przyciski przesuwu, powiêkszenia i obrotu umo¿liwiaj¹ poruszanie Sima. Po klikniêciu na narzêdziu obrotu, mo¿esz przesuwaæ, powiêkszaæ i obracaæ w taki sam sposób, jak na g³ównym ekranie The Sims™ Creator. Jeœli chcesz malowaæ Sima, uaktywnij pêdzel koloru lub pêdzel tekstur.
+There is already a body with that filename, do you wish to save over it?|Pod t¹ nazw¹ jest ju¿ zapisane jakieœ cia³o, czy chcesz je zast¹piæ?
+There is already a head with that filename, do you wish to save over it?|Pod t¹ nazw¹ jest ju¿ zapisane jakaœ g³owa, czy chcesz j¹ zast¹piæ?
+Tim LeTourneau|Tim LeTourneau
+Tint|Odcieñ
+Tip: Use the wire frame tool and the mask sliders to adjust and align the image to your liking, try to align the nose and eyes of the image with the wire frame.|Rada: Suwaki modelu kreskowego i maski u³atwiaj¹ prawid³owe umieszczenie portretu na g³owie, zw³aszcza dopasowanie pozycji oczu i nosa obrazu do modelu kreskowego.
+To add an image to the body of the Sim click on the 'Add Logo' button, you will be taken to the Logo Selector screen.|W celu umieszczenia emblematu na ciele Sima kliknij na przycisku "Dodaj logo". Przejdziesz do ekranu selektora logo.
+To import an image to use as a logo press the 'Load Logo' button and choose the file you want to use (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|W celu importowania obrazu, który bêdzie u¿ywany jako logo, kliknij na przycisku "Wczytaj logo" i wybierz plik do wczytania (obs³ugiwane s¹ formaty .png, .jpg, .tga, .bmp i .tif).
+To put your face on the Sim model, follow these instructions.|W celu obdarzenia Sima w³asn¹ twarz¹ wykonaj nastêpuj¹ce czynnoœci.
+Toggle Wire Frame|W³¹cz/wy³¹cz model kreskowy
+Top|Góra
+Trude Mattingly|Trude Mattingly
+Type a unique name in the 'Name' box. The name of the file that will be saved on the disk will be displayed underneath the 'Name' box by the word 'FileName'. Once you are happy with the name, press 'Save'. You must enter a name for the head and for the body if you would like to save both. It is easiest if you select the same name for each so that you remember they go together!|W okienku "Nazwa" wpisz nieu¿ywan¹ nazwê. Nazwa pliku, który zostanie zapisany na dysku, bêdzie wyœwietlona pod okienkiem nazwy, przy s³owie "NazwaPliku". Po wpisaniu odpowiedniej nazwy kliknij na przycisku "Zapisz". Aby zapisaæ g³owê i cia³o, musisz podaæ nazwy dla obu elementów. Jeœli obie bêd¹ takie same, ³atwiej bêdzie zapamiêtaæ, ¿e dana g³owa stanowi komplet z danym cia³em!
+Undo|Cofnij
+Undress|Rozbierz
+Untitled window|Bez tytu³u
+Use The Sims(TM) Creator to customize the look of all your Sims. Just click on a head and a body to choose a Sim to customize.|Program The Sims™ Creator s³u¿y do modyfikowania wygl¹du Simów. Wystarczy klikn¹æ na g³owie i na ciele, by wybraæ postaæ do modyfikacji.
+Use the 'Undo' button to remove the last piece of clothing you added. The 'Undress' button removes most of the Sim's clothing. If you do not click the 'Undress' button you will layer the new garments over the Sim's original garments.|Przycisk "Cofnij" s³u¿y do usuwania ostatniego dodanego elementu ubioru. Przycisk "Rozbierz" usuwa wiêkszoœæ ubioru Sima. Jeœli na pocz¹tku pracy nie klikniesz na przycisku "Rozbierz", nowe czêœci ubrania bêd¹ nak³adane na pierwotny strój.
+Use the controls to fine-tune your Sim's new face.|Elementy steruj¹ce umo¿liwiaj¹ wyg³adzenie nowej twarzy Twojego Sima.
+Use the scale slider to make the logo larger or smaller.|Suwak skali umo¿liwia powiêkszenie lub pomniejszenie symbolu.
+Use the slider to change your paintbrush's scale, feather, and strength.|Suwak s³u¿y do regulowania wielkoœci, kszta³tu i si³y pêdzla.
+Use this screen to paint your Sim using the 2D and 3D views.|Na tym ekranie mo¿esz malowaæ swojego Sima z u¿yciem widoku 2D lub 3D.
+View All Of The Sim|Widok ca³ego Sima
+View From The Back|Widok od ty³u
+View From The Bottom|Widok od do³u
+View From The Front|Widok z przodu
+View From The Left|Widok z lewej
+View From The Right|Widok z prawej
+View From The Top|Widok od góry
+View The Body|Widok cia³a
+View The Head|Widok g³owy
+When you are finished, click 'Done' to return to the Sims Wardrobe screen and keep your changes, or click 'Cancel' to return without keeping your changes.|Gdy skoñczysz, kliknij na "Gotów", by wróciæ do ekranu garderoby Simów z zapamiêtaniem zmian. Jeœli klikniesz na "Anuluj", wrócisz do tego ekranu bez zapamiêtywania zmian.
+When you are finished click 'Done' to return to the start screen, or click 'Cancel' to return without keeping your changes.|Gdy skoñczysz, kliknij na "Gotów", by wróciæ do ekranu g³ównego z zapamiêtaniem zmian. Jeœli klikniesz na "Anuluj", wrócisz do tego ekranu bez zapamiêtywania zmian.
+When you are finished painting your Sim click 'Done' to return to the main screen. Click 'Cancel' to undo all your painting and return to the main screen.|Gdy skoñczysz malowaæ Sima, kliknij na "Gotów", by wróciæ do ekranu g³ównego z zapamiêtaniem zmian. Jeœli klikniesz na "Anuluj", wrócisz do tego ekranu bez zapamiêtywania zmian.
+When you select the Texture Paintbrush, the right side of the panel shows a texture selector. Choose the texture you want to paint with from there. If you would like to import your own textures, you must go to the Sim Wardrobe screen.|Gdy uaktywnisz pêdzel tekstur, w prawej czêœci panelu pojawi siê selektor tekstur. Wybierz teksturê, której chcesz u¿yæ podczas malowania. Jeœli chcesz importowaæ w³asne tekstury, musisz przejœæ do ekranu garderoby Simów.
+Wire Frame|Model kreskowy
+Working|Modyfikowany
+X:|X:
+Y:|Y:
+Yes|Tak
+You can access the Face Photo Wizard, Sims Wardrobe, and Paint from here. When you are done don't forget to save your work.|Na tym ekranie masz dostêp do czarodzieja portretów, garderoby Sima i malowania. Gdy skoñczysz pracê, nie zapomnij jej zapisaæ.
+You can change your 3D view direction using the 'Front', 'Back', 'Left', 'Right', 'Top' and 'Bottom' buttons on the top of the 3D panel. You can get a closer view by clicking the 'Head' or 'Body' buttons. Click on the wireframe button to show or hide the wireframe.|Obraz na widoku 3D mo¿esz zmieniaæ, klikaj¹c na przyciskach "Przód", "Ty³", "Z lewej", "Z prawej", "Góra i "Dó³" u góry panelu 3D. Mo¿esz te¿ przyjrzeæ siê modelowi z bliska, klik¹j¹c na przyciskach "G³owa" lub "Cia³o". W celu wyœwietlenia lub ukrycia modelu kreskowego, kliknij na przycisku "Model kreskowy".
+You can load more material from disk by clicking on the 'Load Texture' button (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Wiêcej materia³ów mo¿esz wczytaæ z dysku, klikaj¹c na przycisku "Wczytaj teksturê" (obs³ugiwane s¹ formaty .png, .jpg, .tga, .bmp i .tif).
+You can move the face around on your Sim by clicking inside the white box on the left or clicking and dragging the white squares that are attached to the box.|Mo¿esz przesuwaæ twarz po swoim Simie, klikaj¹c w obrêbie bia³ego prostok¹ta i przeci¹gaj¹c bia³e kwadraciki "przyczepione" do prostok¹ta.
+You can view your Sim from different angles, by clicking and dragging in the 3D view.|Klikaj¹c na widoku 3D i przeci¹gaj¹c mysz¹, mo¿esz ogl¹daæ swego Sima z ró¿nych punktów widzenia.
+You have not clicked a save button, are you sure you wish to return?|Praca nie zosta³a zapisana, czy na pewno chcesz wróciæ?
+Zoom Tool|Powiêkszanie
+and all of the employees of Maxis who|i wszyscy pracownicy Maxis, dziêki którym
+continue to make The Sims(TM) an incredible game.|The Sims pozostaje niesamowit¹ gr¹.

@@ -1,0 +1,267 @@
+ 
+          |                    
+           |                                             
+ Accessories| Accessoires
+ Lower body garments| kledingstukken onderlichaam
+ Upper body garments| kledingstukken bovenlichaam
+%S%%S~%%%S~|%S%%S~%%%S~
+%d|%d
+*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw|*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw
+1) Adjust the framing box by moving the white handles to a better position around the face.|1) Pas het selectiekader rond het gezicht aan door de witte vierkantjes te verslepen. 
+1) Move|1) Verplaatsen 
+1) Select "Load Face" to load a face image file.|1) Kies 'Gezicht laden' om een fotobestand van een gezicht te laden.
+2) Adjust the look of the image by using "Tint", "Saturation", and "Stylize" sliders.|2) Pas de foto aan met de schuifbalken 'Tint', 'Verzadiging' en 'Stileren'.
+2) Move your face to the center of the white box by clicking on and dragging the image to position the face inside the box.|2) Plaats je gezicht in het midden van het witte selectiekader. Je doet dit door erop te klikken en het te verslepen.
+2) Rotate|2) Draaien
+3) Adjust the mask on the face using the mask sliders and the wire frame tool so the image sits on the skin to your liking.|3) Gebruik de schuifbalken en het rastergereedschap om het masker zo over het gezicht te plaatsen zoals jij het wilt.  
+3) If the face is not straight, use "Rotate" to get the eyes level.|3) Als het gezicht scheef staat, kun je 'Draaien' gebruiken om de ogen op één horizontale lijn te krijgen.
+3) Scale|3) Formaat
+3D Preview|3D-preview
+4) Use the "Size" slider to fit the face into the box approximately as shown.|4) Gebruik de schuifbalk 'Formaat' om het gezicht in het kader in te passen zoals in het voorbeeld.
+5) When you are satisfied with the result, select "Next".|5) Kies 'Volgende' als je tevreden bent met het resultaat.
+< Back|< Terug
+Aaron Keppel|Aaron Keppel
+Aaron Robinson|Aaron Robinson
+Activating these options will increase the performance of opengl.|Het activeren van deze opties verhoogt de prestaties van OpenGL. 
+Add Logo|Logo toevoegen
+Add a logo to your sims clothes|Plak een logo op de kleding van je Sims
+Add another Logo to the collection|Voeg nog een logo toe aan de collectie
+Add another material texture to the collection|Voeg nog een stof toe aan de collectie
+Adult|Volwassene
+Alex Fennell|Alex Fennell
+All|Alles
+All Files (*.*)|Alle bestanden (*.*)
+All Image Files (%s)|Alle fotobestanden (%s)
+All~*.*~|Alle~*.*~
+Andrew Howes|Andrew Howes
+Any unsaved changes will be lost, are you sure you want to quit?|Alle niet opgeslagen wijzigingen gaan verloren, weet je zeker dat je wilt afsluiten? 
+Apply Logo|Logo plakken
+Apply the selected logo to your sim|Plak het gekozen logo op je Sim
+Back|Achter
+Blend|Mengen
+Body|Lichaam
+Body Saved|Lichaam opgeslagen
+Body Skins|lichamen
+Bottom|Onder
+Brian Lomas|Brian Lomas
+Brooke Harris|Brooke Harris
+Bryan Moodie|Bryan Moodie
+Cancel|Annuleren
+Can't add logo images FROM the logo directory!|Fout
+Can't add material textures FROM the texture directory!|Fout
+Change which heads and bodies are displayed by clicking the Adult, Child, Gender, and Skin Tone icons on the left.|Verander de getoonde hoofden en lichamen door te klikken op de icoontjes Volwassene, Kind, Geslacht en Huidskleur links in beeld. 
+Change your Sims clothes|Verander de kleding van je Sims
+Changing these options will require a restart of The Sims(TM) Creator.|Als je deze opties verandert, moet je The Sims Creator opnieuw starten.
+Charis Kumpula|Charis Kumpula
+Chih-Kuo Chuang|Chih-Kuo Chuang
+Child|Kind
+Choose from the selection of logos on the right to add to your Sim's clothing. If you would like to add a second logo, click on the 'Apply Logo' button and select another logo for your Sim.|Kies uit de lijst rechts een logo om op de kleding van je Sim te plakken. Als je een tweede logo wilt opplakken, klik je op de knop 'Logo plakken' en kies je nog een logo voor je Sim. 
+Chris Blackbourn|Chris Blackbourn
+Click 'Done' when you are finished.|Klik op 'Klaar' als je klaar bent.
+Click 'Next' to continue.|Klik op 'Volgende' om verder te gaan.
+Click the '?' button if you get stuck.|Klik op de knop '?' als niet weet wat je moet doen.
+Click the 'Load Face' button to load an image from disk (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Klik op de knop 'Gezicht laden' om een op schijf opgeslagen foto te laden (.png, .jpg, .tga, .bmp, of .tif zijn geldige bestandstypen).
+Close|Sluiten
+Color Paintbrush Tool|Kleurenpenseel
+Color Picker Tool|Pipetgereedschap
+Continue to next screen|Verder naar volgend scherm
+Credits|Credits
+Damien Connolly|Damien Connolly
+Dark Skin|Donkere huid
+David Miller|David Miller
+David Revill|David Revill
+David Rhoades|David Rhoades
+Done|Klaar
+Drag the logo in the left window or use the X-Y sliders to position the logo on the Sim.|Versleep het logo in het linkervenster of gebruik de X-Y schuifbalken om het logo op de Sim te plakken.
+Engineering Support|Ondersteuning techniek
+Eraser Tool|Gummetje
+Error|Fout
+Exit|Sluiten
+Face Photo Wizard|Foto Wizard
+Face Photo Wizard Step 1|Foto Wizard Stap 1
+Face Photo Wizard Step 2|Foto Wizard Stap 2
+Face Photo Wizard: Step 1|Foto Wizard: Stap 1
+Face Photo Wizard: Step 2|Foto Wizard: Stap 2
+Feather|Dekking
+Female|Vrouw
+File:|Bestand:
+File already exists|Bestand bestaat al
+File exists|Bestand bestaat
+FileName|Bestandsnaam
+Finish dressing this sim|Klaar met aankleden van deze Sim
+Finish the Face Photo Wizard|Klaar met de Foto Wizard
+Flip Logo|Logo omdraaien
+Flip the selected logo on your sim|Gekozen logo op je Sim omdraaien
+Front|Voor
+Glenn Collins|Glenn Collins
+Go Back|Ga terug
+Head|Hoofd
+Head Saved|Hoofd opgeslagen
+Head Skins|hoofden 
+Help|Help
+Hugh Malan|Hugh Malan
+If you need to load a new image you can do so here by clicking on 'Load Face' (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Als je een nieuwe foto wilt laden, kun je dat hier doen door op 'Gezicht laden' te klikken (.png, .jpg, .tga, .bmp, of .tif zijn geldige bestandstypen).
+Instructions:|Instructies:
+Jeannie Revill|Jeannie Revill
+John Zurek|John Zurek
+Keep logos and return to the wardrobe|Bewaar logo's en keer terug naar de kledingkast
+Kent Barber|Kent Barber
+Left|Links
+Left click and drag to rotate.|Klik links en versleep om te draaien.
+Light Skin|Lichte huid
+Load Face|Gezicht laden
+Load Logo|Logo laden
+Load Texture|Stof laden
+Load your own photo from disk|Laad je eigen op de harde schijf opgeslagen foto
+Loading|Laden
+Logo Selector|Logokeuze
+Logos|Logo's
+Main renderer|Hoofdrenderer
+Male|Man
+Mark Thomas|Mark Thomas
+Mary Alice Krayecki|Mary Alice Krayecki
+Mask|Masker
+Mask Height|Maskerhoogte
+Mask Left/Right|Masker links/rechts
+Mask Model|Maskermodel
+Mask Up/Down|Masker omhoog/omlaag
+Mask Width|Maskerbreedte
+Material|Materiaal
+Materials|Stoffen
+Matthew Simmonds|Matthew Simmonds
+Medium Skin|Gemengde huid
+Michael Lynch|Michael Lynch
+Middle or L and R click and drag to Pan.|Klik midden of links en rechts en versleep om te verplaatsen.
+Name|Naam
+Next >|Volgende >
+No|Nee
+No files saved|Geen bestanden opgeslagen
+OFF|UIT
+ON|AAN
+Once you have saved the models press the 'Done' button.  (Note: You do not have to save both the head and the body. You can save just one of them if you want to.)|Als je de modellen hebt opgeslagen, klik je op de knop 'Klaar'.  (Let op: je hoeft niet het hoofd én het lichaam op te slaan. Je kunt ook maar één van de twee opslaan als je dat wilt).
+OpenGL  |OpenGL 
+OpenGL Compatibility|OpenGL-compatibiliteit
+Paint|Schilderen
+Paint Screen|Schilderscherm
+Paint your Sim|Beschilder je Sim
+Pan Tool|Verplaatsgereedschap
+Parsing CMX files...|Analyseren CMX-bestanden...
+Patrick Barrett|Patrick Barrett
+Perspective|Perspectief
+Peter Dansted|Peter Dansted
+Please load a picture of a face to continue.|Laad een foto van een gezicht om verder te gaan.
+Position the face so it fills the box in the left window by dragging it with your mouse and using the 'Size' and 'Rotate' sliders. Try to leave the ears and hair in the picture inside the box.|Plaats het gezicht zo dat het selectiekader wordt gevuld. Gebruik je muis om de foto te verslepen en de schuifbalken 'Formaat' en 'Draaien'. Probeer om haar en oren binnen het kader te krijgen. 
+Preparing Body Work Area...|Voorbereiding werkkader lichaam...
+Preparing Head Work Area...|Voorbereiding werkkader hoofd...
+Preparing to remove body images|Voorbereiding verwijderen lichaamsplaatjes
+Preparing to remove body models|Voorbereiding verwijderen lichaamsmodellen 
+Preparing to remove body shaders|Voorbereiding verwijderen lichaamsschaduwen 
+Preparing to remove head images|Voorbereiding verwijderen hoofdplaatjes
+Preparing to remove head models|Voorbereiding verwijderen hoofdmodellen
+Preparing to remove head shaders|Voorbereiding verwijderen hoofdschaduwen
+Press R to reset the view.|Druk op de R-toets om het beeld terug te zetten.
+Pressing P will bring up the Rendering Preferences. From here you can change from OpenGL to Software. More recent graphics cards can take advantage of the compatibility settings. By turning on the Share GL Resources it will increase the painting speed. Turning on the Cache Sims Models will speed up the frame rate of interacting with the models. These features will require a restart of The Sims(TM) Creator.|Als je op de P-toets drukt, verschijnen de voorkeuren voor Rendering. Hier kun je wisselen tussen OpenGL en Software. De nieuwste grafische kaarten kunnen gebruikmaken van de compatibiliteitsinstellingen. Door 'GL-bronnen delen' aan te zetten, kun je sneller schilderen. Door 'Sims-modellen cachen' aan te zetten, verbetert de frame-rate van je modellen. Deze opties worden pas actief als je The Sims Creator opnieuw start. 
+Pressing the 'Reset' button will reset all the sliders and the control box.|Als je op de knop 'Terugzetten' klikt, worden alle schuifbalken en instellingen teruggezet.
+Pressing the 'Reset' button will set the sliders back to their starting positions and will center the photo again.|Als je op de knop 'Terugzetten' klikt, worden de schuifbalken teruggezet in hun oorspronkelijke stand en wordt de foto weer gecentreerd. 
+Preview your Sim from different angles in the 3D view.|Bekijk je Sim vanuit verschillende gezichtspunten in het 3D-venster.
+Producer|Producent
+Projection Image|Projectiebeeld
+Put your face on your Sim|Geef je Sim jouw gezicht
+Quit the Face Photo Wizard|Foto Wizard sluiten
+Redo|Opnieuw
+Remember that you can click 'Back' at any time to read instructions from a previous screen.|Vergeet niet dat je altijd op 'Terug' kunt klikken om de instructies in het vorige scherm te lezen. 
+Remove logos ans return to the wardrobe|Verwijder logo's en keer terug naar de kledingkast
+Remove the previous garment|Vorig kledingstuk verwijderen
+Removing body images|Bezig met verwijderen lichaamsplaatjes
+Removing body models|Bezig met verwijderen lichaamsmodellen
+Removing body shaders|Bezig met verwijderen lichaamsschaduwen
+Removing head images|Bezig met verwijderen hoofdplaatjes
+Removing head models|Bezig met verwijderen hoofdmodellen
+Removing head shaders|Bezig met verwijderen hoofdschaduwen
+Render Settings|Instellingen voor renderen
+Reset|Terugzetten
+Reset controls|Instellingen terugzetten
+Restart dressing this sim|Deze Sim opnieuw aankleden
+Return to main screen|Terug naar beginscherm
+Return to previous screen|Terug naar vorig scherm
+Return to the main screen without changing clothes|Terug naar beginscherm zonder van kleding te wisselen
+Right|Rechts
+Right click and drag to zoom.|Klik rechts en versleep om te zoomen.
+Rotate|Draaien
+Rotate Tool|Draaigereedschap
+Saturation|Verzadiging
+Save|Opslaan
+Save Sim|Sim opslaan
+Save this body to disk|Sla dit lichaam op de harde schijf op
+Save this head to disk|Sla dit hoofd op de harde schijf op
+Scale|Dikte
+Scale:|Formaat:
+Scott Boness|Scott Boness
+Sean Baity|Sean Baity
+Sebastian Hyde|Sebastian Hyde
+Shan Simpson|Shan Simpson
+Share GL Resources|GL-bronnen delen
+Sims Model Caching|Sims-modellen cachen
+Sims Wardrobe|Sims kledingkast
+Sinjin Bain|Sinjin Bain
+Size|Formaat
+Software|Software
+Special Thanks|Met speciale dank aan
+Stephen Long|Stephen Long
+Strength|Sterkte
+Stylize|Stileren
+Testers|Testers
+Texture Paintbrush Tool|Stoffenpenseel
+The Sims Wardrobe allows you to change your Sim's clothes. You can choose which garment you would like your Sim to wear from the left, and then you can choose a material for that garment from the right. You can layer the garments on your Sim by clicking on more garments. You may also choose any accessories you wish to place on your Sim from the left but you are only allowed to change the material on certain accessories.|In de kledingkast van de Sims kun je bepalen welke kleren je je Sim wilt laten aantrekken. Links kies je een kledingsstuk voor je Sim, rechts kun je kiezen van welke stof dat kledingsstuk gemaakt is. Je kunt je Sim meerdere lagen kleding aantrekken door op de kledingsstukken te klikken. Je kunt ook in het linker venster de accessoires voor je Sim kiezen, maar je kunt alleen voor de stropdas en de sjaal een andere stof kiezen.  
+The Sims(TM) Creator|The Sims™ Creator
+The Sims(TM) Website|The Sims™ website
+The right side of the panel has the color swatch and a color picker. The color swatch shows the current foreground color, background color, and a few preset colors. The foreground color will be the color used with the Color Paintbrush tool and the background color will be the color used with the Eraser tool. You can choose a preset color by left clicking, or store the foreground color by right clicking. Clicking within the color picker changes the current foreground color.|Rechts in het paneel vind je de kleurenkiezer en het kleurenpalet. De kleurenkiezer toont de huidige voorgrondkleur, achtergrondkleur en een aantal vooraf ingestelde kleuren. De voorgrondkleur is de kleur die gebruikt wordt door het kleurenpenseel; de achtergrondkleur is de kleur die wordt gebruikt door het gummetje. Je kunt een vooraf ingestelde kleur kiezen door er met de linker muiskop op te klikken, of een voorgrondkleur opslaan door rechts te klikken. Als je in het kleurenpalet klikt, verander je de huidige voorgrondkleur. 
+The tool panel at the bottom of the screen allows you to paint, move and save your Sim. On the left are the tool buttons. You can Undo or Redo changes with the arrow buttons. The Color Picker tool can be used to choose a color from the 2D or 3D views. The Pan, Zoom and Rotate tools allow you to move your Sim. If you click on the Rotate tool you may pan, zoom and rotate the same way you were able to on the start screen of The Sims(TM) Creator. To paint your Sim, choose the Color Paintbrush or the Texture Paintbrush.|Met het gereedschappenpaneel onder in je scherm kun je je Sim beschilderen, verplaatsen en opslaan. Links vind je de gereedschapsknoppen. Met de pijltjes kun je wijzigingen ongedaan maken of opnieuw doorvoeren. Met de pipet kun je in het 2D- of 3D-venster een kleur kiezen. Met de Verplaats-, Zoom- en Draaigereedschappen kun je je Sim bewegen. Als je op Draaien klikt, kun je je Sim op dezelfde manier verplaatsen, zoomen en draaien als in het beginscherm van The Sims Creator. Om je Sim te kleuren, kies je het kleurenpenseel of het stoffenpenseel.
+There is already a body with that filename, do you wish to save over it?|Er bestaat al een lichaam met deze bestandsnaam, wil je dit overschrijven?
+There is already a head with that filename, do you wish to save over it?|Er bestaat al een hoofd met deze bestandsnaam, wil je dit overschrijven?
+Tim LeTourneau|Tim LeTourneau
+Tint|Tint
+Tip: Use the wire frame tool and the mask sliders to adjust and align the image to your liking, try to align the nose and eyes of the image with the wire frame.|Tip: gebruik het rastergereedschap en de maskerschuifbalken om de foto aan je eigen wensen aan te passen. Probeer neus en ogen van de foto uit te lijnen met het raster. 
+To add an image to the body of the Sim click on the 'Add Logo' button, you will be taken to the Logo Selector screen.|Om een plaatje op het lichaam van je Sim te plakken, klik je op de knop 'Logo toevoegen'. Je komt terecht in het scherm Logokeuze.
+To import an image to use as a logo press the 'Load Logo' button and choose the file you want to use (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Om een plaatje te importeren dat je als logo kunt gebruiken, klik je op de knop 'Logo laden' en kies je het bestand dat je wilt gebruiken(.png, .jpg, .tga, .bmp, of .tif zijn geldige bestandtypen).
+To put your face on the Sim model, follow these instructions.|Om jouw gezicht op het Sim-model te plaatsen, volg je deze instructies.
+Toggle Wire Frame|Raster aan-/uitzetten
+Top|Boven
+Trude Mattingly|Trude Mattingly
+Type a unique name in the 'Name' box. The name of the file that will be saved on the disk will be displayed underneath the 'Name' box by the word 'FileName'. Once you are happy with the name, press 'Save'. You must enter a name for the head and for the body if you would like to save both. It is easiest if you select the same name for each so that you remember they go together!|Typ een nog niet gebruikte naam in het tekstveld 'Naam'. De naam van het bestand dat op schijf wordt opgeslagen verschijnt onder het veld 'Naam' naast het woord 'Bestandsnaam'. Als je tevreden bent met de naam, klik je op 'Opslaan'. Je moet voor zowel het hoofd als het lichaam een naam invoeren als je ze allebei wilt opslaan. Het is makkelijker als je voor beide dezelfde naam kiest zodat je weet dat ze bij elkaar horen!
+Undo|Ongedaan maken
+Undress|Uitkleden
+Untitled window|Venster zonder titel
+Use The Sims(TM) Creator to customize the look of all your Sims. Just click on a head and a body to choose a Sim to customize.|Gebruik The Sims Creator om het uiterlijk van al je Sims aan te passen aan je eigen wensen. Klik op een hoofd en een lichaam om de Sim te kiezen die je wilt aanpassen.
+Use the 'Undo' button to remove the last piece of clothing you added. The 'Undress' button removes most of the Sim's clothing. If you do not click the 'Undress' button you will layer the new garments over the Sim's original garments.|Gebruik de knop 'Ongedaan maken' om het laatste kledingstuk dat je je Sim hebt gegeven weer uit te trekken. Met de knop 'Uitkleden' trekt je Sim bijna al z'n kleren uit. Als je niet op de knop 'Uitkleden' klikt, trekt je Sim de nieuwe kledingstukken over de oude aan.
+Use the controls to fine-tune your Sim's new face.|Gebruik de instelmogelijkheden om het nieuwe gezicht van je Sim helemaal goed in te stellen.
+Use the scale slider to make the logo larger or smaller.|Gebruik de schuifbalk 'Formaat' om het logo te vergroten of te verkleinen.
+Use the slider to change your paintbrush's scale, feather, and strength.|Gebruik de schuifbalk om de dikte, dekking en sterkte van je penseel in te stellen. 
+Use this screen to paint your Sim using the 2D and 3D views.|Gebruik dit scherm om je Sim te beschilderen in het 2D- of 3D-venster.
+View All Of The Sim|Sim helemaal bekijken
+View From The Back|Zicht van achteren
+View From The Bottom|Zicht van onderen
+View From The Front|Zicht van voren
+View From The Left|Zicht van links
+View From The Right|Zicht van rechts
+View From The Top|Zicht van boven
+View The Body|Lichaam bekijken
+View The Head|Hoofd bekijken
+When you are finished, click 'Done' to return to the Sims Wardrobe screen and keep your changes, or click 'Cancel' to return without keeping your changes.|Als je klaar bent, klik je op 'Klaar' om terug te keren naar de kledingkast van de Sims en je wijzigingen op te slaan, of klik je op 'Annuleren' om terug te keren zonder je wijzigingen op te slaan. 
+When you are finished click 'Done' to return to the start screen, or click 'Cancel' to return without keeping your changes.|Als je klaar bent, kun je op 'Klaar' klikken om terug te keren naar het beginscherm, of op 'Annuleren' om terug te keren zonder je wijzigingen op te slaan. 
+When you are finished painting your Sim click 'Done' to return to the main screen. Click 'Cancel' to undo all your painting and return to the main screen.|Als je klaar bent met het beschilderen van je Sim, klik je op 'Klaar' om terug te keren naar het beginscherm. Als je op 'Annuleren' klikt, worden al je wijzigingen ongedaan gemaakt en keer je terug naar het beginscherm. 
+When you select the Texture Paintbrush, the right side of the panel shows a texture selector. Choose the texture you want to paint with from there. If you would like to import your own textures, you must go to the Sim Wardrobe screen.|Als je het stoffenpenseel kiest, zie je rechts in het paneel een stoffenpalet. Kies hier welke stof je wilt gebruiken voor je stoffenpenseel. Als je je eigen stoffen wilt importeren, moet je teruggaan naar de Sims kledingkast. 
+Wire Frame|Raster
+Working|Bezig
+X:|X:
+Y:|Y:
+Yes|Ja
+You can access the Face Photo Wizard, Sims Wardrobe, and Paint from here. When you are done don't forget to save your work.|Van hieruit kun je naar de Foto Wizard, naar de Sims kledingkast en naar Schilderen. Vergeet niet je wijzigingen op te slaan als je klaar bent. 
+You can change your 3D view direction using the 'Front', 'Back', 'Left', 'Right', 'Top' and 'Bottom' buttons on the top of the 3D panel. You can get a closer view by clicking the 'Head' or 'Body' buttons. Click on the wireframe button to show or hide the wireframe.|Je kunt je 3D-zicht veranderen met de knoppen 'Voor', 'Achter', 'Links', 'Rechts', 'Boven' en 'Onder' boven in het 3D-venster. Je kunt inzoomen door op de knoppen 'Hoofd' of 'Lichaam' te klikken. Als je op de rasterknop klikt, kun je wisselen tussen wel of geen raster. 
+You can load more material from disk by clicking on the 'Load Texture' button (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Je kunt meer stoffen laden door op de knop 'Stof laden' te klikken .png, .jpg, .tga, .bmp, of .tif zijn geldige bestandstypen).
+You can move the face around on your Sim by clicking inside the white box on the left or clicking and dragging the white squares that are attached to the box.|Je kunt het gezicht op je Sim verplaatsen door links op het scherm binnenin het witte selectiekader te klikken of door de witte vierkantjes van het selectiekader te verslepen.
+You can view your Sim from different angles, by clicking and dragging in the 3D view.|Je kunt je Sim vanuit verschillende gezichtspunten bekijken door in het 3D-venster op de Sim te klikken en hem of haar te verslepen.
+You have not clicked a save button, are you sure you wish to return?|Je hebt niet op de knop 'Opslaan' geklikt, weet je zeker dat je terug wilt keren?
+Zoom Tool|Zoomgereedschap
+and all of the employees of Maxis who|en alle werknemers van Maxis die 
+continue to make The Sims(TM) an incredible game.|van The Sims een ongelooflijk spel blijven maken.

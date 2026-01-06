@@ -1,0 +1,30 @@
+// This file contains the standard nodes used by most (all?) 
+//	builds with a GUI: Toolwindows, an MDI node, a document 
+//	manager, a view manager.
+
+// The Document manager.  All documents correspond to children of this node.
+DocumentManager=RHXDocumentManager()
+
+// The View node.  Analogous to the ToolWindow node, all MDI windows correspond to children of this node.
+ViewManager=RHXViewManager()
+
+WizardManager=RHXWizardManager()	// For wizards: A series of dialogs boxes, analogous to a Windows Wizard.
+
+// The tool window manager
+ToolWindowManager=RHXToolWindowManager()
+
+// These nodes handle CurrentDocument:: and CurrentView:: calls.
+CurrentDocument=RHXCurrentDocument()
+CurrentView=RHXCurrentView()
+
+// Multiple Document Interface controller.  Implements cascade, tile, MDI::Next, MDI::Prev, etc.
+MDI=RHXMDI()
+
+// There'll probably be a set of tools, which have propertes. 
+//	eg: "Feather" for a selection; "Tolerance" for fill.
+// The contents of this node are loaded according to the ADG resource 
+//	specified in the Build* file - cf the ToolProperties node there.
+Tool=()
+
+//Question, is this programmer or english? (Hint: programmer)
+StatusMessage="Initializing ...                                                                        "

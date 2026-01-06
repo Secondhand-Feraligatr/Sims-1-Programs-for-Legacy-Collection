@@ -1,0 +1,267 @@
+ 
+          |                    
+           |                                             
+ Accessories| st. accessoarer
+ Lower body garments| st. klädesplagg för benen
+ Upper body garments| st. klädesplagg för överkroppen
+%S%%S~%%%S~|%S%%S~%%%S~
+%d|%d
+*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw|*.bmp;*.jpg;*.jpeg;*.png;*.tga;*.tif;*.tiff;*.iff;*.pix;*.raw
+1) Adjust the framing box by moving the white handles to a better position around the face.|1) Justera ramen genom att flytta de vita handtagen till en bättre placering runt ansiktet.
+1) Move|1) Flytta
+1) Select "Load Face" to load a face image file.|1) Välj "Ladda ansikte" för att ladda en ansiktsbildfil.
+2) Adjust the look of the image by using "Tint", "Saturation", and "Stylize" sliders.|2) Justera utseendet på bilden med hjälp av skjutreglagen "Nyans", "Färgdjup", och "Stilisera".
+2) Move your face to the center of the white box by clicking on and dragging the image to position the face inside the box.|2) Flytta ditt ansikte till mitten av den vita rutan genom att klicka på bilden och dra den så att ansiktet hamnar i rutan.
+2) Rotate|2) Rotera
+3) Adjust the mask on the face using the mask sliders and the wire frame tool so the image sits on the skin to your liking.|3) Justera ansiktsmasken med hjälp av skjutreglagen och rutnätsverktyget tills bilden sitter som den ska på ditt skin.
+3) If the face is not straight, use "Rotate" to get the eyes level.|3) Om ansiktet inte är rakt använder du "Vrid"-funktionen för att få ögonen i samma nivå.
+3) Scale|3) Ändra storlek
+3D Preview|3D-ruta
+4) Use the "Size" slider to fit the face into the box approximately as shown.|4) Använd skjutreglaget "Storlek" för att få ansiktet att passa in i ramen.
+5) When you are satisfied with the result, select "Next".|5) När du är nöjd med resultatet trycker du på "Nästa".
+< Back|< Tillbaka
+Aaron Keppel|Aaron Keppel
+Aaron Robinson|Aaron Robinson
+Activating these options will increase the performance of opengl.|Om du aktiverar dessa alternativ förbättras prestandan hos opengl.
+Add Logo|Ny logga
+Add a logo to your sims clothes|Fäst en logga på din sims kläder
+Add another Logo to the collection|Lägg till en ny logga i samlingen
+Add another material texture to the collection|Lägg till en ny materialtextur i samlingen
+Adult|Vuxen
+Alex Fennell|Alex Fennell
+All|Båda
+All Files (*.*)|Alla filer (*.*)
+All Image Files (%s)|Alla bildfiler (%s)
+All~*.*~|All~*.*~
+Andrew Howes|Andrew Howes
+Any unsaved changes will be lost, are you sure you want to quit?|Alla ändringar som inte sparats kommer att försvinna, vill du verkligen avsluta?
+Apply Logo|Fäst logga
+Apply the selected logo to your sim|Fäst vald logga på din sim
+Back|Bak
+Blend|Blandning
+Body|Kropp
+Body Saved|Kropp sparad
+Body Skins|st. kroppstyper
+Bottom|Under
+Brian Lomas|Brian Lomas
+Brooke Harris|Brooke Harris
+Bryan Moodie|Bryan Moodie
+Cancel|Avbryt
+Can't add logo images FROM the logo directory!|Fel
+Can't add material textures FROM the texture directory!|Fel
+Change which heads and bodies are displayed by clicking the Adult, Child, Gender, and Skin Tone icons on the left.|Välj vilka huvuden och kroppar som ska visas genom att klicka på Vuxen-, Barn-, Kön-, och hudfärgsikonerna till vänster.
+Change your Sims clothes|Byt din sims kläder
+Changing these options will require a restart of The Sims(TM) Creator.|Om du ändrar dessa alternativ måste du starta om The Sims Creator.
+Charis Kumpula|Charis Kumpula
+Chih-Kuo Chuang|Chih-Kuo Chuang
+Child|Barn
+Choose from the selection of logos on the right to add to your Sim's clothing. If you would like to add a second logo, click on the 'Apply Logo' button and select another logo for your Sim.|Välj bland en samling av loggor till höger som du kan fästa på din sims kläder. Om du vill lägga till en andra logga klickar du på knappen 'Fäst logga' och väljer en till logga åt din sim.
+Chris Blackbourn|Chris Blackbourn
+Click 'Done' when you are finished.|Klicka på 'Klar' när du är färdig.
+Click 'Next' to continue.|Klicka på 'Nästa' för att fortsätta.
+Click the '?' button if you get stuck.|Klicka på '?'-knappen om du fastnar.
+Click the 'Load Face' button to load an image from disk (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Klicka på 'Ladda ansikte'-knappen om du vill ladda en bild (.png, .jpg, .tga, .bmp, eller .tif är godkända filtyper).
+Close|Stäng
+Color Paintbrush Tool|Färgpensel
+Color Picker Tool|Färgväljare
+Continue to next screen|Fortsätt till nästa skärm
+Credits|Medverkande
+Damien Connolly|Damien Connolly
+Dark Skin|Mörk hy
+David Miller|David Miller
+David Revill|David Revill
+David Rhoades|David Rhoades
+Done|Klar
+Drag the logo in the left window or use the X-Y sliders to position the logo on the Sim.|Dra loggan i det vänstra fönstret eller använd X- och Y-reglagen för att placera loggan på din sim.
+Engineering Support|Teknisk support
+Eraser Tool|Radergummi
+Error|Fel
+Exit|Stäng av
+Face Photo Wizard|Fotoassistenten
+Face Photo Wizard Step 1|Fotoassistenten Steg 1
+Face Photo Wizard Step 2|Fotoassistenten Steg 2
+Face Photo Wizard: Step 1|Fotoassistenten: Steg 1
+Face Photo Wizard: Step 2|Fotoassistenten: Steg 2
+Feather|Kantskärpa
+Female|Kvinna
+File:|Fil:
+File already exists|Filen finns redan
+File exists|Filen finns
+FileName|Filnamn
+Finish dressing this sim|Klä på din sim färdigt
+Finish the Face Photo Wizard|Avsluta Fotoassistenten
+Flip Logo|Vänd logga
+Flip the selected logo on your sim|Vänd vald logga på din sim
+Front|Fram
+Glenn Collins|Glenn Collins
+Go Back|Gå tillbaka
+Head|Huvud
+Head Saved|Huvud sparat
+Head Skins|st. huvudtyper
+Help|Hjälp
+Hugh Malan|Hugh Malan
+If you need to load a new image you can do so here by clicking on 'Load Face' (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Om du vill ladda en ny bild kan du göra det här genom att klicka på  'Ladda ansikte' (.png, .jpg, .tga, .bmp, eller .tif är godkända filtyper).
+Instructions:|Instruktioner:
+Jeannie Revill|Jeannie Revill
+John Zurek|John Zurek
+Keep logos and return to the wardrobe|Behåll loggor och återgå till kläderna
+Kent Barber|Kent Barber
+Left|Vänster
+Left click and drag to rotate.|Vänsterklicka och dra för att vrida.
+Light Skin|Ljus hy
+Load Face|Ladda ansikte
+Load Logo|Ladda logga
+Load Texture|Ladda textur
+Load your own photo from disk|Ladda ditt eget foto från disk
+Loading|Laddar
+Logo Selector|Välj logga
+Logos|Loggor
+Main renderer|Huvudrenderare
+Male|Man
+Mark Thomas|Mark Thomas
+Mary Alice Krayecki|Mary Alice Krayecki
+Mask|Mask
+Mask Height|Maskhöjd
+Mask Left/Right|Mask vänster/höger
+Mask Model|Maskmodell
+Mask Up/Down|Mask upp/ner
+Mask Width|Maskbredd
+Material|Material
+Materials|Material
+Matthew Simmonds|Matthew Simmonds
+Medium Skin|Medelmörk hy
+Michael Lynch|Michael Lynch
+Middle or L and R click and drag to Pan.|Tryck på mittknappen eller vänster och höger musknapp och dra för att flytta.
+Name|Namn
+Next >|Nästa >
+No|Nej
+No files saved|Inga filer sparade
+OFF|AV
+ON|PÅ
+Once you have saved the models press the 'Done' button.  (Note: You do not have to save both the head and the body. You can save just one of them if you want to.)|När du har sparat modellen trycker du på 'Klar'-knappen.  (Obs! Du behöver inte spara både huvudet och kroppen.)
+OpenGL  |OpenGL 
+OpenGL Compatibility|OpenGL-kompatibilitet
+Paint|Måla
+Paint Screen|Målarskärm
+Paint your Sim|Måla din sim
+Pan Tool|Flyttverktyg
+Parsing CMX files...|Analys av CMX-filer...
+Patrick Barrett|Patrick Barrett
+Perspective|Perspektiv
+Peter Dansted|Peter Dansted
+Please load a picture of a face to continue.|Ladda en ansiktsbild för att fortsätta.
+Position the face so it fills the box in the left window by dragging it with your mouse and using the 'Size' and 'Rotate' sliders. Try to leave the ears and hair in the picture inside the box.|Placera ansiktet så att det fyller rutan i den vänstra fönstret genom att dra fotot med musen och använda skjutreglagen 'Storlek' och 'Vrid'. Försök att få med öronen och håret på fotot innanför rutan.
+Preparing Body Work Area...|Förbereder yta för kroppsarbete...
+Preparing Head Work Area...|Förbereder yta för huvudarbete...
+Preparing to remove body images|Förbereder radering av kroppsbilder
+Preparing to remove body models|Förbereder radering av kroppsmodeller
+Preparing to remove body shaders|Förbereder radering av kroppsskuggor
+Preparing to remove head images|Förbereder radering av huvudbilder
+Preparing to remove head models|Förbereder radering av huvudmodeller
+Preparing to remove head shaders|Förbereder radering av huvudskuggor
+Press R to reset the view.|Tryck på R för att återställa bilden.
+Pressing P will bring up the Rendering Preferences. From here you can change from OpenGL to Software. More recent graphics cards can take advantage of the compatibility settings. By turning on the Share GL Resources it will increase the painting speed. Turning on the Cache Sims Models will speed up the frame rate of interacting with the models. These features will require a restart of The Sims(TM) Creator.|Genom att trycka på P får du upp Renderingsvalen. Här kan du växla mellan OpenGL- och programrendering. De nyare grafikkorten utnyttjar kompatibilitetsinställningarna. Genom att slå på alternativet Dela GL-resurser ökas målningshastigheten. Genom att slå på alternativet Sim-modellcache förbättras bildfrekvensen när du arbetar med modellerna. Dessa funktioner kräver att du startar om The Sims Creator.
+Pressing the 'Reset' button will reset all the sliders and the control box.|Om du trycker på 'Återställ'-knappen återställs alla skjutreglage och kontrollrutan.
+Pressing the 'Reset' button will set the sliders back to their starting positions and will center the photo again.|Om du trycker på 'Återställ'-knappen återställs skjutreglagen till sina startpositioner och fotot centreras igen.
+Preview your Sim from different angles in the 3D view.|Förhandsgranska din sim från olika vinklar i 3D-rutan.
+Producer|Producent
+Projection Image|Planeringsbild
+Put your face on your Sim|Sätt ditt ansikte på en sim
+Quit the Face Photo Wizard|Stäng Fotoassistenten
+Redo|Gör om
+Remember that you can click 'Back' at any time to read instructions from a previous screen.|Tänk på att du alltid kan klicka på 'Tillbaka' för att läsa instruktionerna på den föregående skärmen.
+Remove logos ans return to the wardrobe|Ta bort loggor och återgå till kläder
+Remove the previous garment|Ta bort föregående plagg
+Removing body images|Raderar kroppsbilder
+Removing body models|Raderar kroppsmodeller
+Removing body shaders|Raderar kroppsskuggor
+Removing head images|Raderar huvudbilder
+Removing head models|Raderar huvudmodeller
+Removing head shaders|Raderar huvudskuggor
+Render Settings|Renderingsinställningar
+Reset|Återställ
+Reset controls|Återställ kontroller
+Restart dressing this sim|Börja om att klä på din sim
+Return to main screen|Återgå till huvudskärmen
+Return to previous screen|Återgå till föregående skärm
+Return to the main screen without changing clothes|Återgå till föregående skärm utan att byta kläder
+Right|Höger
+Right click and drag to zoom.|Högerklicka och dra för att zooma.
+Rotate|Vrid
+Rotate Tool|Vridverktyg
+Saturation|Färgdjup
+Save|Spara
+Save Sim|Spara sim
+Save this body to disk|Spara denna kropp på disk
+Save this head to disk|Spara detta huvud på disk
+Scale|Storlek
+Scale:|Storlek:
+Scott Boness|Scott Boness
+Sean Baity|Sean Baity
+Sebastian Hyde|Sebastian Hyde
+Shan Simpson|Shan Simpson
+Share GL Resources|Dela GL-resurser
+Sims Model Caching|Sim-modellcache
+Sims Wardrobe|Simkläder
+Sinjin Bain|Sinjin Bain
+Size|Storlek
+Software|Program
+Special Thanks|Särskilt tack till
+Stephen Long|Stephen Long
+Strength|Styrka
+Stylize|Stilisera
+Testers|Testare
+Texture Paintbrush Tool|Texturpensel
+The Sims Wardrobe allows you to change your Sim's clothes. You can choose which garment you would like your Sim to wear from the left, and then you can choose a material for that garment from the right. You can layer the garments on your Sim by clicking on more garments. You may also choose any accessories you wish to place on your Sim from the left but you are only allowed to change the material on certain accessories.|På Simkläder-skärmen kan du byta kläder på dina simmar. Du väljer ett plagg åt din sim i det vänstra fönstret och kan välja ett tygmaterial i fönstret till höger. Du kan skapa klädlager genom att klicka på flera plagg. Du kan även välja olika accessoarer åt din sim i fönstret till vänster, men du får bara ändra materialet i slipsen och sjalen.
+The Sims(TM) Creator|The Sims™ Creator
+The Sims(TM) Website|The Sims™ webbsajt
+The right side of the panel has the color swatch and a color picker. The color swatch shows the current foreground color, background color, and a few preset colors. The foreground color will be the color used with the Color Paintbrush tool and the background color will be the color used with the Eraser tool. You can choose a preset color by left clicking, or store the foreground color by right clicking. Clicking within the color picker changes the current foreground color.|Den högra sidan av panelen innehåller färgpaletten och färgväljaren. Färgpaletten visar den aktuella förgrundsfärgen, bakgrundsfärgen och några förinställda färger. Förgrundsfärgen är den färg som framträder när du målar med Färgpenseln och bakgrundsfärgen är den färg som framträder om du använder Radergummit. Du kan välja någon av de förinställda färgerna genom att vänsterklicka eller lagra förgrundsfärgen genom att högerklicka. Om du klickar på färgväljaren ändras den aktuella förgrundsfärgen.
+The tool panel at the bottom of the screen allows you to paint, move and save your Sim. On the left are the tool buttons. You can Undo or Redo changes with the arrow buttons. The Color Picker tool can be used to choose a color from the 2D or 3D views. The Pan, Zoom and Rotate tools allow you to move your Sim. If you click on the Rotate tool you may pan, zoom and rotate the same way you were able to on the start screen of The Sims(TM) Creator. To paint your Sim, choose the Color Paintbrush or the Texture Paintbrush.|Verktygspanelen längst ner på skärmen ger dig möjlighet att måla, flytta och spara din sim. Till vänster hittar du verktygsknapparna. Du kan Ångra eller Göra om dina ändringar med pilknapparna. Färgväljaren använder du om du vill markera en färg på 2D- eller 3D-bilden. Panorera-, Zoom- och Vrid-verktygen ger dig möjlighet att flytta din sim. Om du klickar på Vridverktyget kan du panorera, zooma och vrida bilden på samma sätt som på startskärmen i The Sims Creator. Om du vill måla din sim väljer du Färgpenseln eller Texturpenseln.
+There is already a body with that filename, do you wish to save over it?|Det finns redan en kropp med det filnamnet, vill du spara över den?
+There is already a head with that filename, do you wish to save over it?|Det finns redan ett huvud med det filnamnet, vill du spara över det?
+Tim LeTourneau|Tim LeTourneau
+Tint|Nyans
+Tip: Use the wire frame tool and the mask sliders to adjust and align the image to your liking, try to align the nose and eyes of the image with the wire frame.|Tips: Använd rutnätet och maskreglagen för att justera och rikta in bilden som du vill ha den. Försök att få ögonen och näsan att passa in i rutnätet.
+To add an image to the body of the Sim click on the 'Add Logo' button, you will be taken to the Logo Selector screen.|Om du vill lägga till en bild på din sims kropp klickar du på knappen 'Ny logga', så kommer du till skärmen Välj logga.
+To import an image to use as a logo press the 'Load Logo' button and choose the file you want to use (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Om du vill importera en bild som du kan använda som logga klickar du på knappen 'Ladda logga' och väljer den bildfil som du vill använda (.png, .jpg, .tga, .bmp, eller .tif är de filtyper som är godkända).
+To put your face on the Sim model, follow these instructions.|Om du vill sätta ditt ansikte på en simmodell följer du dessa instruktioner.
+Toggle Wire Frame|Aktivera rutnät
+Top|Ovan
+Trude Mattingly|Trude Mattingly
+Type a unique name in the 'Name' box. The name of the file that will be saved on the disk will be displayed underneath the 'Name' box by the word 'FileName'. Once you are happy with the name, press 'Save'. You must enter a name for the head and for the body if you would like to save both. It is easiest if you select the same name for each so that you remember they go together!|Skriv in ett nytt namn i 'Namn'-rutan. Namnet på filen som sparas visas under 'Namn'-rutan bredvid 'Filnamn'. När du är nöjd med namnet trycker du på 'Spara'. Du måste skriva in ett namn för huvudet och ett för kroppen om du vill spara båda. Det är enklast om du väljer samma namn åt båda så att du minns att de hör ihop!
+Undo|Ångra
+Undress|Klä av
+Untitled window|Namnlöst fönster
+Use The Sims(TM) Creator to customize the look of all your Sims. Just click on a head and a body to choose a Sim to customize.|Använd The Sims Creator om du vill anpassa dina simmars utseende. Klicka på ett huvud och en kropp för att välja en sim du vill göra om.
+Use the 'Undo' button to remove the last piece of clothing you added. The 'Undress' button removes most of the Sim's clothing. If you do not click the 'Undress' button you will layer the new garments over the Sim's original garments.|Använd 'Ångra'-knappen om du vill ta bort det plagg du lade till senast. 'Klä av'-knappen tar bort större delen av din sims kläder. Om du inte klickar på 'Klä av'-knappen kommer du att sätta på det nya plagget över de kläder din sim redan har på sig.
+Use the controls to fine-tune your Sim's new face.|Använd kontrollerna för att finjustera din sims nya ansikte.
+Use the scale slider to make the logo larger or smaller.|Använd reglaget för storlek om du vill göra loggan större eller mindre.
+Use the slider to change your paintbrush's scale, feather, and strength.|Använd skjutreglagen för att ändra penselns storlek, kantskärpa och styrka.
+Use this screen to paint your Sim using the 2D and 3D views.|Använd den här skärmen när du vill måla din sim i 2D- eller 3D-bilden.
+View All Of The Sim|Se hela din sim
+View From The Back|Vy bakifrån
+View From The Bottom|Vy underifrån
+View From The Front|Vy framifrån
+View From The Left|Vy från vänster
+View From The Right|Vy från höger
+View From The Top|Vy ovanifrån
+View The Body|Se kroppen
+View The Head|Se huvudet
+When you are finished, click 'Done' to return to the Sims Wardrobe screen and keep your changes, or click 'Cancel' to return without keeping your changes.|När du är klar klickar du på 'Klar' för att gå tillbaka till Simkläder-skärmen och behålla dina ändringar, eller klickar på 'Avbryt' för att gå tillbaka utan att behålla ändringarna.
+When you are finished click 'Done' to return to the start screen, or click 'Cancel' to return without keeping your changes.|När du är klar klickar du på 'Klar' för att återgå till startskärmen, eller klickar på 'Avbryt' för att gå tillbaka utan att behålla ändringarna.
+When you are finished painting your Sim click 'Done' to return to the main screen. Click 'Cancel' to undo all your painting and return to the main screen.|När du har målat klart din sim klickar du på 'Klar' för att återgå till huvudskärmen. Klicka på 'Avbryt' för att ta bort allt du har målat och gå tillbaka till huvudskärmen.
+When you select the Texture Paintbrush, the right side of the panel shows a texture selector. Choose the texture you want to paint with from there. If you would like to import your own textures, you must go to the Sim Wardrobe screen.|När du väljer Texturpenseln visar den högra sidan av panelen olika texturer. Där väljer du den textur som du vill måla med. Om du vill importera egna texturer måste du gå till Simkläder-skärmen.
+Wire Frame|Rutnät
+Working|Arbetar
+X:|X:
+Y:|Y:
+Yes|Ja
+You can access the Face Photo Wizard, Sims Wardrobe, and Paint from here. When you are done don't forget to save your work.|Här kan du öppna Fotoassistenten, Simkläder- och Måla-skärmen. Glöm inte att spara ditt arbete när du är färdig.
+You can change your 3D view direction using the 'Front', 'Back', 'Left', 'Right', 'Top' and 'Bottom' buttons on the top of the 3D panel. You can get a closer view by clicking the 'Head' or 'Body' buttons. Click on the wireframe button to show or hide the wireframe.|Du kan ändra vinkel på 3D-bilden med knapparna 'Fram', 'Bak', 'Vänster', 'Höger', 'Ovan' och 'Under' längst upp på 3D-panelen. Du kan få en större bild genom att klicka på  'Huvud'- eller 'Kropp'-knappen. Klicka på rutnätsknappen för att visa eller dölja rutnätet.
+You can load more material from disk by clicking on the 'Load Texture' button (.png, .jpg, .tga, .bmp, and .tif's are the acceptable file types).|Du kan ladda fler material från en disk genom att klicka på knappen 'Ladda textur' (.png, .jpg, .tga, .bmp, eller .tif är godkända filtyper).
+You can move the face around on your Sim by clicking inside the white box on the left or clicking and dragging the white squares that are attached to the box.|Du kan flytta runt din sims ansikte genom att klicka i den vita rutan till vänster eller genom att klicka och dra de vita handtagen som sitter på rutan.
+You can view your Sim from different angles, by clicking and dragging in the 3D view.|Du kan titta på din sim från olika vinklar genom att klicka och dra på 3D-bilden.
+You have not clicked a save button, are you sure you wish to return?|Du har inte klickat på någon av spara-knapparna, är du säker på att du vill gå tillbaka?
+Zoom Tool|Zoomverktyg
+and all of the employees of Maxis who|och alla anställda på Maxis som fortsätter
+continue to make The Sims(TM) an incredible game.|att göra The Sims till ett fantastiskt spel.
