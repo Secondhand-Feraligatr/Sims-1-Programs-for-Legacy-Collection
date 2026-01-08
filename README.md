@@ -22,7 +22,7 @@ This project has all the programs Maxis made for sims 1 ands let's you install t
   <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/face-lift.png" width="25%">
 </p>
-Also let's you make CC faces, but this one is more user friendly. You edit the face using sliders
+Also let's you make CC faces, but this one works differently. You edit the face using sliders
 
 - **Object Organizer**
     <p align="left">
