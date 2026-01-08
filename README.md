@@ -1,11 +1,21 @@
 # Sims-1-projects-for-Legacy-Collection
-Installs sims 1 programs made my Maxis for the Legacy Collction release of sims 1.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/Creator.png" width="45%">
+  <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/TS1_HOMEMASTERSPLASH3.png" width="45%"><br>
+  <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/make%20a%20celeb.PNG" width="45%">
+  <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/makeadate.PNG" width="45%">
+</p>
+
+This project has all the programs Maxis made for sims 1 ands let's you install them to the Legacy Collection release of the game
 
 ---
 
 ## **Included Programs**
 - **The Sims Creator**
-
+<p align="left">
+  <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/Creator.png" width="25%">
+</p>
  Let's you create CC heads and bodies
   
 - **FaceLift**
