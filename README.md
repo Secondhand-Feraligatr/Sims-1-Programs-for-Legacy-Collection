@@ -56,7 +56,7 @@ Checks your CC for any bad files
 </p>
 Let's you edit the menu text of an object
 
-(Not change the interactions, only the text in the pie menu)
+(Note: This program doesn't let you change the actual interactions. Only the text in the pie menu)
 
 - **Make-A-Date**
     <p align="left">
