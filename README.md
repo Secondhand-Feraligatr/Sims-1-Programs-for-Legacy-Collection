@@ -48,7 +48,7 @@ Let's you create CC walls and floors
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/file-cop.png" width="25%">
 </p>
-Checks your CC for any bad files
+Checks your game files and CC for any bad files
 
 - **Menu Editor**
     <p align="left">
