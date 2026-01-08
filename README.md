@@ -57,3 +57,14 @@ Let's you create custom Hot Date townies
 5. let the installation complete
 
 - The programs are put into your sims 1 installation. They're all in a new folder called `Programs`.
+
+---
+
+## **Troubleshooting**
+- **16 bit color error**
+
+Art Studio needs 16 bit color mode while Homecrafter needs 16 bit color mode and xp service pack 2 compability mode. You getting a 16 bit color mode error means the installer failed to apply these atrributes. So, you'll have to go into the properties of the exe and apply them manually.
+
+- **Uninstalling**
+
+In your sims 1 installation you'll find a file called `unins000.exe`. Running this will uninstall all of the sims 1 programs from this installer.
