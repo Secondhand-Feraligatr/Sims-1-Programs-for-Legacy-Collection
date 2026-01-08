@@ -1,5 +1,5 @@
 ;    Sims 1 Programs Installer For Legacy Collection - Installs sims 1 programs for the legacy collection release.
-;    Copyright (C) 2025 CroconawSims / Secondhand Feraligatr.
+;    Copyright (C) 2026 CroconawSims / Secondhand Feraligatr.
 ;
 ;    This program is free software: you can redistribute it and/or modify
 ;    it under the terms of the GNU General Public License as published by
@@ -42,6 +42,7 @@ PrivilegesRequired=admin
 DisableProgramGroupPage=yes
 DefaultGroupName={#MyAppName}
 AppendDefaultDirName=no
+RedirectionGuard=yes
 AllowNoIcons=no
 ; Uncomment the following line to run in non administrative install mode (install for current user only).
 ;PrivilegesRequired=lowest
@@ -55,9 +56,10 @@ WizardStyle=modern dynamic polar includetitlebar
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Messages]
-
-
-
+WizardSelectComponents=Select Programs
+SelectComponentsDesc=Which programs should be installed?
+SelectComponentsLabel2=Remove the check mark from the programs you don't want to install. Click Next when you are ready to continue.
+ReadyMemoComponents=Selected programs:
 ReadyMemoType= 
 WizardSelectDir=Selected Folder:
 SelectDirDesc= 
@@ -65,6 +67,7 @@ SelectDirLabel3=
 ReadyLabel1=Setup is ready to begin installing.
 FinishedLabel=Setup has finished installing the programs. They can be launched via the desktop shortcuts.
 InstallingLabel=Please wait for the installation process to finish.
+ReadyMemoDir=Install location:
 
 [Files]
 Source: "Z:\home\moxxie\Documents\sims 1\installer\Programs\Art Studio\*"; DestDir: "{app}\Programs\Art Studio"; Components: "art"; Flags: recursesubdirs replacesameversion uninsrestartdelete notimestamp
@@ -154,9 +157,7 @@ var
 
 procedure InitializeWizard;
 begin
-  // ----------------------------
-  // Part 1: Custom Install Location Selector
-  // ----------------------------
+  // Install Location Selector
   InstallDirPage := CreateInputOptionPage(
     wpWelcome,  
     'Select where The Sims 1 Legacy Collection is installed', 
