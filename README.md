@@ -75,8 +75,8 @@ Let's you create custom Hot Date townies
 ---
 
 ## **Install Instructions**
-1. Download the program from the [Releases page](https://github.com/Secondhand-Feraligatr/The-Sims-2-Legacy-Collection-Fixer/releases)  
-2. Start the installer 
+1. Download the program from the [Releases page](https://github.com/Secondhand-Feraligatr/Sims-1-Programs-for-Legacy-Collection/releases)  
+2. Start the setup 
 3. select where you have the sims 1 installed:
    - **Steam** → `C:\Program Files (x86)\Steam\steamapps\common\The Sims Legacy Collection`
    - **EA App** → `C:\Program Files\EA Games\The Sims Legacy`
