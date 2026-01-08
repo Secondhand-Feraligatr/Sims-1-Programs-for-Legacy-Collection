@@ -12,62 +12,81 @@ This project has all the programs Maxis made for sims 1 ands let's you install t
 ---
 
 ## **Included Programs**
+
 - **The Sims Creator**
+  
 <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/creator2.png" width="25%">
 </p>
+
  Let's you create CC heads and bodies
   
 - **FaceLift**
+  
   <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/face-lift.png" width="25%">
 </p>
+
 Also let's you create CC faces, but this one works differently. You edit the face using sliders
 
 - **Object Organizer**
+  
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/organzier.jpg" width="25%">
 </p>
+
 Let's you fix CC that's not categorized correctly
 
 - **Art Studio**
+  
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/art.png" width="25%">
 </p>
+
 Let's you create CC paintings
 
   (**Important Note:** Items made with Art Studio need to then be fixed with Object Organizer)
 
   - **HomeCrafter**
+    
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/TS1_HOMEMASTER3.png" width="25%">
 </p>
+
 Let's you create CC walls and floors
 
 - **File Cop**
+  
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/file-cop.png" width="25%">
 </p>
+
 Checks your game files and CC for any bad files
 
 - **Menu Editor**
+  
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/menu.jpg" width="25%">
 </p>
+
 Let's you edit the menu text of an object
 
 (Note: This program doesn't let you change the actual interactions. Only the text in the pie menu)
 
 - **Make-A-Date**
+  
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/date2.png" width="25%">
 </p>
+
 Let's you create custom Hot Date townies
 
   - **Make-A-Celebrity**
+    
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/celeb2.png" width="25%">
 </p>
+
   Same as Make-A-Date but for Superstar celebrities
 
 - If you need any help with these programs, they all come with their original read me file.
