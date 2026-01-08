@@ -1,4 +1,4 @@
-# Sims-1-programs-for-Legacy-Collection
+# Sims-1-Programs-for-Legacy-Collection
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/Creator.png" width="45%">
