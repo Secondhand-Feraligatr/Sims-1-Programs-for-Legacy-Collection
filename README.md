@@ -28,7 +28,7 @@ Also let's you make CC faces, but this one works differently. You edit the face 
     <p align="left">
   <img src="https://raw.githubusercontent.com/Secondhand-Feraligatr/Sims-1-projects-for-Legacy-Collection/main/Photos/organzier.jpg" width="25%">
 </p>
-Let's you fix CC that's not categorize correctly
+Let's you fix CC that's not categorized correctly
 
 - **Art Studio**
     <p align="left">
